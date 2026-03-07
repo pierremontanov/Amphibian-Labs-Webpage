@@ -16,8 +16,8 @@ const ContactSection = () => {
           </div>
           <div className="flex items-center justify-center gap-2 text-muted-foreground">
             <Mail size={18} className="text-primary" />
-            <a href="mailto:pierremontanov@gmail.com" className="hover:text-foreground transition-colors">
-              pierremontanov@gmail.com
+            <a href="mailto:info@amphibianlabs.com.au" className="hover:text-foreground transition-colors">
+              info@amphibianlabs.com.au
             </a>
           </div>
           <div className="flex items-center justify-center gap-2 text-muted-foreground">
@@ -27,7 +27,7 @@ const ContactSection = () => {
         </div>
         <div className="flex flex-wrap justify-center gap-3 mb-8">
           <a
-            href="mailto:pierremontanov@gmail.com"
+            href="mailto:info@amphibianlabs.com.au"
             className="inline-flex items-center gap-2 gradient-teal text-primary-foreground px-6 py-3 rounded-lg text-base font-semibold shadow-button hover:opacity-90 transition-opacity"
           >
             <Mail size={18} />
