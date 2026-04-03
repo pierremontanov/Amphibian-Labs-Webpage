@@ -14,8 +14,8 @@ const Footer = () => {
             <a href="tel:0420729667" className="hover:text-foreground transition-colors">
               0420 729 667
             </a>
-            <a href="mailto:pierremontanov@gmail.com" className="hover:text-foreground transition-colors">
-              pierremontanov@gmail.com
+            <a href="mailto:info@amphibianlabs.com.au" className="hover:text-foreground transition-colors">
+              info@amphibianlabs.com.au
             </a>
           </div>
         </div>

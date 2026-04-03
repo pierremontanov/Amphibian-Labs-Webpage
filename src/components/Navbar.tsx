@@ -41,7 +41,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="mailto:pierremontanov@gmail.com"
+              href="mailto:info@amphibianlabs.com.au"
               className={`inline-flex items-center gap-2 gradient-teal text-primary-foreground px-4 py-2 rounded-lg text-sm font-semibold shadow-button hover:opacity-90 transition-all ${
                 scrolled ? "scale-100 opacity-100" : "scale-95 opacity-80"
               }`}
@@ -72,7 +72,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="mailto:pierremontanov@gmail.com"
+            href="mailto:info@amphibianlabs.com.au"
             className="mt-2 block text-center gradient-teal text-primary-foreground px-4 py-2 rounded-lg text-sm font-semibold"
           >
             Email me
