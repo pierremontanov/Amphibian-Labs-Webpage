@@ -30,7 +30,7 @@ const HeroSection = () => {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href="mailto:pierremontanov@gmail.com"
+                href="mailto:info@amphibianlabs.com.au"
                 className="inline-flex items-center gap-2 gradient-teal text-primary-foreground px-6 py-3 rounded-lg text-base font-semibold shadow-button hover:opacity-90 transition-opacity"
               >
                 <Mail size={18} />

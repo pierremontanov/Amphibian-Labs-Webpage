@@ -67,7 +67,7 @@ const OptionsSection = () => {
                 ))}
               </ul>
               <a
-                href="mailto:pierremontanov@gmail.com"
+                href="mailto:info@amphibianlabs.com.au"
                 className={`mt-6 inline-flex items-center justify-center text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-200 ${
                   opt.popular
                     ? "gradient-teal text-primary-foreground shadow-button hover:opacity-90"
