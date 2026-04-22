@@ -1,105 +1,115 @@
-import { Settings, Zap, Database, Globe, ShieldCheck, Brain } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import { Search, Puzzle, Presentation, Brain, Network, Zap, GitBranch, Users } from "lucide-react";
 
-const services = [
+interface ServiceCardProps {
+  icon: React.ReactNode;
+  title: string;
+  body: string;
+}
+
+function ServiceCard({ icon, title, body }: ServiceCardProps) {
+  return (
+    <div className="flex items-start gap-4 p-4 rounded-lg bg-card border border-border hover:shadow-card transition-shadow">
+      <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg bg-muted">
+        {icon}
+      </div>
+      <div>
+        <h4 className="text-sm font-semibold text-foreground">{title}</h4>
+        <p className="mt-1 text-sm text-muted-foreground leading-relaxed">{body}</p>
+      </div>
+    </div>
+  );
+}
+
+const tiers = [
   {
-    icon: Settings,
-    title: "Make operations easier",
-    outcome: "So your team stops wasting hours on repetitive tasks",
-    bullets: [
-      "Remove repetitive admin work",
-      "Reduce mistakes and rework",
-      "Clear steps for the team",
-      "Track what failed and what needs action",
+    key: "understand",
+    accent: "teal",
+    borderColor: "border-teal-200 dark:border-teal-700/30",
+    iconColor: "text-teal-600",
+    bgAccent: "bg-teal-50 dark:bg-teal-900/20",
+    services: [
+      { key: "discovery", icon: Search },
+      { key: "advisory", icon: Puzzle },
+      { key: "training", icon: Presentation },
     ],
   },
   {
-    icon: Zap,
-    title: "Automate the boring stuff",
-    outcome: "So work moves forward without you chasing it",
-    bullets: [
-      "Process requests from emails and forms",
-      "Approval flows (quotes, invoices, leave, purchases)",
-      "Reminders and follow-ups",
-      "Move info between systems (no copy and paste)",
-      "Simple dashboards",
+    key: "build",
+    accent: "sky",
+    borderColor: "border-sky-100 dark:border-sky-800/30",
+    iconColor: "text-sky-600",
+    bgAccent: "bg-sky-50 dark:bg-sky-800/10",
+    services: [
+      { key: "ai_backends", icon: Brain },
+      { key: "integration", icon: Network },
+      { key: "automation", icon: Zap },
     ],
   },
   {
-    icon: Database,
-    title: "Improve systems without replacing everything",
-    outcome: "So you get more from tools you already pay for",
-    bullets: [
-      "Clean up CRM usage",
-      "Data entry rules and validation",
-      "Simple internal apps for consistent capture",
-    ],
-  },
-  {
-    icon: Globe,
-    title: "Simple web solutions when needed",
-    outcome: "So customers and staff get what they need online",
-    bullets: [
-      "Basic business websites or landing pages",
-      "Forms that route data correctly",
-      "Small tools that save time (validation, booking, reporting)",
-    ],
-  },
-  {
-    icon: ShieldCheck,
-    title: "Choose the right provider",
-    outcome: "So you don't overpay or get locked in",
-    bullets: [
-      "Compare options in plain language",
-      "Get quotes, reduce risk, avoid vendor traps",
-      "Manage delivery so you get what you paid for",
-    ],
-  },
-  {
-    icon: Brain,
-    title: "Practical AI (no hype)",
-    outcome: "So you extract value from documents automatically",
-    bullets: [
-      "Extract key info from documents (invoices, forms, PDFs)",
-      "Structured summaries and reports",
-      "Human review step for accuracy",
+    key: "share",
+    accent: "amber",
+    borderColor: "border-amber-100 dark:border-amber-800/30",
+    iconColor: "text-amber-600",
+    bgAccent: "bg-amber-50 dark:bg-amber-800/10",
+    services: [
+      { key: "open_source", icon: GitBranch },
+      { key: "community", icon: Users },
     ],
   },
 ];
 
-const ServicesSection = () => {
+export default function ServicesSection() {
+  const { t } = useTranslation("home");
+
   return (
-    <section id="services" className="py-20 bg-secondary">
+    <section id="services" className="py-24 bg-muted/50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
-          What I help you with
+        <h2 className="text-2xl sm:text-3xl font-bold text-foreground text-center">
+          {t("services.section_title")}
         </h2>
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((s) => (
-            <div
-              key={s.title}
-              className="bg-card rounded-xl p-8 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 flex flex-col"
-            >
-              <div className="w-14 h-14 rounded-xl bg-accent flex items-center justify-center mb-5">
-                <s.icon size={26} className="text-primary" />
+        <p className="mt-3 text-center text-muted-foreground max-w-xl mx-auto">
+          {t("services.intro")}
+        </p>
+
+        <div className="mt-16 space-y-12">
+          {tiers.map((tier) => (
+            <div key={tier.key}>
+              {/* Tier header */}
+              <div className="flex items-center gap-3 mb-6">
+                <div className={`w-1.5 h-8 rounded-full ${
+                  tier.key === "understand" ? "bg-teal-600" :
+                  tier.key === "build" ? "bg-sky-600" :
+                  "bg-amber-600"
+                }`} />
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground">
+                    {t(`services.${tier.key}.title`)}
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    {t(`services.${tier.key}.subtitle`)}
+                  </p>
+                </div>
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-1">
-                {s.title}
-              </h3>
-              <p className="text-sm text-primary italic mb-4">{s.outcome}</p>
-              <ul className="space-y-2 flex-1">
-                {s.bullets.map((b) => (
-                  <li key={b} className="text-sm text-muted-foreground flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 shrink-0" />
-                    {b}
-                  </li>
-                ))}
-              </ul>
+
+              {/* Service cards grid */}
+              <div className={`grid gap-4 sm:grid-cols-2 ${tier.services.length === 3 ? "lg:grid-cols-3" : "lg:grid-cols-2"}`}>
+                {tier.services.map((service) => {
+                  const Icon = service.icon;
+                  return (
+                    <ServiceCard
+                      key={service.key}
+                      icon={<Icon className={`w-5 h-5 ${tier.iconColor}`} />}
+                      title={t(`services.${tier.key}.${service.key}.title`)}
+                      body={t(`services.${tier.key}.${service.key}.body`)}
+                    />
+                  );
+                })}
+              </div>
             </div>
           ))}
         </div>
       </div>
     </section>
   );
-};
-
-export default ServicesSection;
+}

@@ -1,0 +1,225 @@
+{
+  "hero": {
+    "headline": "Your business already runs. We make it run smarter.",
+    "subheadline": "We plug AI into what you already have. No migrations. No disruption. No vendor lock-in.",
+    "cta_primary": "Book a discovery session",
+    "cta_secondary": "See our open-source work",
+    "trust_strip": "Built with"
+  },
+  "problems": {
+    "section_title": "Sound familiar?",
+    "tech_gap": {
+      "title": "The tech gap",
+      "body": "Edge technology exists, but it's built for companies with 500+ employees and six-figure IT budgets. Small and mid-sized businesses get left behind — or get sold oversized solutions they can't maintain."
+    },
+    "rip_replace": {
+      "title": "The rip-and-replace trap",
+      "body": "Every vendor wants to replace your entire stack. You didn't ask for a migration. You asked for help. Your systems work — they just need an intelligent layer on top."
+    },
+    "trust_gap": {
+      "title": "The trust gap",
+      "body": "You've been burned by consultants who recommend what they sell, not what you need. You need someone who'll tell you when an off-the-shelf product beats a custom build — even if it means less work for them."
+    }
+  },
+  "services": {
+    "section_title": "What we do",
+    "intro": "We turn problems into working systems.",
+    "understand": {
+      "title": "Understand",
+      "subtitle": "Consultancy & business analysis",
+      "discovery": {
+        "title": "Discovery & requirements",
+        "body": "Stakeholder workshops, current-state analysis, pain-point identification."
+      },
+      "advisory": {
+        "title": "Solution design & advisory",
+        "body": "We recommend off-the-shelf vs custom vs AI backend based on fit, not vendor pressure. We'll suggest competitors if they're a better fit."
+      },
+      "training": {
+        "title": "Workshops & training",
+        "body": "Sessions on AI adoption, automation strategy, and tech literacy for SMBs."
+      }
+    },
+    "build": {
+      "title": "Build",
+      "subtitle": "Engineering & delivery",
+      "ai_backends": {
+        "title": "AI-powered backends",
+        "body": "Document intelligence, unstructured data extraction, NLP pipelines. Python, FastAPI, containerised microservices."
+      },
+      "integration": {
+        "title": "System integration",
+        "body": "Microsoft 365, SharePoint, Teams, CRMs, third-party APIs. No migration required."
+      },
+      "automation": {
+        "title": "Workflow automation",
+        "body": "Power Automate, Make, n8n — eliminate manual steps across platforms."
+      }
+    },
+    "share": {
+      "title": "Share",
+      "subtitle": "Open source & community",
+      "open_source": {
+        "title": "Open-source projects",
+        "body": "Production-grade tools under MIT license. DocIQ is the flagship."
+      },
+      "community": {
+        "title": "Community resources",
+        "body": "Templates, automation blueprints, reference architectures."
+      }
+    }
+  },
+  "outcomes": {
+    "section_title": "What changes",
+    "rows": [
+      {
+        "before": "Staff spend 4 hours/day copying data between PDFs and your system",
+        "after": "An AI backend extracts, validates, and loads it in seconds"
+      },
+      {
+        "before": "Your CRM, EHR, and accounting tool don't talk to each other",
+        "after": "A lightweight integration layer syncs them — no new platform needed"
+      },
+      {
+        "before": "You're told you need to replace everything",
+        "after": "You keep what works. We add what's missing"
+      },
+      {
+        "before": "AI tools feel inaccessible or oversold",
+        "after": "You attend a workshop and leave with a working prototype"
+      }
+    ]
+  },
+  "process": {
+    "section_title": "How it works",
+    "steps": [
+      {
+        "title": "Listen",
+        "body": "Free clarity session. You tell us what's broken. No pitch, no commitment."
+      },
+      {
+        "title": "Map",
+        "body": "We document your current state — systems, workflows, pain points, budget constraints."
+      },
+      {
+        "title": "Recommend",
+        "body": "We design a solution — and it might not include us. If an off-the-shelf tool solves it, we'll say so."
+      },
+      {
+        "title": "Build",
+        "body": "We build what's agreed. Iterative delivery, not a 6-month black box. You see working software early and often."
+      },
+      {
+        "title": "Handover",
+        "body": "Full documentation, BAU handover, knowledge transfer. You own everything. No lock-in."
+      }
+    ]
+  },
+  "blog_preview": {
+    "section_title": "Latest from the lab",
+    "read_more": "Read more on the blog",
+    "articles": [
+      {
+        "title": "Why we enhance your systems instead of replacing them",
+        "excerpt": "Most consultants recommend what they sell. We recommend what fits. Here's our philosophy on system enhancement over replacement.",
+        "category": "Philosophy",
+        "date": "2026-04-15",
+        "reading_time": "5 min read"
+      },
+      {
+        "title": "How we built DocIQ: an open-source AI engine for medical document processing",
+        "excerpt": "1,100+ tests, 3 document types, 2 languages, FHIR R4 compliant. A technical deep-dive into building production-grade document intelligence.",
+        "category": "Engineering",
+        "date": "2026-04-08",
+        "reading_time": "8 min read"
+      },
+      {
+        "title": "5 signs your business is ready for AI — and 3 signs you're not",
+        "excerpt": "AI isn't magic. It's infrastructure. Here's how to tell if your business is actually ready — and what to fix first if you're not.",
+        "category": "Guide",
+        "date": "2026-03-28",
+        "reading_time": "6 min read"
+      }
+    ]
+  },
+  "about": {
+    "section_title": "About",
+    "bio_p1": "Amphibian Labs was founded by Pierre Montanov — a technical consultant and engineer with 5+ years in the industry, a Master's in IT, and dual expertise in business analysis and software engineering.",
+    "bio_p2": "Pierre saw first-hand how small and mid-sized businesses get underserved by the tech industry. Enterprise tools exist, but they're priced and scoped for enterprises. SMBs deserve the same calibre of technology — built to fit their scale, their budget, and their existing systems.",
+    "bio_p3": "Amphibian Labs closes that gap. We don't replace what works. We enhance it with AI backends, workflow automation, and system integration. And when we're done, you own everything.",
+    "philosophy": "Amphibian Labs is a lab in the true sense — we create, experiment, publish, and help.",
+    "credentials": {
+      "name": "Pierre Montanov",
+      "title": "Founder & Technical Consultant",
+      "location": "Gold Coast, QLD, Australia",
+      "degree": "Master's in Information Technology",
+      "experience": "5+ years industry experience"
+    }
+  },
+  "engagement": {
+    "section_title": "Ways to work together",
+    "intro": "Flexible options — no lock-in contracts. Start small and scale up when you're ready.",
+    "discovery": {
+      "price": "$300",
+      "duration": "2 hours",
+      "title": "Discovery session",
+      "description": "2-hour session (remote or in-person). We listen to the pain, ask diagnostic questions, and map your current state. Written report delivered within 48 hours: what we found, what we recommend, 2–3 actionable suggestions — which may or may not include Amphibian Labs. No obligation.",
+      "cta": "Book a discovery session — $300 for 2 hours of honest answers and a written report."
+    },
+    "discover": {
+      "label": "Discover",
+      "title": "Understand what you have and what you need",
+      "bullets": [
+        "Stakeholder workshops",
+        "Current-state mapping",
+        "Solution recommendations",
+        "Written report"
+      ],
+      "best_for": "Businesses who know something isn't working but aren't sure what to fix first."
+    },
+    "build": {
+      "label": "Build",
+      "title": "Scoped project with defined outcomes",
+      "bullets": [
+        "AI backends & system integrations",
+        "Workflow automations",
+        "Iterative delivery",
+        "Documentation & BAU handover"
+      ],
+      "best_for": "Businesses ready to act."
+    },
+    "evolve": {
+      "label": "Evolve",
+      "title": "Monthly retainer for evolving needs",
+      "bullets": [
+        "New integrations as you grow",
+        "Expanding automation coverage",
+        "Keeping systems aligned",
+        "Your tech partner on call"
+      ],
+      "best_for": "Businesses that want a tech partner on call."
+    },
+    "scoped": "Scoped to your project."
+  },
+  "contact": {
+    "section_title": "Let's talk",
+    "subtitle": "Tell us what's broken. We'll reply with the next step.",
+    "name_label": "First name",
+    "email_label": "Email",
+    "industry_label": "Business type / industry",
+    "industry_options": {
+      "placeholder": "Select your industry",
+      "healthcare": "Healthcare",
+      "construction": "Construction",
+      "professional": "Professional Services",
+      "trades": "Trades",
+      "retail": "Retail",
+      "other": "Other"
+    },
+    "frustration_label": "What's your biggest frustration?",
+    "referral_label": "How did you find us?",
+    "submit": "Tell us what's broken",
+    "confirmation": "Got it. We'll be in touch within 24 hours.",
+    "fallback": "Prefer email? Reach us at"
+  }
+}

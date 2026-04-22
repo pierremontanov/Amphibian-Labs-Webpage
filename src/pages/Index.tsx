@@ -4,28 +4,26 @@ import ProblemSection from "@/components/ProblemSection";
 import ServicesSection from "@/components/ServicesSection";
 import OutcomesSection from "@/components/OutcomesSection";
 import ProcessSection from "@/components/ProcessSection";
-import TestimonialSection from "@/components/TestimonialSection";
-import OptionsSection from "@/components/OptionsSection";
+import BlogPreviewSection from "@/components/BlogPreviewSection";
 import AboutSection from "@/components/AboutSection";
+import EngagementSection from "@/components/OptionsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import MobileStickyEmail from "@/components/MobileStickyEmail";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background pb-16 md:pb-0">
+    <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
       <ProblemSection />
       <ServicesSection />
       <OutcomesSection />
       <ProcessSection />
-      <TestimonialSection />
-      <OptionsSection />
+      <BlogPreviewSection />
       <AboutSection />
+      <EngagementSection />
       <ContactSection />
       <Footer />
-      <MobileStickyEmail />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,53 +6,120 @@
 
 @layer base {
   :root {
-    /* Navy / off-white / teal palette */
-    --background: 210 20% 98%;
-    --foreground: 220 40% 13%;
+    /* ─── Primary: Teal ─── */
+    --teal-50: #E6F5F0;
+    --teal-100: #B3E4D4;
+    --teal-200: #6DCBAB;
+    --teal-300: #34B085;
+    --teal-400: #1D9E75;
+    --teal-600: #0F6E56;
+    --teal-700: #085041;
+    --teal-800: #04342C;
+    --teal-900: #021F1A;
+
+    /* ─── Navy ─── */
+    --navy-50: #EEF2F5;
+    --navy-100: #CEDAE2;
+    --navy-200: #94AEBE;
+    --navy-300: #5A7D94;
+    --navy-400: #2E4F63;
+    --navy-600: #1A3548;
+    --navy-700: #122A3A;
+    --navy-800: #0C1F2C;
+    --navy-900: #06111A;
+
+    /* ─── Amber ─── */
+    --amber-50: #FEF6E6;
+    --amber-100: #FDE4A8;
+    --amber-200: #F6C84E;
+    --amber-400: #EF9F27;
+    --amber-600: #D4940F;
+    --amber-800: #5C3D04;
+
+    /* ─── Coral ─── */
+    --coral-50: #FDF0EB;
+    --coral-100: #F9CCBA;
+    --coral-200: #F0997B;
+    --coral-400: #E8643A;
+    --coral-600: #C74A25;
+    --coral-800: #5A1D0C;
+
+    /* ─── Sky ─── */
+    --sky-50: #E0F2FE;
+    --sky-100: #BAE6FD;
+    --sky-400: #38BDF8;
+    --sky-600: #0284C7;
+    --sky-800: #0C4A6E;
+
+    /* ─── Slate ─── */
+    --slate-50: #F8FAFC;
+    --slate-100: #F1F5F9;
+    --slate-200: #E2E8F0;
+    --slate-300: #CBD5E1;
+    --slate-400: #94A3B8;
+    --slate-500: #64748B;
+    --slate-600: #475569;
+    --slate-700: #334155;
+    --slate-800: #1E293B;
+    --slate-900: #0F172A;
+
+    /* ─── Semantic ─── */
+    --success: #065F46;
+    --success-bg: #ECFDF5;
+    --warning: #5C3D04;
+    --warning-bg: #FEF6E6;
+    --error: #991B1B;
+    --error-bg: #FEF2F2;
+    --info: #075985;
+    --info-bg: #E0F2FE;
+
+    /* ─── Surfaces (Light) ─── */
+    --bg-page: #FAFAF8;
+    --bg-card: #FFFFFF;
+    --bg-muted: #EEF2F5;
+    --border-color: #E2E8F0;
+
+    /* ─── shadcn/ui semantic tokens (Light) ─── */
+    --background: 40 20% 98%;
+    --foreground: 206 40% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 40% 13%;
+    --card-foreground: 206 40% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 40% 13%;
+    --popover-foreground: 206 40% 10%;
 
-    --primary: 174 62% 40%;
+    --primary: 160 75% 24%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 20% 95%;
-    --secondary-foreground: 220 40% 13%;
+    --secondary: 210 25% 95%;
+    --secondary-foreground: 206 40% 10%;
 
-    --muted: 210 15% 93%;
-    --muted-foreground: 220 15% 46%;
+    --muted: 210 20% 93%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 174 45% 92%;
-    --accent-foreground: 174 62% 28%;
+    --accent: 160 45% 92%;
+    --accent-foreground: 160 75% 20%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 18% 89%;
-    --input: 210 18% 89%;
-    --ring: 174 62% 40%;
+    --border: 214 20% 89%;
+    --input: 214 20% 89%;
+    --ring: 160 75% 24%;
 
     --radius: 0.75rem;
 
-    /* Custom tokens */
-    --navy: 220 40% 13%;
-    --navy-light: 220 30% 25%;
-    --teal: 174 62% 40%;
-    --teal-light: 174 45% 92%;
-    --teal-dark: 174 62% 28%;
-    --off-white: 210 20% 98%;
-    --warm-gray: 220 10% 60%;
+    /* ─── Gradients ─── */
+    --gradient-teal: linear-gradient(135deg, #0F6E56, #1D9E75);
+    --gradient-navy: linear-gradient(180deg, #0C1F2C, #06111A);
 
-    --gradient-hero: linear-gradient(135deg, hsl(174 45% 92%) 0%, hsl(200 40% 94%) 40%, hsl(220 30% 95%) 100%);
-    --gradient-teal: linear-gradient(135deg, hsl(174 62% 40%), hsl(174 50% 50%));
+    /* ─── Shadows ─── */
+    --shadow-card: 0 1px 3px 0 rgba(12,31,44,0.04), 0 4px 16px -2px rgba(12,31,44,0.06);
+    --shadow-card-hover: 0 4px 12px -2px rgba(12,31,44,0.08), 0 8px 24px -4px rgba(12,31,44,0.1);
+    --shadow-button: 0 1px 2px 0 rgba(15,110,86,0.2), 0 4px 12px -2px rgba(15,110,86,0.15);
 
-    --shadow-card: 0 1px 3px 0 hsl(220 40% 13% / 0.04), 0 4px 16px -2px hsl(220 40% 13% / 0.06);
-    --shadow-card-hover: 0 4px 12px -2px hsl(220 40% 13% / 0.08), 0 8px 24px -4px hsl(220 40% 13% / 0.1);
-    --shadow-button: 0 1px 2px 0 hsl(174 62% 40% / 0.2), 0 4px 12px -2px hsl(174 62% 40% / 0.15);
-
+    /* ─── Sidebar (shadcn) ─── */
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -64,25 +131,44 @@
   }
 
   .dark {
-    --background: 220 40% 8%;
-    --foreground: 210 20% 95%;
-    --card: 220 35% 12%;
-    --card-foreground: 210 20% 95%;
-    --popover: 220 35% 12%;
-    --popover-foreground: 210 20% 95%;
-    --primary: 174 62% 45%;
+    /* ─── Surfaces (Dark) ─── */
+    --bg-page: #0B1215;
+    --bg-card: #141E23;
+    --bg-muted: #1C2D35;
+    --border-color: #1E3340;
+
+    /* ─── shadcn/ui semantic tokens (Dark) ─── */
+    --background: 200 20% 7%;
+    --foreground: 210 20% 93%;
+
+    --card: 200 22% 11%;
+    --card-foreground: 210 20% 93%;
+
+    --popover: 200 22% 11%;
+    --popover-foreground: 210 20% 93%;
+
+    --primary: 160 70% 37%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 220 30% 18%;
-    --secondary-foreground: 210 20% 95%;
-    --muted: 220 30% 18%;
-    --muted-foreground: 215 15% 60%;
-    --accent: 174 40% 18%;
-    --accent-foreground: 174 50% 70%;
-    --destructive: 0 62.8% 30.6%;
+
+    --secondary: 200 25% 15%;
+    --secondary-foreground: 210 20% 93%;
+
+    --muted: 200 25% 15%;
+    --muted-foreground: 215 15% 55%;
+
+    --accent: 160 35% 16%;
+    --accent-foreground: 160 50% 70%;
+
+    --destructive: 0 62% 30%;
     --destructive-foreground: 210 40% 98%;
-    --border: 220 25% 20%;
-    --input: 220 25% 20%;
-    --ring: 174 62% 45%;
+
+    --border: 200 25% 18%;
+    --input: 200 25% 18%;
+    --ring: 160 70% 37%;
+
+    --gradient-teal: linear-gradient(135deg, #1D9E75, #34B085);
+    --gradient-navy: linear-gradient(180deg, #0B1215, #06111A);
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,19 +186,23 @@
   }
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'DM Sans', 'Inter', system-ui, sans-serif;
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  }
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
   }
 }
 
 @layer utilities {
-  .gradient-hero {
-    background: var(--gradient-hero);
-  }
   .gradient-teal {
     background: var(--gradient-teal);
+  }
+  .gradient-navy {
+    background: var(--gradient-navy);
   }
   .shadow-card {
     box-shadow: var(--shadow-card);
@@ -123,13 +213,24 @@
   .shadow-button {
     box-shadow: var(--shadow-button);
   }
-  .text-navy {
-    color: hsl(var(--navy));
+
+  /* Staggered reveal animation */
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-  .text-warm-gray {
-    color: hsl(var(--warm-gray));
+  .animate-fade-up {
+    animation: fade-up 0.6s ease-out both;
   }
-  .bg-teal-light {
-    background-color: hsl(var(--teal-light));
-  }
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+  .animation-delay-500 { animation-delay: 500ms; }
 }

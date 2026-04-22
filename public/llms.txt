@@ -1,0 +1,15 @@
+# Amphibian Labs
+> AI backends, system integration, and workflow automation for SMBs
+
+## About
+Amphibian Labs is an Australian tech consultancy that enhances existing business systems with AI-powered backend services, workflow automation, and system integration. Founded by Pierre Montanov.
+
+## Key pages
+- [Home](https://amphibianlabs.com.au/)
+- [Services](https://amphibianlabs.com.au/services)
+- [Open Source](https://amphibianlabs.com.au/repositories)
+- [Blog](https://amphibianlabs.com.au/blog)
+- [Contact](https://amphibianlabs.com.au/#contact)
+
+## Flagship project
+- [DocIQ](https://github.com/pierremontanov/HealthParse) — Open-source AI document intelligence engine for healthcare. MIT licensed. 1,100+ tests.

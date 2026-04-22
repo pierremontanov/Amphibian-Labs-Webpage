@@ -1,87 +1,104 @@
-import { Badge } from "@/components/ui/badge";
+import { useTranslation } from "react-i18next";
+import { ArrowRight, Sparkles } from "lucide-react";
 
-const options = [
-  {
-    label: "Option A",
-    title: "Clarity Session",
-    popular: false,
-    bullets: ["Process map", "Recommendations", "Short plan and next steps"],
-  },
-  {
-    label: "Option B",
-    title: "Build Sprint",
-    popular: true,
-    bullets: [
-      "Automation, app, or system improvement",
-      "Testing and go-live support",
-      "Handover notes",
-    ],
-  },
-  {
-    label: "Option C",
-    title: "Ongoing Tech Lead",
-    popular: false,
-    bullets: [
-      "Priorities and planning",
-      "Provider and software management",
-      "Ongoing improvements and reporting",
-    ],
-  },
-];
+const tierKeys = ["discover", "build", "evolve"] as const;
 
-const OptionsSection = () => {
+export default function EngagementSection() {
+  const { t } = useTranslation("home");
+
   return (
-    <section id="options" className="py-20 bg-background">
+    <section id="engagement" className="py-24 bg-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">
-          Simple ways to engage
+        <h2 className="text-2xl sm:text-3xl font-bold text-foreground text-center mb-3">
+          {t("engagement.section_title")}
         </h2>
-        <p className="text-base text-muted-foreground mb-12">
-          Flexible options — no lock-in contracts. Start small and scale up when you're ready.
+        <p className="text-center text-muted-foreground max-w-xl mx-auto mb-12">
+          {t("engagement.intro")}
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {options.map((opt) => (
-            <div
-              key={opt.title}
-              className={`rounded-xl p-6 sm:p-8 border relative ${
-                opt.popular
-                  ? "border-primary bg-accent/50 shadow-card-hover ring-2 ring-primary/20"
-                  : "border-border bg-card shadow-card"
-              } transition-shadow duration-300 hover:shadow-card-hover flex flex-col`}
-            >
-              {opt.popular && (
-                <Badge className="absolute -top-3 left-6 gradient-teal text-primary-foreground border-0 px-3 py-1 text-xs">
-                  Most Popular
-                </Badge>
-              )}
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary">
-                {opt.label}
-              </span>
-              <h3 className="mt-2 text-xl font-bold text-foreground">{opt.title}</h3>
-              <ul className="mt-4 space-y-2 flex-1">
-                {opt.bullets.map((b) => (
-                  <li key={b} className="text-sm text-muted-foreground flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 shrink-0" />
-                    {b}
-                  </li>
-                ))}
-              </ul>
+
+        {/* Discovery session callout */}
+        <div className="mb-12 rounded-xl border-2 border-amber-400 bg-amber-50 dark:bg-amber-800/10 p-6 sm:p-8 max-w-3xl mx-auto">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-amber-100 dark:bg-amber-800/20 flex items-center justify-center">
+              <Sparkles className="w-5 h-5 text-amber-600" />
+            </div>
+            <div className="flex-1">
+              <div className="flex items-baseline gap-3 mb-2">
+                <span className="text-2xl font-bold text-foreground">
+                  {t("engagement.discovery.price")}
+                </span>
+                <span className="text-sm text-muted-foreground">
+                  &middot; {t("engagement.discovery.duration")}
+                </span>
+                <span className="text-sm text-muted-foreground">
+                  &middot; {t("engagement.discovery.title")}
+                </span>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                {t("engagement.discovery.description")}
+              </p>
               <a
-                href="mailto:info@amphibianlabs.com.au"
-                className={`mt-6 inline-flex items-center justify-center text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-200 ${
-                  opt.popular
-                    ? "gradient-teal text-primary-foreground shadow-button hover:opacity-90"
-                    : "text-primary border border-primary/30 hover:bg-accent hover:border-primary"
-                }`}
+                href="#contact"
+                className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-white rounded-lg gradient-teal shadow-button hover:opacity-90 transition-opacity"
               >
-                Get started →
+                {t("engagement.discovery.cta")}
               </a>
             </div>
-          ))}
+          </div>
+        </div>
+
+        {/* Tier cards */}
+        <div className="grid gap-6 md:grid-cols-3">
+          {tierKeys.map((key) => {
+            const bullets = t(`engagement.${key}.bullets`, { returnObjects: true }) as string[];
+            return (
+              <div
+                key={key}
+                className="flex flex-col rounded-xl border border-border bg-card p-6 hover:shadow-card-hover transition-shadow"
+              >
+                {/* Label */}
+                <span className="text-xs font-medium uppercase tracking-widest text-teal-600 mb-2">
+                  {t(`engagement.${key}.label`)}
+                </span>
+
+                {/* Title */}
+                <h3 className="text-lg font-semibold text-foreground mb-3">
+                  {t(`engagement.${key}.title`)}
+                </h3>
+
+                {/* Bullets */}
+                <ul className="space-y-2 flex-1 mb-6">
+                  {bullets.map((b, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <span className="w-1 h-1 rounded-full bg-teal-600 mt-2 flex-shrink-0" />
+                      {b}
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Best for */}
+                <p className="text-xs text-muted-foreground/80 italic mb-4">
+                  {t(`engagement.${key}.best_for`)}
+                </p>
+
+                {/* Pricing note */}
+                <p className="text-xs text-muted-foreground mb-4">
+                  {t("engagement.scoped")}
+                </p>
+
+                {/* CTA */}
+                <a
+                  href="#contact"
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-teal-600 hover:text-teal-700 transition-colors"
+                >
+                  {t("cta.lets_talk", { ns: "common" })}
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
   );
-};
-
-export default OptionsSection;
+}

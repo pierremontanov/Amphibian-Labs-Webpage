@@ -1,52 +1,50 @@
-import { Target, Clock, Wrench, FileText, ShieldCheck } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import { ArrowRight } from "lucide-react";
 
-const outcomes = [
-  {
-    icon: Target,
-    title: "Clarity on the problem",
-    desc: "Know what \"done\" means before any work starts",
-  },
-  {
-    icon: Clock,
-    title: "Fits your budget & timeline",
-    desc: "A plan scoped to what you can actually deliver",
-  },
-  {
-    icon: Wrench,
-    title: "A working solution",
-    desc: "Not just advice — real systems you can use",
-  },
-  {
-    icon: FileText,
-    title: "Simple documentation",
-    desc: "Your team can run it without calling me",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Built for exceptions",
-    desc: "Handles edge cases instead of falling apart",
-  },
-];
+export default function OutcomesSection() {
+  const { t } = useTranslation("home");
+  const rows = t("outcomes.rows", { returnObjects: true }) as Array<{
+    before: string;
+    after: string;
+  }>;
 
-const OutcomesSection = () => {
   return (
-    <section id="outcomes" className="py-20 bg-background">
+    <section id="outcomes" className="py-24 bg-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-12">
-          What you get
+        <h2 className="text-2xl sm:text-3xl font-bold text-foreground text-center mb-4">
+          {t("outcomes.section_title")}
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {outcomes.map((item) => (
+
+        <div className="mt-12 space-y-4 max-w-4xl mx-auto">
+          {/* Header row — desktop only */}
+          <div className="hidden md:grid grid-cols-[1fr_auto_1fr] gap-4 text-xs font-medium uppercase tracking-widest text-muted-foreground px-6">
+            <span>{t("outcomes.before_label")}</span>
+            <span className="w-8" />
+            <span>{t("outcomes.after_label")}</span>
+          </div>
+
+          {rows.map((row, i) => (
             <div
-              key={item.title}
-              className="bg-card rounded-xl p-6 shadow-card flex items-start gap-4"
+              key={i}
+              className="grid md:grid-cols-[1fr_auto_1fr] gap-4 items-stretch"
             >
-              <div className="w-11 h-11 rounded-lg bg-accent flex items-center justify-center shrink-0">
-                <item.icon size={22} className="text-primary" />
+              {/* Before */}
+              <div className="rounded-lg p-5 bg-slate-100 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/40">
+                <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                  {row.before}
+                </p>
               </div>
-              <div>
-                <h3 className="text-base font-semibold text-foreground">{item.title}</h3>
-                <p className="mt-1 text-sm text-muted-foreground">{item.desc}</p>
+
+              {/* Arrow */}
+              <div className="hidden md:flex items-center justify-center">
+                <ArrowRight className="w-5 h-5 text-teal-600" />
+              </div>
+
+              {/* After */}
+              <div className="rounded-lg p-5 bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700/30">
+                <p className="text-sm text-teal-800 dark:text-teal-300 leading-relaxed font-medium">
+                  {row.after}
+                </p>
               </div>
             </div>
           ))}
@@ -54,6 +52,4 @@ const OutcomesSection = () => {
       </div>
     </section>
   );
-};
-
-export default OutcomesSection;
+}
