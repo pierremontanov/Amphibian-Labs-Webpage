@@ -1,0 +1,157 @@
+{
+  "breadcrumb_services": "Services",
+  "sections": {
+    "problem": "The problem",
+    "approach": "Our approach",
+    "technologies": "Technologies we use",
+    "scenario": "Example scenario",
+    "cta_title": "Ready to get started?",
+    "cta_button": "Book a discovery session"
+  },
+  "automation": {
+    "meta": {
+      "title": "Workflow Automation - Amphibian Labs",
+      "description": "Eliminate manual steps across platforms with Power Automate, Make, and n8n. No code changes to your existing systems."
+    },
+    "title": "Workflow automation",
+    "subtitle": "Eliminate manual steps across platforms",
+    "problem": "Your team spends hours every week on repetitive tasks: copying data between systems, sending follow-up emails, updating spreadsheets, generating reports. These tasks aren't complex - they're just tedious. And every manual step is a chance for errors, delays, and frustration.",
+    "approach": "We map your existing workflows end to end, identify the manual bottlenecks, and automate them using the right tool for the job. We don't force a single platform - we pick the automation engine that fits your stack and your team's technical comfort level. Every automation is documented, tested, and handed over with clear ownership.",
+    "technologies": [
+      "Power Automate",
+      "Make (Integromat)",
+      "n8n",
+      "Azure Logic Apps",
+      "Python scripting",
+      "REST APIs"
+    ],
+    "scenario": {
+      "title": "Construction company - weekly compliance reporting",
+      "context": "A Gold Coast construction firm was spending 6 hours every Friday compiling safety inspection data from three different apps into a single compliance report for their project managers.",
+      "solution": "We built a Power Automate flow that pulls inspection data from their field app, cross-references it with the project schedule in SharePoint, and generates a formatted PDF report - delivered to each PM's inbox by 8am Friday.",
+      "outcome": "6 hours of manual work reduced to zero. Reports are more consistent and never late."
+    }
+  },
+  "integration": {
+    "meta": {
+      "title": "System Integration - Amphibian Labs",
+      "description": "Connect Microsoft 365, SharePoint, CRMs, and third-party APIs. No migrations - just a lightweight layer that makes your systems talk to each other."
+    },
+    "title": "System integration",
+    "subtitle": "Make your systems talk to each other",
+    "problem": "Your CRM doesn't talk to your accounting software. Your project management tool has no idea what's in your inbox. Your team copies data between three tabs because nothing is connected. You've been told the only fix is to migrate everything to one platform - but that's expensive, disruptive, and probably not true.",
+    "approach": "We build lightweight integration layers that connect your existing systems without replacing any of them. We work with the APIs and connectors your tools already expose, adding just enough middleware to keep data flowing. No new platforms to learn. No data migrations. Your team keeps working in the tools they already know.",
+    "technologies": [
+      "Microsoft Graph API",
+      "SharePoint REST API",
+      "Power Automate connectors",
+      "Custom REST/GraphQL middleware",
+      "Azure Functions",
+      "Python / FastAPI"
+    ],
+    "scenario": {
+      "title": "Healthcare clinic - patient intake synchronisation",
+      "context": "A multi-location clinic used separate systems for patient intake forms, appointment scheduling, and billing. Front desk staff manually re-entered patient data into each system - averaging 12 minutes per patient.",
+      "solution": "We built a FastAPI middleware layer that listens for new intake submissions, validates the data, and pushes it to the scheduling and billing systems via their APIs. No changes to the front-end forms or existing software.",
+      "outcome": "12 minutes per patient reduced to zero manual entry. Error rate dropped from 8% to under 1%."
+    }
+  },
+  "ai-extraction": {
+    "meta": {
+      "title": "AI-Powered Data Extraction - Amphibian Labs",
+      "description": "Document intelligence, OCR, and NLP pipelines that extract structured data from real-world documents. Built on Python, FastAPI, and open-source AI."
+    },
+    "title": "AI-powered data extraction",
+    "subtitle": "Turn documents into structured data",
+    "problem": "Your business runs on documents - invoices, medical records, contracts, inspection reports, compliance forms. But the data trapped inside those documents is unstructured, inconsistent, and impossible to query. Someone on your team spends hours every day reading PDFs and typing numbers into spreadsheets.",
+    "approach": "We build AI-powered backends that read, classify, and extract structured data from your documents - automatically. Our pipelines handle OCR, layout analysis, entity extraction, and validation. We design for your specific document types, not generic templates. Every pipeline includes confidence scoring so you know when to trust the output and when to flag for human review.",
+    "technologies": [
+      "Python",
+      "FastAPI",
+      "Tesseract OCR",
+      "Azure Document Intelligence",
+      "spaCy / Hugging Face",
+      "Docker",
+      "PostgreSQL"
+    ],
+    "scenario": {
+      "title": "Medical practice - pathology report processing",
+      "context": "A pathology provider sends PDF reports with lab results, reference ranges, and clinical notes. The practice's admin staff manually transcribed key values into their EHR - 15 to 20 reports per day, 10 minutes each.",
+      "solution": "We deployed DocIQ - our open-source document intelligence engine - configured for pathology report layouts. The pipeline extracts patient identifiers, test names, results, units, and reference ranges, then outputs FHIR R4-compliant JSON ready for EHR import.",
+      "outcome": "3 hours of daily transcription eliminated. Extraction accuracy above 97%. Flagging system catches the remaining edge cases for human review."
+    }
+  },
+  "web-solutions": {
+    "meta": {
+      "title": "Web Solutions and Portals - Amphibian Labs",
+      "description": "Client-facing portals, dashboards, and web applications connected to your existing backend systems. Built with React, TypeScript, and modern web standards."
+    },
+    "title": "Web solutions and portals",
+    "subtitle": "Give your clients and team a front door to your systems",
+    "problem": "Your internal systems work, but your clients and field staff have no way to interact with them directly. Requests come in via email or phone, your team processes them manually, and status updates go out the same way. You need a web-facing layer - but you don't need (or want) to rebuild your entire backend.",
+    "approach": "We build web portals and dashboards that sit on top of your existing systems. Your backend stays the same - we add a modern, responsive front end that your clients and team can use from any device. Authentication, role-based access, real-time data - all connected to what you already run.",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Next.js / Vite",
+      "FastAPI",
+      "Azure AD / Auth0",
+      "PostgreSQL"
+    ],
+    "scenario": {
+      "title": "Professional services firm - client status portal",
+      "context": "A consulting firm managed all project status updates via email. Clients constantly asked for updates, and project managers spent 30 minutes per client per week writing status emails.",
+      "solution": "We built a client portal that pulls project data from their existing project management tool via API. Clients log in to see milestones, deliverables, and next steps in real time. Automated email digests replaced manual updates.",
+      "outcome": "Client status enquiries dropped by 80%. PMs reclaimed 4+ hours per week. Client satisfaction scores improved."
+    }
+  },
+  "vendor-selection": {
+    "meta": {
+      "title": "Vendor Selection and Advisory - Amphibian Labs",
+      "description": "Unbiased technology recommendations for SMBs. We recommend what fits - not what we sell. Off-the-shelf, custom, or a hybrid approach."
+    },
+    "title": "Vendor selection and advisory",
+    "subtitle": "Honest recommendations - even when they don't include us",
+    "problem": "Every vendor tells you their product is the answer. But you don't know what questions to ask, which features actually matter for your size, or whether you even need custom software at all. You've been burned by consultants who recommend what they sell, not what you need.",
+    "approach": "We evaluate your requirements against the market - off-the-shelf products, open-source tools, and custom builds. We score each option on fit, cost, maintenance burden, and lock-in risk. Our recommendations are independent: we don't resell software, and we'll tell you when a $50/month SaaS tool beats a $50,000 custom build. You get a written report with our analysis and a clear recommendation.",
+    "technologies": [
+      "Requirements analysis",
+      "Market scanning",
+      "TCO modelling",
+      "Risk assessment",
+      "Vendor comparison matrices",
+      "Written advisory reports"
+    ],
+    "scenario": {
+      "title": "Trades business - choosing a job management platform",
+      "context": "A plumbing business with 15 staff was evaluating four job management platforms. Each vendor demo looked great, but the owner couldn't tell which features mattered and which were noise. Previous software purchases had gone unused after 3 months.",
+      "solution": "We ran a half-day workshop to map their actual workflows, then scored each platform against their real requirements - not the vendor's feature list. We recommended the simplest option that covered 90% of their needs and flagged the one feature gap that could be filled with a $20/month add-on.",
+      "outcome": "Owner chose with confidence. Platform adoption hit 100% within 6 weeks - a first for the business."
+    }
+  },
+  "crm-cleanup": {
+    "meta": {
+      "title": "CRM Cleanup and Optimisation - Amphibian Labs",
+      "description": "Audit, deduplicate, restructure, and automate your CRM. Stop working around your data - make it work for you."
+    },
+    "title": "CRM cleanup and optimisation",
+    "subtitle": "Make your CRM actually work for your team",
+    "problem": "Your CRM has thousands of records, but half of them are duplicates, outdated, or missing key fields. Your team has stopped trusting the data and built workarounds in spreadsheets. Reports are unreliable. The CRM was supposed to save time - instead it creates more work.",
+    "approach": "We start with a data audit: how many records, how many duplicates, what's missing, what's inconsistent. Then we clean, deduplicate, and restructure - with your team's input on what matters. Finally, we set up validation rules and automations so the data stays clean going forward. We work with whatever CRM you already use.",
+    "technologies": [
+      "HubSpot",
+      "Salesforce",
+      "Zoho CRM",
+      "Microsoft Dynamics 365",
+      "Python data cleaning scripts",
+      "Power Automate / Zapier"
+    ],
+    "scenario": {
+      "title": "Real estate agency - contact database overhaul",
+      "context": "A real estate agency had 12,000 contacts in their CRM. After 4 years of use by multiple agents, 30% were duplicates, 40% had missing phone numbers or emails, and nobody trusted the data enough to run marketing campaigns.",
+      "solution": "We exported and profiled the data, built a Python deduplication pipeline using fuzzy matching, merged records with the most complete data, and re-imported the clean dataset. We added validation rules to prevent future duplicates and set up automated enrichment for missing fields.",
+      "outcome": "12,000 records reduced to 7,800 clean contacts. First email campaign in 2 years sent the following week. Open rates doubled compared to the last attempt."
+    }
+  }
+}

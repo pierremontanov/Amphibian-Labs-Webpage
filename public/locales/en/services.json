@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "title": "Services - Amphibian Labs",
+    "description": "AI backends, system integration, workflow automation, and honest consultancy for small and mid-sized businesses. No vendor lock-in."
+  },
+  "hero": {
+    "title": "What can we build together?",
+    "subtitle": "We enhance what you already have with AI, automation, and integration. Every engagement starts with listening and ends with you owning everything."
+  },
+  "tiers": {
+    "understand": {
+      "title": "Understand",
+      "subtitle": "Consultancy and business analysis",
+      "description": "Before we build anything, we listen. Discovery sessions, stakeholder workshops, and honest recommendations - even if that means suggesting a competitor."
+    },
+    "build": {
+      "title": "Build",
+      "subtitle": "Engineering and delivery",
+      "description": "AI-powered backends, system integrations, and workflow automations - built iteratively, delivered with documentation, and fully owned by you."
+    },
+    "share": {
+      "title": "Share",
+      "subtitle": "Open source and community",
+      "description": "Production-grade tools under MIT license. Templates, blueprints, and reference architectures that any business can use."
+    }
+  },
+  "services": {
+    "automation": {
+      "title": "Workflow automation",
+      "excerpt": "Eliminate manual steps across platforms with Power Automate, Make, and n8n.",
+      "icon": "zap",
+      "tier": "build"
+    },
+    "integration": {
+      "title": "System integration",
+      "excerpt": "Connect Microsoft 365, SharePoint, CRMs, and third-party APIs without migrating anything.",
+      "icon": "network",
+      "tier": "build"
+    },
+    "ai-extraction": {
+      "title": "AI-powered data extraction",
+      "excerpt": "Document intelligence, unstructured data extraction, and NLP pipelines for real-world documents.",
+      "icon": "brain",
+      "tier": "build"
+    },
+    "web-solutions": {
+      "title": "Web solutions and portals",
+      "excerpt": "Client-facing portals, dashboards, and web applications that connect to your existing backend systems.",
+      "icon": "globe",
+      "tier": "build"
+    },
+    "vendor-selection": {
+      "title": "Vendor selection and advisory",
+      "excerpt": "Unbiased technology recommendations. We'll tell you when an off-the-shelf product beats a custom build.",
+      "icon": "search",
+      "tier": "understand"
+    },
+    "crm-cleanup": {
+      "title": "CRM cleanup and optimisation",
+      "excerpt": "Audit, deduplicate, restructure, and automate your CRM so it actually works for your team.",
+      "icon": "database",
+      "tier": "understand"
+    }
+  },
+  "faq": {
+    "title": "Questions we hear often",
+    "items": [
+      {
+        "question": "Do I need to replace my existing systems?",
+        "answer": "No. Our entire approach is built around enhancing what you already have. We add intelligent layers on top of your current tools - no migrations, no disruption."
+      },
+      {
+        "question": "What industries do you work with?",
+        "answer": "We work across healthcare, construction, professional services, trades, and retail. Our tools are industry-agnostic - what matters is the workflow, not the sector."
+      },
+      {
+        "question": "How long does a typical project take?",
+        "answer": "Discovery sessions take 2 hours. A scoped automation or integration project typically runs 2 to 6 weeks. Larger AI backend projects run 6 to 12 weeks with iterative delivery throughout."
+      },
+      {
+        "question": "Will I own the code you build?",
+        "answer": "Yes. Everything we build is yours. Full source code, documentation, and BAU handover. No vendor lock-in, no recurring license fees for code we wrote."
+      },
+      {
+        "question": "What if I just need advice, not a build?",
+        "answer": "That's exactly what our Discovery tier is for. We run stakeholder workshops, map your current state, and deliver a written report with recommendations - which may or may not include us."
+      },
+      {
+        "question": "Do you offer ongoing support after a project?",
+        "answer": "Yes. Our Evolve tier provides a monthly retainer for ongoing integrations, expanding automation coverage, and keeping your systems aligned as your business grows."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Not sure which service fits?",
+    "body": "Book a discovery session. We'll listen to what's broken and recommend the right path - even if it's not us.",
+    "button": "Book a discovery session"
+  }
+}
