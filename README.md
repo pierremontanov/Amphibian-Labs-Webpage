@@ -1,6 +1,6 @@
 # Amphibian Labs
 
-Website for [Amphibian Labs](https://amphibianlabs.com.au) — AI backends, system integration, and workflow automation for small and medium businesses.
+Website for [Amphibian Labs](https://amphibianlabs.com.au) - AI backends, system integration, and workflow automation for small and medium businesses.
 
 ## Tech stack
 

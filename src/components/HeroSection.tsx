@@ -1,10 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { ArrowRight } from "lucide-react";
 
-const techLogos = [
-  "Python", "FastAPI", "Docker", "Power Automate", "SharePoint", "Microsoft 365",
-];
-
 export default function HeroSection() {
   const { t } = useTranslation("home");
 
@@ -43,22 +39,6 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Trust strip */}
-        <div className="mt-20 animate-fade-up animation-delay-400">
-          <p className="text-xs text-navy-400 uppercase tracking-widest mb-4">
-            {t("hero.trust_strip")}
-          </p>
-          <div className="flex flex-wrap gap-x-8 gap-y-3">
-            {techLogos.map((name) => (
-              <span
-                key={name}
-                className="text-sm text-navy-300/60 font-medium tracking-wide"
-              >
-                {name}
-              </span>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

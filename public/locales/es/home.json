@@ -10,15 +10,15 @@
     "section_title": "Sound familiar?",
     "tech_gap": {
       "title": "The tech gap",
-      "body": "Edge technology exists, but it's built for companies with 500+ employees and six-figure IT budgets. Small and mid-sized businesses get left behind — or get sold oversized solutions they can't maintain."
+      "body": "Edge technology exists, but it's built for companies with 500+ employees and six-figure IT budgets. Small and mid-sized businesses get left behind - or get sold oversized solutions they can't maintain."
     },
     "rip_replace": {
       "title": "The rip-and-replace trap",
-      "body": "Every vendor wants to replace your entire stack. You didn't ask for a migration. You asked for help. Your systems work — they just need an intelligent layer on top."
+      "body": "Every vendor wants to replace your entire stack. You didn't ask for a migration. You asked for help. Your systems work - they just need an intelligent layer on top."
     },
     "trust_gap": {
       "title": "The trust gap",
-      "body": "You've been burned by consultants who recommend what they sell, not what you need. You need someone who'll tell you when an off-the-shelf product beats a custom build — even if it means less work for them."
+      "body": "You've been burned by consultants who recommend what they sell, not what you need. You need someone who'll tell you when an off-the-shelf product beats a custom build - even if it means less work for them."
     }
   },
   "services": {
@@ -53,7 +53,7 @@
       },
       "automation": {
         "title": "Workflow automation",
-        "body": "Power Automate, Make, n8n — eliminate manual steps across platforms."
+        "body": "Power Automate, Make, n8n - eliminate manual steps across platforms."
       }
     },
     "share": {
@@ -78,7 +78,7 @@
       },
       {
         "before": "Your CRM, EHR, and accounting tool don't talk to each other",
-        "after": "A lightweight integration layer syncs them — no new platform needed"
+        "after": "A lightweight integration layer syncs them - no new platform needed"
       },
       {
         "before": "You're told you need to replace everything",
@@ -99,11 +99,11 @@
       },
       {
         "title": "Map",
-        "body": "We document your current state — systems, workflows, pain points, budget constraints."
+        "body": "We document your current state - systems, workflows, pain points, budget constraints."
       },
       {
         "title": "Recommend",
-        "body": "We design a solution — and it might not include us. If an off-the-shelf tool solves it, we'll say so."
+        "body": "We design a solution - and it might not include us. If an off-the-shelf tool solves it, we'll say so."
       },
       {
         "title": "Build",
@@ -134,8 +134,8 @@
         "reading_time": "8 min read"
       },
       {
-        "title": "5 signs your business is ready for AI — and 3 signs you're not",
-        "excerpt": "AI isn't magic. It's infrastructure. Here's how to tell if your business is actually ready — and what to fix first if you're not.",
+        "title": "5 signs your business is ready for AI - and 3 signs you're not",
+        "excerpt": "AI isn't magic. It's infrastructure. Here's how to tell if your business is actually ready - and what to fix first if you're not.",
         "category": "Guide",
         "date": "2026-03-28",
         "reading_time": "6 min read"
@@ -144,10 +144,10 @@
   },
   "about": {
     "section_title": "About",
-    "bio_p1": "Amphibian Labs was founded by Pierre Montanov — a technical consultant and engineer with 5+ years in the industry, a Master's in IT, and dual expertise in business analysis and software engineering.",
-    "bio_p2": "Pierre saw first-hand how small and mid-sized businesses get underserved by the tech industry. Enterprise tools exist, but they're priced and scoped for enterprises. SMBs deserve the same calibre of technology — built to fit their scale, their budget, and their existing systems.",
+    "bio_p1": "Amphibian Labs was founded by Pierre Montanov - a technical consultant and engineer with 5+ years in the industry, a Master's in IT, and dual expertise in business analysis and software engineering.",
+    "bio_p2": "Pierre saw first-hand how small and mid-sized businesses get underserved by the tech industry. Enterprise tools exist, but they're priced and scoped for enterprises. SMBs deserve the same calibre of technology - built to fit their scale, their budget, and their existing systems.",
     "bio_p3": "Amphibian Labs closes that gap. We don't replace what works. We enhance it with AI backends, workflow automation, and system integration. And when we're done, you own everything.",
-    "philosophy": "Amphibian Labs is a lab in the true sense — we create, experiment, publish, and help.",
+    "philosophy": "Amphibian Labs is a lab in the true sense - we create, experiment, publish, and help.",
     "credentials": {
       "name": "Pierre Montanov",
       "title": "Founder & Technical Consultant",
@@ -158,13 +158,13 @@
   },
   "engagement": {
     "section_title": "Ways to work together",
-    "intro": "Flexible options — no lock-in contracts. Start small and scale up when you're ready.",
+    "intro": "Flexible options - no lock-in contracts. Start small and scale up when you're ready.",
     "discovery": {
       "price": "$300",
       "duration": "2 hours",
       "title": "Discovery session",
-      "description": "2-hour session (remote or in-person). We listen to the pain, ask diagnostic questions, and map your current state. Written report delivered within 48 hours: what we found, what we recommend, 2–3 actionable suggestions — which may or may not include Amphibian Labs. No obligation.",
-      "cta": "Book a discovery session — $300 for 2 hours of honest answers and a written report."
+      "description": "2-hour session (remote or in-person). We listen to the pain, ask diagnostic questions, and map your current state. Written report delivered within 48 hours: what we found, what we recommend, 2–3 actionable suggestions - which may or may not include Amphibian Labs. No obligation.",
+      "cta": "Book a discovery session - $300 for 2 hours of honest answers and a written report."
     },
     "discover": {
       "label": "Discover",
