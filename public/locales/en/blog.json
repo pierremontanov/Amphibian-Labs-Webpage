@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Blog - Amphibian Labs",
+    "description": "Articles on AI philosophy, engineering deep-dives, and practical guides for small and mid-sized businesses."
+  },
+  "hero": {
+    "title": "From the lab",
+    "subtitle": "Philosophy, engineering, and practical guides for businesses that want to use technology without being used by it."
+  },
+  "filters": {
+    "all": "All",
+    "philosophy": "Philosophy",
+    "engineering": "Engineering",
+    "guide": "Guide",
+    "case-study": "Case Study"
+  },
+  "reading_time_suffix": "min read",
+  "by": "By",
+  "related": "Related articles",
+  "back_to_blog": "Back to blog",
+  "cta": {
+    "title": "Want to talk about what you just read?",
+    "body": "Book a free clarity session. No pitch, no commitment.",
+    "button": "Book a discovery session"
+  },
+  "articles": [
+    {
+      "slug": "why-we-enhance-not-replace",
+      "title": "Why we enhance your systems instead of replacing them",
+      "excerpt": "Most consultants recommend what they sell. We recommend what fits. Here's our philosophy on system enhancement over replacement.",
+      "category": "philosophy",
+      "date": "2026-04-15",
+      "reading_time": 5,
+      "author": "Pierre Montanov",
+      "tags": ["philosophy", "integration", "smb"],
+      "body": [
+        "Every vendor pitch starts the same way: 'Let us show you how our platform replaces everything you're currently using.' It sounds clean. It sounds modern. And it almost never works the way they promise.",
+        "The rip-and-replace model assumes that your existing systems are the problem. But most of the time, they're not. Your CRM works. Your accounting software works. Your project management tool works. What doesn't work is the gap between them - the manual steps, the copy-paste workflows, the data that lives in someone's inbox instead of your database.",
+        "At Amphibian Labs, we start from a different premise: your systems are assets, not liabilities. Our job is to make them work together, not throw them away.",
+        "## The cost of replacement",
+        "Replacing a core business system isn't just a software decision - it's an organisational disruption. Staff need retraining. Data needs migrating. Workflows need rebuilding. And during the transition, productivity drops. For small and mid-sized businesses, this disruption can be existential.",
+        "We've seen businesses spend 6 months and $80,000 migrating to a new platform only to discover that it doesn't handle a workflow their old system managed perfectly. The new platform is technically superior - but it doesn't fit.",
+        "## Enhancement over replacement",
+        "Enhancement means adding an intelligent layer on top of what you already have. It means building an API integration that syncs your CRM with your accounting tool. It means deploying an AI backend that reads your invoices and enters the data for you. It means automating the 47-step process that someone on your team does every Monday morning.",
+        "The key insight is this: most businesses don't need new systems. They need their existing systems to talk to each other, and they need the manual steps in between to disappear.",
+        "## When replacement is the right call",
+        "We're not dogmatic about this. Sometimes a system genuinely needs replacing - it's unsupported, insecure, or so outdated that integration isn't practical. When that's the case, we'll say so. We'll even help you evaluate replacements.",
+        "But we'll never recommend replacement because it's easier to sell. And we'll never lock you into our platform - because we don't have one.",
+        "## What this means for you",
+        "If you work with us, you keep what works. You add what's missing. And when we're done, you own everything. That's the model. That's the philosophy."
+      ]
+    },
+    {
+      "slug": "how-we-built-dociq",
+      "title": "How we built DocIQ: an open-source AI engine for medical document processing",
+      "excerpt": "1,100+ tests, 3 document types, 2 languages, FHIR R4 compliant. A technical deep-dive into building production-grade document intelligence.",
+      "category": "engineering",
+      "date": "2026-04-08",
+      "reading_time": 8,
+      "author": "Pierre Montanov",
+      "tags": ["engineering", "ai", "healthcare", "open-source", "python"],
+      "body": [
+        "DocIQ started as a frustration. We were working with a healthcare client who received dozens of pathology reports every day - PDFs with lab results, reference ranges, and clinical notes. Their admin staff spent 3 hours every morning transcribing key values into their EHR. Manually. Every single day.",
+        "The data was right there, on the page. But it was trapped in unstructured text, inconsistent layouts, and scanned images. No existing tool could reliably extract it.",
+        "So we built one.",
+        "## Architecture",
+        "DocIQ is a Python-based AI backend built on FastAPI. The pipeline has four stages: ingestion, layout analysis, entity extraction, and output formatting.",
+        "**Ingestion** accepts PDFs via REST API. Scanned documents go through Tesseract OCR; native PDFs are parsed directly. The system auto-detects which path to take based on the document's text layer.",
+        "**Layout analysis** identifies document structure - headers, tables, key-value pairs, free-text sections. This is where most generic OCR tools fail: they extract text but lose the spatial relationships that give it meaning.",
+        "**Entity extraction** uses a combination of rule-based patterns and NLP models to identify clinical entities: patient identifiers, test names, numeric results, units, reference ranges, and flags. We trained custom models for pathology, radiology, and referral letter formats.",
+        "**Output formatting** converts extracted entities into FHIR R4-compliant JSON resources - DiagnosticReport, Observation, and Patient. The output is ready for EHR import without transformation.",
+        "## Testing strategy",
+        "1,100+ tests might sound excessive for a document processing engine. It's not. Medical data extraction has zero tolerance for silent failures. A misread decimal point in a lab result isn't a bug - it's a clinical risk.",
+        "Our test suite covers unit tests for each extraction rule, integration tests for full document processing, regression tests against a corpus of real-world documents (anonymised), and conformance tests against the FHIR R4 specification.",
+        "Every test runs in CI on every commit. No exceptions.",
+        "## Why open source?",
+        "We open-sourced DocIQ under MIT license because healthcare document processing shouldn't be a luxury. Small clinics, community health centres, and practices in developing regions face the same document processing burden as large hospitals - but they can't afford enterprise solutions.",
+        "Open source means anyone can use it, modify it, and contribute back. It also means the code is auditable - critical for healthcare applications where trust and transparency matter.",
+        "## What's next",
+        "We're expanding DocIQ's document type coverage, adding support for discharge summaries and medication charts. We're also building a web-based configuration interface so non-technical users can define new document templates without writing code.",
+        "If you want to try DocIQ, it's on GitHub: github.com/pierremontanov/HealthParse"
+      ]
+    },
+    {
+      "slug": "5-signs-business-ready-for-ai",
+      "title": "5 signs your business is ready for AI - and 3 signs you're not",
+      "excerpt": "AI isn't magic. It's infrastructure. Here's how to tell if your business is actually ready - and what to fix first if you're not.",
+      "category": "guide",
+      "date": "2026-03-28",
+      "reading_time": 6,
+      "author": "Pierre Montanov",
+      "tags": ["guide", "ai", "smb", "readiness"],
+      "body": [
+        "Every business conference, every LinkedIn post, every vendor pitch tells you the same thing: you need AI. But nobody tells you whether you're actually ready for it. And if you're not ready, AI won't just fail to help - it'll waste your time and money.",
+        "Here's a practical checklist based on what we've seen working with small and mid-sized businesses.",
+        "## 5 signs you're ready",
+        "**1. You have a repetitive, high-volume process that follows rules.** AI is excellent at tasks that are predictable, repetitive, and rule-based. If your team processes 50 invoices a day, reads 30 reports a week, or sends 100 follow-up emails a month - and each one follows roughly the same pattern - that's a strong candidate.",
+        "**2. You have digital data (even messy digital data).** AI needs data to work with. If your documents are already digital - PDFs, spreadsheets, emails, database records - you have the raw material. It doesn't need to be clean. Cleaning messy data is literally what we do.",
+        "**3. You can describe what a correct outcome looks like.** If you can tell us 'a correctly processed invoice has these 7 fields extracted, validated against this reference, and entered into this system' - we can build it. Vague goals like 'use AI to improve things' aren't actionable.",
+        "**4. You have a workflow bottleneck, not a strategy problem.** AI solves execution problems, not strategy problems. If your bottleneck is 'we can't process documents fast enough' - AI can help. If your bottleneck is 'we don't know which market to enter' - AI can't help.",
+        "**5. You're willing to start small.** The best AI implementations start with one process, one document type, one workflow. If you're willing to pilot on a single use case before scaling, you're in the right mindset.",
+        "## 3 signs you're not ready",
+        "**1. Your data lives on paper.** If your core documents are physical paper with no digital copies, AI has nothing to work with. Step one is digitisation - scanning, OCR, and basic digital storage. We can help with this, but it's a prerequisite, not an AI project.",
+        "**2. You don't have a defined process to automate.** If your team handles every case differently with no consistent workflow, AI will struggle. AI needs patterns. Before you automate, you need to standardise - even loosely.",
+        "**3. You're looking for a silver bullet.** If you expect AI to solve all your problems overnight, you'll be disappointed. AI is infrastructure, not magic. It works best when deployed iteratively: start with one thing, prove it works, then expand.",
+        "## What to do if you're not ready yet",
+        "Not being ready isn't a failure - it's information. If you checked one of the 'not ready' signs, start there. Digitise your documents. Standardise your workflows. Define what success looks like. Then come back.",
+        "Or book a discovery session and we'll help you figure out where you actually are - and what to do next."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "title": "Open Source - Amphibian Labs",
+    "description": "Explore our open-source projects: AI document intelligence, automation blueprints, templates, and community tools. All MIT licensed."
+  },
+  "hero": {
+    "title": "Open source",
+    "subtitle": "Production-grade tools, templates, and blueprints - all under MIT license. We build in the open because good tools should be accessible to everyone."
+  },
+  "spotlight": {
+    "label": "Flagship project",
+    "title": "DocIQ",
+    "tagline": "AI document intelligence engine for healthcare",
+    "description": "Open-source AI backend that reads, classifies, and extracts structured data from medical documents. Built for real-world clinical workflows with FHIR R4 compliance.",
+    "tests": "1,100+ tests",
+    "languages": "2 languages",
+    "fhir": "FHIR R4 compliant",
+    "license": "MIT license",
+    "view_on_github": "View on GitHub",
+    "read_case_study": "Read the case study"
+  },
+  "pinned": {
+    "title": "Featured repositories"
+  },
+  "all_repos": {
+    "title": "All repositories",
+    "view_all": "View all on GitHub",
+    "stars": "stars",
+    "updated": "Updated",
+    "no_description": "No description provided."
+  },
+  "filters": {
+    "all": "All",
+    "automations": "Automations",
+    "templates": "Templates",
+    "utilities": "Utilities",
+    "documentation": "Documentation"
+  },
+  "loading": {
+    "fetching": "Loading repositories from GitHub..."
+  },
+  "error": {
+    "title": "Could not load repositories",
+    "body": "GitHub API is temporarily unavailable. You can browse all repositories directly on GitHub.",
+    "link": "View on GitHub"
+  }
+}

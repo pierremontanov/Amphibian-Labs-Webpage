@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "Support Open Source - Amphibian Labs",
+    "description": "Fund open-source AI tools, community resources, and documentation. Every dollar goes directly to development, testing, and infrastructure."
+  },
+  "hero": {
+    "title": "Support open source",
+    "subtitle": "Amphibian Labs builds production-grade tools and gives them away for free. Your support keeps that possible."
+  },
+  "why": {
+    "title": "Why support us?",
+    "items": [
+      {
+        "title": "Fund real tools, not promises",
+        "body": "Every dollar goes to building, testing, and maintaining open-source software that businesses actually use. DocIQ alone has 1,100+ tests and processes real clinical documents."
+      },
+      {
+        "title": "Keep AI accessible",
+        "body": "Enterprise AI tools cost six figures. Our tools are free and MIT licensed. Your support helps small clinics, community organisations, and sole traders access the same technology."
+      },
+      {
+        "title": "Support independent work",
+        "body": "We don't take VC money or run ads. We're funded by client work and community support. That independence means we build what's needed, not what's fundable."
+      }
+    ]
+  },
+  "tiers": {
+    "title": "Choose your level",
+    "supporter": {
+      "label": "Supporter",
+      "price": "$5 - $10",
+      "frequency": "one-time or monthly",
+      "description": "Help keep the lights on. Your contribution covers hosting, CI/CD, and domain costs.",
+      "perks": [
+        "Name in the supporters list",
+        "Early access to release notes"
+      ]
+    },
+    "builder": {
+      "label": "Builder",
+      "price": "$25 - $50",
+      "frequency": "one-time or monthly",
+      "description": "Fund a feature. Your contribution goes directly to new capabilities, test coverage, and documentation.",
+      "perks": [
+        "Everything in Supporter",
+        "Vote on the next feature",
+        "Quarterly progress update"
+      ]
+    },
+    "champion": {
+      "label": "Champion",
+      "price": "$100+",
+      "frequency": "one-time or monthly",
+      "description": "Sponsor a release. Your contribution funds a full development sprint - new document types, language support, or integrations.",
+      "perks": [
+        "Everything in Builder",
+        "Logo on the README",
+        "Direct line to the developer",
+        "Named in release notes"
+      ]
+    }
+  },
+  "transparency": {
+    "title": "Where your donation goes",
+    "items": [
+      { "label": "Development and testing", "percent": 60 },
+      { "label": "Infrastructure and hosting", "percent": 20 },
+      { "label": "Documentation and guides", "percent": 15 },
+      { "label": "Community support", "percent": 5 }
+    ],
+    "note": "100% of donations go to open-source work. Client revenue covers business operations."
+  },
+  "payment": {
+    "button": "Support this tier",
+    "note": "Payment links will be set up via Stripe. For now, reach out directly to arrange a contribution.",
+    "contact_instead": "Or email us at"
+  },
+  "cta": {
+    "title": "Prefer to contribute code?",
+    "body": "We welcome pull requests, bug reports, and documentation improvements. Every contribution matters.",
+    "button": "View repositories"
+  }
+}
