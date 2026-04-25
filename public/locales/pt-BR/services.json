@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "title": "Servicos - Amphibian Labs",
+    "description": "Backends de IA, integracao de sistemas, automacao de workflows e consultoria honesta para pequenas e medias empresas. Sem dependencia de fornecedor."
+  },
+  "hero": {
+    "title": "O que podemos construir juntos?",
+    "subtitle": "Aprimoramos o que voce ja tem com IA, automacao e integracao. Todo projeto comeca ouvindo e termina com voce sendo dono de tudo."
+  },
+  "tiers": {
+    "understand": {
+      "title": "Entender",
+      "subtitle": "Consultoria e analise de negocios",
+      "description": "Antes de construir qualquer coisa, nos ouvimos. Sessoes de descoberta, workshops com stakeholders e recomendacoes honestas - mesmo que isso signifique sugerir um concorrente."
+    },
+    "build": {
+      "title": "Construir",
+      "subtitle": "Engenharia e entrega",
+      "description": "Backends com IA, integracoes de sistemas e automacoes de workflows - construidos de forma iterativa, entregues com documentacao e totalmente seus."
+    },
+    "share": {
+      "title": "Compartilhar",
+      "subtitle": "Open source e comunidade",
+      "description": "Ferramentas de nivel profissional sob licenca MIT. Templates, blueprints e arquiteturas de referencia que qualquer empresa pode usar."
+    }
+  },
+  "services": {
+    "automation": {
+      "title": "Automacao de workflows",
+      "excerpt": "Elimine etapas manuais entre plataformas com Power Automate, Make e n8n.",
+      "icon": "zap",
+      "tier": "build"
+    },
+    "integration": {
+      "title": "Integracao de sistemas",
+      "excerpt": "Conecte Microsoft 365, SharePoint, CRMs e APIs de terceiros sem migrar nada.",
+      "icon": "network",
+      "tier": "build"
+    },
+    "ai-extraction": {
+      "title": "Extracao de dados com IA",
+      "excerpt": "Inteligencia documental, extracao de dados nao estruturados e pipelines de NLP para documentos do mundo real.",
+      "icon": "brain",
+      "tier": "build"
+    },
+    "web-solutions": {
+      "title": "Solucoes web e portais",
+      "excerpt": "Portais para clientes, dashboards e aplicacoes web conectadas aos seus sistemas de backend existentes.",
+      "icon": "globe",
+      "tier": "build"
+    },
+    "vendor-selection": {
+      "title": "Selecao de fornecedores e consultoria",
+      "excerpt": "Recomendacoes de tecnologia imparciais. Dizemos quando um produto pronto supera uma solucao personalizada.",
+      "icon": "search",
+      "tier": "understand"
+    },
+    "crm-cleanup": {
+      "title": "Limpeza e otimizacao de CRM",
+      "excerpt": "Auditoria, deduplicacao, reestruturacao e automacao do seu CRM para que ele realmente funcione para sua equipe.",
+      "icon": "database",
+      "tier": "understand"
+    }
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "items": [
+      {
+        "question": "Preciso substituir meus sistemas atuais?",
+        "answer": "Nao. Toda a nossa abordagem e construida em torno de aprimorar o que voce ja tem. Adicionamos camadas inteligentes por cima das suas ferramentas atuais - sem migracoes, sem interrupcoes."
+      },
+      {
+        "question": "Com quais setores voces trabalham?",
+        "answer": "Trabalhamos com saude, construcao, servicos profissionais, comercio e varejo. Nossas ferramentas sao independentes de setor - o que importa e o fluxo de trabalho, nao o segmento."
+      },
+      {
+        "question": "Quanto tempo dura um projeto tipico?",
+        "answer": "Sessoes de descoberta levam 2 horas. Um projeto de automacao ou integracao com escopo definido geralmente leva de 2 a 6 semanas. Projetos maiores de backend com IA levam de 6 a 12 semanas com entrega iterativa ao longo do processo."
+      },
+      {
+        "question": "Vou ser dono do codigo que voces constroem?",
+        "answer": "Sim. Tudo que construimos e seu. Codigo-fonte completo, documentacao e transferencia operacional. Sem dependencia de fornecedor, sem taxas de licenca recorrentes por codigo que nos escrevemos."
+      },
+      {
+        "question": "E se eu so precisar de consultoria, nao de desenvolvimento?",
+        "answer": "E exatamente para isso que existe nossa etapa Descobrir. Realizamos workshops com stakeholders, mapeamos seu estado atual e entregamos um relatorio escrito com recomendacoes - que podem ou nao nos incluir."
+      },
+      {
+        "question": "Voces oferecem suporte continuo apos um projeto?",
+        "answer": "Sim. Nossa etapa Evoluir oferece um contrato mensal para integracoes continuas, expansao da cobertura de automacao e manutencao do alinhamento dos seus sistemas conforme sua empresa cresce."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Nao sabe qual servico se encaixa?",
+    "body": "Agende uma sessao de descoberta. Vamos ouvir o que nao esta funcionando e recomendar o caminho certo - mesmo que nao seja conosco.",
+    "button": "Agende uma sessao de descoberta"
+  }
+}

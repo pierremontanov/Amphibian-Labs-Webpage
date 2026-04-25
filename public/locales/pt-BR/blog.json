@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Blog - Amphibian Labs",
+    "description": "Artigos sobre filosofia de IA, mergulhos tecnicos em engenharia e guias praticos para pequenas e medias empresas."
+  },
+  "hero": {
+    "title": "Direto do laboratorio",
+    "subtitle": "Filosofia, engenharia e guias praticos para empresas que querem usar tecnologia sem serem usadas por ela."
+  },
+  "filters": {
+    "all": "Todos",
+    "philosophy": "Filosofia",
+    "engineering": "Engenharia",
+    "guide": "Guia",
+    "case-study": "Estudo de Caso"
+  },
+  "reading_time_suffix": "min de leitura",
+  "by": "Por",
+  "related": "Artigos relacionados",
+  "back_to_blog": "Voltar ao blog",
+  "cta": {
+    "title": "Quer conversar sobre o que acabou de ler?",
+    "body": "Agende uma sessao de clareza gratuita. Sem apresentacao comercial, sem compromisso.",
+    "button": "Agende uma sessao de descoberta"
+  },
+  "articles": [
+    {
+      "slug": "why-we-enhance-not-replace",
+      "title": "Por que aprimoramos seus sistemas em vez de substitui-los",
+      "excerpt": "A maioria dos consultores recomenda o que vende. Nos recomendamos o que se encaixa. Esta e nossa filosofia sobre aprimoramento de sistemas em vez de substituicao.",
+      "category": "philosophy",
+      "date": "2026-04-15",
+      "reading_time": 5,
+      "author": "Pierre Montanov",
+      "tags": ["philosophy", "integration", "smb"],
+      "body": [
+        "Toda apresentacao de fornecedor comeca do mesmo jeito: 'Deixe-nos mostrar como nossa plataforma substitui tudo o que voce usa atualmente.' Parece limpo. Parece moderno. E quase nunca funciona como prometem.",
+        "O modelo de substituicao total assume que seus sistemas atuais sao o problema. Mas na maioria das vezes, nao sao. Seu CRM funciona. Seu software de contabilidade funciona. Sua ferramenta de gestao de projetos funciona. O que nao funciona e a lacuna entre eles - as etapas manuais, os fluxos de copiar e colar, os dados que vivem na caixa de entrada de alguem em vez do seu banco de dados.",
+        "Na Amphibian Labs, partimos de uma premissa diferente: seus sistemas sao ativos, nao passivos. Nosso trabalho e faze-los funcionar juntos, nao descarta-los.",
+        "## O custo da substituicao",
+        "Substituir um sistema central de negocios nao e apenas uma decisao de software - e uma disrupcao organizacional. A equipe precisa de retreinamento. Os dados precisam ser migrados. Os fluxos de trabalho precisam ser reconstruidos. E durante a transicao, a produtividade cai. Para pequenas e medias empresas, essa disrupcao pode ser existencial.",
+        "Ja vimos empresas gastar 6 meses e $80.000 migrando para uma nova plataforma apenas para descobrir que ela nao suporta um fluxo de trabalho que o sistema antigo gerenciava perfeitamente. A nova plataforma e tecnicamente superior - mas nao se encaixa.",
+        "## Aprimoramento em vez de substituicao",
+        "Aprimoramento significa adicionar uma camada inteligente por cima do que voce ja tem. Significa construir uma integracao via API que sincroniza seu CRM com sua ferramenta de contabilidade. Significa implantar um backend de IA que le suas notas fiscais e insere os dados por voce. Significa automatizar o processo de 47 etapas que alguem da sua equipe faz toda segunda-feira de manha.",
+        "O insight principal e este: a maioria das empresas nao precisa de novos sistemas. Elas precisam que seus sistemas existentes conversem entre si, e que as etapas manuais no meio desaparecam.",
+        "## Quando a substituicao e a escolha certa",
+        "Nao somos dogmaticos sobre isso. As vezes um sistema realmente precisa ser substituido - nao tem mais suporte, e inseguro ou tao desatualizado que a integracao nao e pratica. Quando for o caso, diremos. Ate ajudaremos voce a avaliar substituicoes.",
+        "Mas nunca recomendaremos substituicao porque e mais facil de vender. E nunca prendemos voce a nossa plataforma - porque nao temos uma.",
+        "## O que isso significa para voce",
+        "Se voce trabalhar conosco, mantem o que funciona. Adiciona o que falta. E quando terminarmos, voce e dono de tudo. Esse e o modelo. Essa e a filosofia."
+      ]
+    },
+    {
+      "slug": "how-we-built-dociq",
+      "title": "Como construimos o DocIQ: um motor de IA open source para processamento de documentos medicos",
+      "excerpt": "Mais de 1.100 testes, 3 tipos de documentos, 2 idiomas, compativel com FHIR R4. Um mergulho tecnico na construcao de inteligencia documental de nivel profissional.",
+      "category": "engineering",
+      "date": "2026-04-08",
+      "reading_time": 8,
+      "author": "Pierre Montanov",
+      "tags": ["engineering", "ai", "healthcare", "open-source", "python"],
+      "body": [
+        "O DocIQ nasceu de uma frustracao. Estavamos trabalhando com um cliente da area de saude que recebia dezenas de laudos de patologia todos os dias - PDFs com resultados de exames, faixas de referencia e notas clinicas. A equipe administrativa passava 3 horas toda manha transcrevendo valores-chave no prontuario eletronico. Manualmente. Todos os dias.",
+        "Os dados estavam ali, na pagina. Mas estavam presos em texto nao estruturado, layouts inconsistentes e imagens digitalizadas. Nenhuma ferramenta existente conseguia extrair de forma confiavel.",
+        "Entao construimos uma.",
+        "## Arquitetura",
+        "O DocIQ e um backend de IA baseado em Python construido com FastAPI. O pipeline tem quatro estagios: ingestao, analise de layout, extracao de entidades e formatacao de saida.",
+        "**Ingestao** aceita PDFs via REST API. Documentos digitalizados passam pelo Tesseract OCR; PDFs nativos sao analisados diretamente. O sistema detecta automaticamente qual caminho seguir com base na camada de texto do documento.",
+        "**Analise de layout** identifica a estrutura do documento - cabecalhos, tabelas, pares chave-valor, secoes de texto livre. E aqui que a maioria das ferramentas genericas de OCR falha: elas extraem texto mas perdem as relacoes espaciais que dao significado.",
+        "**Extracao de entidades** usa uma combinacao de padroes baseados em regras e modelos de NLP para identificar entidades clinicas: identificadores do paciente, nomes de exames, resultados numericos, unidades, faixas de referencia e sinalizacoes. Treinamos modelos personalizados para formatos de patologia, radiologia e cartas de encaminhamento.",
+        "**Formatacao de saida** converte entidades extraidas em recursos JSON compativeis com FHIR R4 - DiagnosticReport, Observation e Patient. A saida esta pronta para importacao no prontuario eletronico sem transformacao.",
+        "## Estrategia de testes",
+        "Mais de 1.100 testes podem parecer excessivos para um motor de processamento de documentos. Nao sao. A extracao de dados medicos tem tolerancia zero para falhas silenciosas. Um ponto decimal lido incorretamente em um resultado de exame nao e um bug - e um risco clinico.",
+        "Nossa suite de testes cobre testes unitarios para cada regra de extracao, testes de integracao para processamento completo de documentos, testes de regressao contra um corpus de documentos do mundo real (anonimizados) e testes de conformidade contra a especificacao FHIR R4.",
+        "Todos os testes rodam no CI em cada commit. Sem excecoes.",
+        "## Por que open source?",
+        "Tornamos o DocIQ open source sob licenca MIT porque o processamento de documentos de saude nao deveria ser um luxo. Pequenas clinicas, centros de saude comunitarios e consultorios em regioes em desenvolvimento enfrentam a mesma carga de processamento de documentos que grandes hospitais - mas nao podem pagar solucoes corporativas.",
+        "Open source significa que qualquer um pode usar, modificar e contribuir de volta. Tambem significa que o codigo e auditavel - algo critico para aplicacoes de saude onde confianca e transparencia importam.",
+        "## Proximos passos",
+        "Estamos expandindo a cobertura de tipos de documentos do DocIQ, adicionando suporte para resumos de alta e fichas de medicacao. Tambem estamos construindo uma interface web de configuracao para que usuarios nao tecnicos possam definir novos templates de documentos sem escrever codigo.",
+        "Se quiser experimentar o DocIQ, ele esta no GitHub: github.com/pierremontanov/HealthParse"
+      ]
+    },
+    {
+      "slug": "5-signs-business-ready-for-ai",
+      "title": "5 sinais de que sua empresa esta pronta para IA - e 3 sinais de que nao esta",
+      "excerpt": "IA nao e magica. E infraestrutura. Veja como saber se sua empresa esta realmente pronta - e o que corrigir primeiro se nao estiver.",
+      "category": "guide",
+      "date": "2026-03-28",
+      "reading_time": 6,
+      "author": "Pierre Montanov",
+      "tags": ["guide", "ai", "smb", "readiness"],
+      "body": [
+        "Toda conferencia de negocios, todo post no LinkedIn, toda apresentacao de fornecedor diz a mesma coisa: voce precisa de IA. Mas ninguem diz se voce esta realmente pronto para isso. E se nao estiver, a IA nao apenas vai falhar em ajudar - vai desperdicar seu tempo e dinheiro.",
+        "Aqui esta um checklist pratico baseado no que vimos trabalhando com pequenas e medias empresas.",
+        "## 5 sinais de que voce esta pronto",
+        "**1. Voce tem um processo repetitivo, de alto volume, que segue regras.** IA e excelente em tarefas previsiveis, repetitivas e baseadas em regras. Se sua equipe processa 50 notas fiscais por dia, le 30 relatorios por semana ou envia 100 e-mails de acompanhamento por mes - e cada um segue mais ou menos o mesmo padrao - e um forte candidato.",
+        "**2. Voce tem dados digitais (mesmo dados digitais bagunçados).** IA precisa de dados para trabalhar. Se seus documentos ja sao digitais - PDFs, planilhas, e-mails, registros de banco de dados - voce tem a materia-prima. Nao precisa estar limpo. Limpar dados bagunçados e literalmente o que fazemos.",
+        "**3. Voce consegue descrever como e um resultado correto.** Se voce pode nos dizer 'uma nota fiscal processada corretamente tem estes 7 campos extraidos, validados contra esta referencia e inseridos neste sistema' - podemos construir. Objetivos vagos como 'usar IA para melhorar as coisas' nao sao acionaveis.",
+        "**4. Voce tem um gargalo de fluxo de trabalho, nao um problema de estrategia.** IA resolve problemas de execucao, nao problemas de estrategia. Se seu gargalo e 'nao conseguimos processar documentos rapido o suficiente' - IA pode ajudar. Se seu gargalo e 'nao sabemos em qual mercado entrar' - IA nao pode ajudar.",
+        "**5. Voce esta disposto a comecar pequeno.** As melhores implementacoes de IA comecam com um processo, um tipo de documento, um fluxo de trabalho. Se voce esta disposto a pilotar em um unico caso de uso antes de escalar, voce esta na mentalidade certa.",
+        "## 3 sinais de que voce nao esta pronto",
+        "**1. Seus dados estao no papel.** Se seus documentos principais sao papel fisico sem copias digitais, a IA nao tem com o que trabalhar. O primeiro passo e a digitalizacao - escaneamento, OCR e armazenamento digital basico. Podemos ajudar com isso, mas e um pre-requisito, nao um projeto de IA.",
+        "**2. Voce nao tem um processo definido para automatizar.** Se sua equipe lida com cada caso de forma diferente sem um fluxo de trabalho consistente, a IA tera dificuldades. IA precisa de padroes. Antes de automatizar, voce precisa padronizar - mesmo que de forma basica.",
+        "**3. Voce esta procurando uma solucao magica.** Se espera que a IA resolva todos os seus problemas da noite para o dia, vai se decepcionar. IA e infraestrutura, nao magica. Funciona melhor quando implantada de forma iterativa: comece com uma coisa, prove que funciona, depois expanda.",
+        "## O que fazer se voce nao esta pronto ainda",
+        "Nao estar pronto nao e um fracasso - e informacao. Se voce marcou um dos sinais de 'nao esta pronto', comece por ai. Digitalize seus documentos. Padronize seus fluxos de trabalho. Defina como e o sucesso. Depois volte.",
+        "Ou agende uma sessao de descoberta e nos ajudaremos voce a descobrir onde voce realmente esta - e o que fazer a seguir."
+      ]
+    }
+  ]
+}

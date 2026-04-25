@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Search, Puzzle, Presentation, Brain, Network, Zap, GitBranch, Users } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 interface ServiceCardProps {
   icon: React.ReactNode;
@@ -61,9 +62,10 @@ const tiers = [
 
 export default function ServicesSection() {
   const { t } = useTranslation("home");
+  const sectionRef = useScrollReveal();
 
   return (
-    <section id="services" className="py-24 bg-muted/50">
+    <section id="services" className="py-24 bg-muted/50" ref={sectionRef}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-3xl font-bold text-foreground text-center">
           {t("services.section_title")}

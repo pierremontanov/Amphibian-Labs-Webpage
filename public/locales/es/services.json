@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "title": "Servicios - Amphibian Labs",
+    "description": "Backends de IA, integracion de sistemas, automatizacion de flujos de trabajo y consultoria honesta para pequenas y medianas empresas. Sin dependencia de proveedores."
+  },
+  "hero": {
+    "title": "Que podemos construir juntos?",
+    "subtitle": "Mejoramos lo que ya tienes con IA, automatizacion e integracion. Cada proyecto comienza escuchando y termina contigo siendo dueno de todo."
+  },
+  "tiers": {
+    "understand": {
+      "title": "Entender",
+      "subtitle": "Consultoria y analisis de negocio",
+      "description": "Antes de construir algo, escuchamos. Sesiones de descubrimiento, talleres con stakeholders y recomendaciones honestas - incluso si eso significa sugerir un competidor."
+    },
+    "build": {
+      "title": "Construir",
+      "subtitle": "Ingenieria y entrega",
+      "description": "Backends con IA, integraciones de sistemas y automatizaciones de flujos de trabajo - construidos de forma iterativa, entregados con documentacion y completamente de tu propiedad."
+    },
+    "share": {
+      "title": "Compartir",
+      "subtitle": "Open source y comunidad",
+      "description": "Herramientas de nivel productivo bajo licencia MIT. Plantillas, blueprints y arquitecturas de referencia que cualquier empresa puede usar."
+    }
+  },
+  "services": {
+    "automation": {
+      "title": "Automatizacion de flujos de trabajo",
+      "excerpt": "Elimina pasos manuales entre plataformas con Power Automate, Make y n8n.",
+      "icon": "zap",
+      "tier": "build"
+    },
+    "integration": {
+      "title": "Integracion de sistemas",
+      "excerpt": "Conecta Microsoft 365, SharePoint, CRMs y APIs de terceros sin migrar nada.",
+      "icon": "network",
+      "tier": "build"
+    },
+    "ai-extraction": {
+      "title": "Extraccion de datos con IA",
+      "excerpt": "Inteligencia documental, extraccion de datos no estructurados y pipelines de NLP para documentos del mundo real.",
+      "icon": "brain",
+      "tier": "build"
+    },
+    "web-solutions": {
+      "title": "Soluciones web y portales",
+      "excerpt": "Portales para clientes, dashboards y aplicaciones web conectadas a tus sistemas backend existentes.",
+      "icon": "globe",
+      "tier": "build"
+    },
+    "vendor-selection": {
+      "title": "Seleccion de proveedores y asesoria",
+      "excerpt": "Recomendaciones tecnologicas imparciales. Te diremos cuando un producto existente supera una solucion personalizada.",
+      "icon": "search",
+      "tier": "understand"
+    },
+    "crm-cleanup": {
+      "title": "Limpieza y optimizacion de CRM",
+      "excerpt": "Auditoria, deduplicacion, reestructuracion y automatizacion de tu CRM para que realmente funcione para tu equipo.",
+      "icon": "database",
+      "tier": "understand"
+    }
+  },
+  "faq": {
+    "title": "Preguntas que escuchamos seguido",
+    "items": [
+      {
+        "question": "Necesito reemplazar mis sistemas actuales?",
+        "answer": "No. Todo nuestro enfoque se basa en mejorar lo que ya tienes. Agregamos capas inteligentes sobre tus herramientas actuales - sin migraciones, sin interrupciones."
+      },
+      {
+        "question": "Con que industrias trabajan?",
+        "answer": "Trabajamos con salud, construccion, servicios profesionales, oficios y retail. Nuestras herramientas son agnosticas a la industria - lo que importa es el flujo de trabajo, no el sector."
+      },
+      {
+        "question": "Cuanto tarda un proyecto tipico?",
+        "answer": "Las sesiones de descubrimiento toman 2 horas. Un proyecto delimitado de automatizacion o integracion normalmente toma de 2 a 6 semanas. Proyectos mas grandes de backends de IA toman de 6 a 12 semanas con entrega iterativa durante todo el proceso."
+      },
+      {
+        "question": "Sere dueno del codigo que construyan?",
+        "answer": "Si. Todo lo que construimos es tuyo. Codigo fuente completo, documentacion y traspaso operativo. Sin dependencia de proveedores, sin tarifas de licencia recurrentes por codigo que nosotros escribimos."
+      },
+      {
+        "question": "Que pasa si solo necesito asesoria, no una construccion?",
+        "answer": "Para eso es exactamente nuestro nivel Descubrir. Realizamos talleres con stakeholders, mapeamos tu estado actual y entregamos un informe escrito con recomendaciones - que pueden o no incluirnos."
+      },
+      {
+        "question": "Ofrecen soporte continuo despues de un proyecto?",
+        "answer": "Si. Nuestro nivel Evolucionar ofrece una retencion mensual para integraciones continuas, ampliacion de la cobertura de automatizacion y mantener tus sistemas alineados a medida que tu negocio crece."
+      }
+    ]
+  },
+  "cta": {
+    "title": "No sabes que servicio se adapta mejor?",
+    "body": "Reserva una sesion de descubrimiento. Escucharemos que no funciona y te recomendaremos el camino correcto - incluso si no somos nosotros.",
+    "button": "Reservar una sesion de descubrimiento"
+  }
+}

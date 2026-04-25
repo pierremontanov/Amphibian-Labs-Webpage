@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "Apoie o Open Source - Amphibian Labs",
+    "description": "Financie ferramentas de IA open source, recursos para a comunidade e documentacao. Cada dolar vai diretamente para desenvolvimento, testes e infraestrutura."
+  },
+  "hero": {
+    "title": "Apoie o open source",
+    "subtitle": "A Amphibian Labs constroi ferramentas de nivel profissional e as disponibiliza gratuitamente. Seu apoio torna isso possivel."
+  },
+  "why": {
+    "title": "Por que nos apoiar?",
+    "items": [
+      {
+        "title": "Financie ferramentas reais, nao promessas",
+        "body": "Cada dolar vai para construir, testar e manter software open source que empresas realmente usam. So o DocIQ tem mais de 1.100 testes e processa documentos clinicos reais."
+      },
+      {
+        "title": "Mantenha a IA acessivel",
+        "body": "Ferramentas corporativas de IA custam seis digitos. Nossas ferramentas sao gratuitas e sob licenca MIT. Seu apoio ajuda pequenas clinicas, organizacoes comunitarias e microempreendedores a acessar a mesma tecnologia."
+      },
+      {
+        "title": "Apoie trabalho independente",
+        "body": "Nao aceitamos capital de risco nem exibimos anuncios. Somos financiados por trabalho com clientes e apoio da comunidade. Essa independencia significa que construimos o que e necessario, nao o que e financiavel."
+      }
+    ]
+  },
+  "tiers": {
+    "title": "Escolha seu nivel",
+    "supporter": {
+      "label": "Apoiador",
+      "price": "$5 - $10",
+      "frequency": "unico ou mensal",
+      "description": "Ajude a manter tudo funcionando. Sua contribuicao cobre custos de hospedagem, CI/CD e dominio.",
+      "perks": [
+        "Nome na lista de apoiadores",
+        "Acesso antecipado as notas de versao"
+      ]
+    },
+    "builder": {
+      "label": "Construtor",
+      "price": "$25 - $50",
+      "frequency": "unico ou mensal",
+      "description": "Financie uma funcionalidade. Sua contribuicao vai diretamente para novas capacidades, cobertura de testes e documentacao.",
+      "perks": [
+        "Tudo do nivel Apoiador",
+        "Vote na proxima funcionalidade",
+        "Atualizacao trimestral de progresso"
+      ]
+    },
+    "champion": {
+      "label": "Campiao",
+      "price": "$100+",
+      "frequency": "unico ou mensal",
+      "description": "Patrocine um lancamento. Sua contribuicao financia um sprint completo de desenvolvimento - novos tipos de documentos, suporte a idiomas ou integracoes.",
+      "perks": [
+        "Tudo do nivel Construtor",
+        "Logo no README",
+        "Linha direta com o desenvolvedor",
+        "Mencionado nas notas de versao"
+      ]
+    }
+  },
+  "transparency": {
+    "title": "Para onde vai sua doacao",
+    "items": [
+      { "label": "Desenvolvimento e testes", "percent": 60 },
+      { "label": "Infraestrutura e hospedagem", "percent": 20 },
+      { "label": "Documentacao e guias", "percent": 15 },
+      { "label": "Suporte a comunidade", "percent": 5 }
+    ],
+    "note": "100% das doacoes vao para trabalho open source. A receita de clientes cobre as operacoes do negocio."
+  },
+  "payment": {
+    "button": "Apoie este nivel",
+    "note": "Links de pagamento serao configurados via Stripe. Por enquanto, entre em contato diretamente para realizar uma contribuicao.",
+    "contact_instead": "Ou envie um e-mail para"
+  },
+  "cta": {
+    "title": "Prefere contribuir com codigo?",
+    "body": "Aceitamos pull requests, relatorios de bugs e melhorias na documentacao. Toda contribuicao importa.",
+    "button": "Ver repositorios"
+  }
+}

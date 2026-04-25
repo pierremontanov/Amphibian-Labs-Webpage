@@ -1,15 +1,17 @@
 import { useTranslation } from "react-i18next";
 import { ArrowRight } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function OutcomesSection() {
   const { t } = useTranslation("home");
+  const sectionRef = useScrollReveal();
   const rows = t("outcomes.rows", { returnObjects: true }) as Array<{
     before: string;
     after: string;
   }>;
 
   return (
-    <section id="outcomes" className="py-24 bg-background">
+    <section id="outcomes" className="py-24 bg-background" ref={sectionRef}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-3xl font-bold text-foreground text-center mb-4">
           {t("outcomes.section_title")}

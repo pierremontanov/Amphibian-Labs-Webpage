@@ -1,12 +1,14 @@
 import { useTranslation } from "react-i18next";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const problemKeys = ["tech_gap", "rip_replace", "trust_gap"] as const;
 
 export default function ProblemSection() {
   const { t } = useTranslation("home");
+  const sectionRef = useScrollReveal();
 
   return (
-    <section id="problems" className="py-24 bg-background">
+    <section id="problems" className="py-24 bg-background" ref={sectionRef}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-3xl font-bold text-foreground text-center mb-4">
           {t("problems.section_title")}

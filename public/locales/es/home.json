@@ -1,225 +1,228 @@
 {
   "hero": {
-    "headline": "Your business already runs. We make it run smarter.",
-    "subheadline": "We plug AI into what you already have. No migrations. No disruption. No vendor lock-in.",
-    "cta_primary": "Book a discovery session",
-    "cta_secondary": "See our open-source work",
-    "trust_strip": "Built with"
+    "headline": "Tu negocio ya funciona. Nosotros lo hacemos mas inteligente.",
+    "subheadline": "Integramos IA en lo que ya tienes. Sin migraciones. Sin interrupciones. Sin dependencia de proveedores.",
+    "cta_primary": "Reservar una sesion de descubrimiento",
+    "cta_secondary": "Ver nuestro trabajo open source",
+    "trust_strip": "Construido con"
   },
   "problems": {
-    "section_title": "Sound familiar?",
+    "section_title": "Te suena familiar?",
     "tech_gap": {
-      "title": "The tech gap",
-      "body": "Edge technology exists, but it's built for companies with 500+ employees and six-figure IT budgets. Small and mid-sized businesses get left behind - or get sold oversized solutions they can't maintain."
+      "title": "La brecha tecnologica",
+      "body": "La tecnologia de punta existe, pero esta disenada para empresas con mas de 500 empleados y presupuestos de TI de seis cifras. Las pequenas y medianas empresas quedan atras - o les venden soluciones sobredimensionadas que no pueden mantener."
     },
     "rip_replace": {
-      "title": "The rip-and-replace trap",
-      "body": "Every vendor wants to replace your entire stack. You didn't ask for a migration. You asked for help. Your systems work - they just need an intelligent layer on top."
+      "title": "La trampa de reemplazar todo",
+      "body": "Cada proveedor quiere reemplazar todo tu stack tecnologico. No pediste una migracion. Pediste ayuda. Tus sistemas funcionan - solo necesitan una capa inteligente encima."
     },
     "trust_gap": {
-      "title": "The trust gap",
-      "body": "You've been burned by consultants who recommend what they sell, not what you need. You need someone who'll tell you when an off-the-shelf product beats a custom build - even if it means less work for them."
+      "title": "La brecha de confianza",
+      "body": "Te han defraudado consultores que recomiendan lo que venden, no lo que necesitas. Necesitas a alguien que te diga cuando un producto existente supera una solucion personalizada - aunque eso signifique menos trabajo para ellos."
     }
   },
   "services": {
-    "section_title": "What we do",
-    "intro": "We turn problems into working systems.",
+    "section_title": "Lo que hacemos",
+    "intro": "Convertimos problemas en sistemas funcionales.",
     "understand": {
-      "title": "Understand",
-      "subtitle": "Consultancy & business analysis",
+      "title": "Entender",
+      "subtitle": "Consultoria y analisis de negocio",
       "discovery": {
-        "title": "Discovery & requirements",
-        "body": "Stakeholder workshops, current-state analysis, pain-point identification."
+        "title": "Descubrimiento y requerimientos",
+        "body": "Talleres con stakeholders, analisis del estado actual, identificacion de puntos de dolor."
       },
       "advisory": {
-        "title": "Solution design & advisory",
-        "body": "We recommend off-the-shelf vs custom vs AI backend based on fit, not vendor pressure. We'll suggest competitors if they're a better fit."
+        "title": "Diseno de soluciones y asesoria",
+        "body": "Recomendamos soluciones existentes vs personalizadas vs backends de IA segun lo que mejor se adapte, no por presion de proveedores. Sugerimos competidores si son una mejor opcion."
       },
       "training": {
-        "title": "Workshops & training",
-        "body": "Sessions on AI adoption, automation strategy, and tech literacy for SMBs."
+        "title": "Talleres y capacitacion",
+        "body": "Sesiones sobre adopcion de IA, estrategia de automatizacion y alfabetizacion tecnologica para pymes."
       }
     },
     "build": {
-      "title": "Build",
-      "subtitle": "Engineering & delivery",
+      "title": "Construir",
+      "subtitle": "Ingenieria y entrega",
       "ai_backends": {
-        "title": "AI-powered backends",
-        "body": "Document intelligence, unstructured data extraction, NLP pipelines. Python, FastAPI, containerised microservices."
+        "title": "Backends con IA",
+        "body": "Inteligencia documental, extraccion de datos no estructurados, pipelines de NLP. Python, FastAPI, microservicios en contenedores."
       },
       "integration": {
-        "title": "System integration",
-        "body": "Microsoft 365, SharePoint, Teams, CRMs, third-party APIs. No migration required."
+        "title": "Integracion de sistemas",
+        "body": "Microsoft 365, SharePoint, Teams, CRMs, APIs de terceros. Sin migracion requerida."
       },
       "automation": {
-        "title": "Workflow automation",
-        "body": "Power Automate, Make, n8n - eliminate manual steps across platforms."
+        "title": "Automatizacion de flujos de trabajo",
+        "body": "Power Automate, Make, n8n - elimina pasos manuales entre plataformas."
       }
     },
     "share": {
-      "title": "Share",
-      "subtitle": "Open source & community",
+      "title": "Compartir",
+      "subtitle": "Open source y comunidad",
       "open_source": {
-        "title": "Open-source projects",
-        "body": "Production-grade tools under MIT license. DocIQ is the flagship."
+        "title": "Proyectos open source",
+        "body": "Herramientas de nivel productivo bajo licencia MIT. DocIQ es el proyecto insignia."
       },
       "community": {
-        "title": "Community resources",
-        "body": "Templates, automation blueprints, reference architectures."
+        "title": "Recursos comunitarios",
+        "body": "Plantillas, blueprints de automatizacion, arquitecturas de referencia."
       }
     }
   },
   "outcomes": {
-    "section_title": "What changes",
+    "section_title": "Lo que cambia",
+    "before_label": "Antes",
+    "after_label": "Despues",
     "rows": [
       {
-        "before": "Staff spend 4 hours/day copying data between PDFs and your system",
-        "after": "An AI backend extracts, validates, and loads it in seconds"
+        "before": "Tu equipo pasa 4 horas al dia copiando datos entre PDFs y tu sistema",
+        "after": "Un backend con IA extrae, valida y carga los datos en segundos"
       },
       {
-        "before": "Your CRM, EHR, and accounting tool don't talk to each other",
-        "after": "A lightweight integration layer syncs them - no new platform needed"
+        "before": "Tu CRM, historia clinica y herramienta contable no se comunican entre si",
+        "after": "Una capa de integracion liviana los sincroniza - sin necesidad de una nueva plataforma"
       },
       {
-        "before": "You're told you need to replace everything",
-        "after": "You keep what works. We add what's missing"
+        "before": "Te dicen que necesitas reemplazar todo",
+        "after": "Conservas lo que funciona. Nosotros agregamos lo que falta"
       },
       {
-        "before": "AI tools feel inaccessible or oversold",
-        "after": "You attend a workshop and leave with a working prototype"
+        "before": "Las herramientas de IA se sienten inaccesibles o exageradas",
+        "after": "Asistes a un taller y te vas con un prototipo funcional"
       }
     ]
   },
   "process": {
-    "section_title": "How it works",
+    "section_title": "Como funciona",
+    "key_message": "Una sola persona maneja todo el ciclo de vida - la persona que recopilo tus requerimientos es la misma que lo construye. Mismo contexto. Misma responsabilidad.",
     "steps": [
       {
-        "title": "Listen",
-        "body": "Free clarity session. You tell us what's broken. No pitch, no commitment."
+        "title": "Escuchar",
+        "body": "Sesion de claridad gratuita. Nos cuentas que no funciona. Sin presentaciones de venta, sin compromiso."
       },
       {
-        "title": "Map",
-        "body": "We document your current state - systems, workflows, pain points, budget constraints."
+        "title": "Mapear",
+        "body": "Documentamos tu estado actual - sistemas, flujos de trabajo, puntos de dolor, restricciones de presupuesto."
       },
       {
-        "title": "Recommend",
-        "body": "We design a solution - and it might not include us. If an off-the-shelf tool solves it, we'll say so."
+        "title": "Recomendar",
+        "body": "Disenamos una solucion - y puede que no nos incluya. Si una herramienta existente lo resuelve, te lo diremos."
       },
       {
-        "title": "Build",
-        "body": "We build what's agreed. Iterative delivery, not a 6-month black box. You see working software early and often."
+        "title": "Construir",
+        "body": "Construimos lo acordado. Entrega iterativa, no una caja negra de 6 meses. Ves software funcional temprano y con frecuencia."
       },
       {
-        "title": "Handover",
-        "body": "Full documentation, BAU handover, knowledge transfer. You own everything. No lock-in."
+        "title": "Entrega",
+        "body": "Documentacion completa, traspaso operativo, transferencia de conocimiento. Eres dueno de todo. Sin dependencia."
       }
     ]
   },
   "blog_preview": {
-    "section_title": "Latest from the lab",
-    "read_more": "Read more on the blog",
+    "section_title": "Lo ultimo del laboratorio",
+    "read_more": "Leer mas en el blog",
     "articles": [
       {
-        "title": "Why we enhance your systems instead of replacing them",
-        "excerpt": "Most consultants recommend what they sell. We recommend what fits. Here's our philosophy on system enhancement over replacement.",
-        "category": "Philosophy",
+        "title": "Por que mejoramos tus sistemas en lugar de reemplazarlos",
+        "excerpt": "La mayoria de los consultores recomiendan lo que venden. Nosotros recomendamos lo que se adapta. Esta es nuestra filosofia sobre mejorar sistemas en lugar de reemplazarlos.",
+        "category": "Filosofia",
         "date": "2026-04-15",
-        "reading_time": "5 min read"
+        "reading_time": "5 min de lectura"
       },
       {
-        "title": "How we built DocIQ: an open-source AI engine for medical document processing",
-        "excerpt": "1,100+ tests, 3 document types, 2 languages, FHIR R4 compliant. A technical deep-dive into building production-grade document intelligence.",
-        "category": "Engineering",
+        "title": "Como construimos DocIQ: un motor de IA open source para procesamiento de documentos medicos",
+        "excerpt": "Mas de 1,100 pruebas, 3 tipos de documentos, 2 idiomas, compatible con FHIR R4. Un analisis tecnico a fondo sobre la construccion de inteligencia documental de nivel productivo.",
+        "category": "Ingenieria",
         "date": "2026-04-08",
-        "reading_time": "8 min read"
+        "reading_time": "8 min de lectura"
       },
       {
-        "title": "5 signs your business is ready for AI - and 3 signs you're not",
-        "excerpt": "AI isn't magic. It's infrastructure. Here's how to tell if your business is actually ready - and what to fix first if you're not.",
-        "category": "Guide",
+        "title": "5 senales de que tu negocio esta listo para la IA - y 3 senales de que no",
+        "excerpt": "La IA no es magia. Es infraestructura. Asi puedes saber si tu negocio esta realmente listo - y que arreglar primero si no lo esta.",
+        "category": "Guia",
         "date": "2026-03-28",
-        "reading_time": "6 min read"
+        "reading_time": "6 min de lectura"
       }
     ]
   },
   "about": {
-    "section_title": "About",
-    "bio_p1": "Amphibian Labs was founded by Pierre Montanov - a technical consultant and engineer with 5+ years in the industry, a Master's in IT, and dual expertise in business analysis and software engineering.",
-    "bio_p2": "Pierre saw first-hand how small and mid-sized businesses get underserved by the tech industry. Enterprise tools exist, but they're priced and scoped for enterprises. SMBs deserve the same calibre of technology - built to fit their scale, their budget, and their existing systems.",
-    "bio_p3": "Amphibian Labs closes that gap. We don't replace what works. We enhance it with AI backends, workflow automation, and system integration. And when we're done, you own everything.",
-    "philosophy": "Amphibian Labs is a lab in the true sense - we create, experiment, publish, and help.",
+    "section_title": "Nosotros",
+    "bio_p1": "Amphibian Labs fue fundada por Pierre Montanov - un consultor tecnico e ingeniero con mas de 5 anos en la industria, una Maestria en TI y doble experiencia en analisis de negocio e ingenieria de software.",
+    "bio_p2": "Pierre vio de primera mano como las pequenas y medianas empresas quedan desatendidas por la industria tecnologica. Las herramientas empresariales existen, pero estan disenadas y presupuestadas para grandes empresas. Las pymes merecen la misma calidad de tecnologia - construida a su escala, su presupuesto y sus sistemas existentes.",
+    "bio_p3": "Amphibian Labs cierra esa brecha. No reemplazamos lo que funciona. Lo mejoramos con backends de IA, automatizacion de flujos de trabajo e integracion de sistemas. Y cuando terminamos, tu eres dueno de todo.",
+    "philosophy": "Amphibian Labs es un laboratorio en el sentido mas autentico - creamos, experimentamos, publicamos y ayudamos.",
     "credentials": {
       "name": "Pierre Montanov",
-      "title": "Founder & Technical Consultant",
+      "title": "Fundador y Consultor Tecnico",
       "location": "Gold Coast, QLD, Australia",
-      "degree": "Master's in Information Technology",
-      "experience": "5+ years industry experience"
+      "degree": "Maestria en Tecnologias de la Informacion",
+      "experience": "Mas de 5 anos de experiencia en la industria"
     }
   },
   "engagement": {
-    "section_title": "Ways to work together",
-    "intro": "Flexible options - no lock-in contracts. Start small and scale up when you're ready.",
+    "section_title": "Formas de trabajar juntos",
+    "intro": "Opciones flexibles - sin contratos de permanencia. Empieza en pequeno y escala cuando estes listo.",
     "discovery": {
       "price": "$300",
-      "duration": "2 hours",
-      "title": "Discovery session",
-      "description": "2-hour session (remote or in-person). We listen to the pain, ask diagnostic questions, and map your current state. Written report delivered within 48 hours: what we found, what we recommend, 2–3 actionable suggestions - which may or may not include Amphibian Labs. No obligation.",
-      "cta": "Book a discovery session - $300 for 2 hours of honest answers and a written report."
+      "duration": "2 horas",
+      "title": "Sesion de descubrimiento",
+      "description": "Sesion de 2 horas (remota o presencial). Escuchamos el problema, hacemos preguntas diagnosticas y mapeamos tu estado actual. Informe escrito entregado en 48 horas: lo que encontramos, lo que recomendamos, 2-3 sugerencias concretas - que pueden o no incluir a Amphibian Labs. Sin compromiso.",
+      "cta": "Reserva una sesion de descubrimiento - $300 por 2 horas de respuestas honestas y un informe escrito."
     },
     "discover": {
-      "label": "Discover",
-      "title": "Understand what you have and what you need",
+      "label": "Descubrir",
+      "title": "Entiende lo que tienes y lo que necesitas",
       "bullets": [
-        "Stakeholder workshops",
-        "Current-state mapping",
-        "Solution recommendations",
-        "Written report"
+        "Talleres con stakeholders",
+        "Mapeo del estado actual",
+        "Recomendaciones de solucion",
+        "Informe escrito"
       ],
-      "best_for": "Businesses who know something isn't working but aren't sure what to fix first."
+      "best_for": "Empresas que saben que algo no funciona pero no estan seguras de que arreglar primero."
     },
     "build": {
-      "label": "Build",
-      "title": "Scoped project with defined outcomes",
+      "label": "Construir",
+      "title": "Proyecto delimitado con resultados definidos",
       "bullets": [
-        "AI backends & system integrations",
-        "Workflow automations",
-        "Iterative delivery",
-        "Documentation & BAU handover"
+        "Backends de IA e integraciones de sistemas",
+        "Automatizaciones de flujos de trabajo",
+        "Entrega iterativa",
+        "Documentacion y traspaso operativo"
       ],
-      "best_for": "Businesses ready to act."
+      "best_for": "Empresas listas para actuar."
     },
     "evolve": {
-      "label": "Evolve",
-      "title": "Monthly retainer for evolving needs",
+      "label": "Evolucionar",
+      "title": "Retencion mensual para necesidades en evolucion",
       "bullets": [
-        "New integrations as you grow",
-        "Expanding automation coverage",
-        "Keeping systems aligned",
-        "Your tech partner on call"
+        "Nuevas integraciones a medida que creces",
+        "Ampliacion de la cobertura de automatizacion",
+        "Manteniendo los sistemas alineados",
+        "Tu socio tecnologico siempre disponible"
       ],
-      "best_for": "Businesses that want a tech partner on call."
+      "best_for": "Empresas que quieren un socio tecnologico siempre disponible."
     },
-    "scoped": "Scoped to your project."
+    "scoped": "Adaptado a tu proyecto."
   },
   "contact": {
-    "section_title": "Let's talk",
-    "subtitle": "Tell us what's broken. We'll reply with the next step.",
-    "name_label": "First name",
-    "email_label": "Email",
-    "industry_label": "Business type / industry",
+    "section_title": "Hablemos",
+    "subtitle": "Cuentanos que no funciona. Te responderemos con el siguiente paso.",
+    "name_label": "Nombre",
+    "email_label": "Correo electronico",
+    "industry_label": "Tipo de negocio / industria",
     "industry_options": {
-      "placeholder": "Select your industry",
-      "healthcare": "Healthcare",
-      "construction": "Construction",
-      "professional": "Professional Services",
-      "trades": "Trades",
+      "placeholder": "Selecciona tu industria",
+      "healthcare": "Salud",
+      "construction": "Construccion",
+      "professional": "Servicios profesionales",
+      "trades": "Oficios y comercios",
       "retail": "Retail",
-      "other": "Other"
+      "other": "Otro"
     },
-    "frustration_label": "What's your biggest frustration?",
-    "referral_label": "How did you find us?",
-    "submit": "Tell us what's broken",
-    "confirmation": "Got it. We'll be in touch within 24 hours.",
-    "fallback": "Prefer email? Reach us at"
+    "frustration_label": "Cual es tu mayor frustracion?",
+    "referral_label": "Como nos encontraste?",
+    "submit": "Cuentanos que no funciona",
+    "confirmation": "Recibido. Te contactaremos en menos de 24 horas.",
+    "fallback": "Prefieres correo? Escribenos a"
   }
 }

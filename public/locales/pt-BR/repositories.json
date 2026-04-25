@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "title": "Open Source - Amphibian Labs",
+    "description": "Explore nossos projetos open source: inteligencia documental com IA, blueprints de automacao, templates e ferramentas para a comunidade. Todos sob licenca MIT."
+  },
+  "hero": {
+    "title": "Open source",
+    "subtitle": "Ferramentas de nivel profissional, templates e blueprints - todos sob licenca MIT. Construimos de forma aberta porque boas ferramentas devem ser acessiveis a todos."
+  },
+  "spotlight": {
+    "label": "Projeto principal",
+    "title": "DocIQ",
+    "tagline": "Motor de inteligencia documental com IA para saude",
+    "description": "Backend de IA open source que le, classifica e extrai dados estruturados de documentos medicos. Construido para fluxos de trabalho clinicos do mundo real com conformidade FHIR R4.",
+    "tests": "Mais de 1.100 testes",
+    "languages": "2 idiomas",
+    "fhir": "Compativel com FHIR R4",
+    "license": "Licenca MIT",
+    "view_on_github": "Ver no GitHub",
+    "read_case_study": "Leia o estudo de caso"
+  },
+  "pinned": {
+    "title": "Repositorios em destaque"
+  },
+  "all_repos": {
+    "title": "Todos os repositorios",
+    "view_all": "Ver tudo no GitHub",
+    "stars": "estrelas",
+    "updated": "Atualizado",
+    "no_description": "Nenhuma descricao fornecida."
+  },
+  "filters": {
+    "all": "Todos",
+    "automations": "Automacoes",
+    "templates": "Templates",
+    "utilities": "Utilitarios",
+    "documentation": "Documentacao"
+  },
+  "loading": {
+    "fetching": "Carregando repositorios do GitHub..."
+  },
+  "error": {
+    "title": "Nao foi possivel carregar os repositorios",
+    "body": "A API do GitHub esta temporariamente indisponivel. Voce pode navegar por todos os repositorios diretamente no GitHub.",
+    "link": "Ver no GitHub"
+  }
+}

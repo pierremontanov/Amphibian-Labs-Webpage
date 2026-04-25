@@ -1,0 +1,157 @@
+{
+  "breadcrumb_services": "Servicios",
+  "sections": {
+    "problem": "El problema",
+    "approach": "Nuestro enfoque",
+    "technologies": "Tecnologias que usamos",
+    "scenario": "Escenario de ejemplo",
+    "cta_title": "Listo para comenzar?",
+    "cta_button": "Reservar una sesion de descubrimiento"
+  },
+  "automation": {
+    "meta": {
+      "title": "Automatizacion de flujos de trabajo - Amphibian Labs",
+      "description": "Elimina pasos manuales entre plataformas con Power Automate, Make y n8n. Sin cambios de codigo en tus sistemas existentes."
+    },
+    "title": "Automatizacion de flujos de trabajo",
+    "subtitle": "Elimina pasos manuales entre plataformas",
+    "problem": "Tu equipo pasa horas cada semana en tareas repetitivas: copiar datos entre sistemas, enviar correos de seguimiento, actualizar hojas de calculo, generar reportes. Estas tareas no son complejas - solo son tediosas. Y cada paso manual es una oportunidad para errores, demoras y frustracion.",
+    "approach": "Mapeamos tus flujos de trabajo existentes de principio a fin, identificamos los cuellos de botella manuales y los automatizamos usando la herramienta adecuada. No forzamos una sola plataforma - elegimos el motor de automatizacion que se adapte a tu stack y al nivel tecnico de tu equipo. Cada automatizacion queda documentada, probada y entregada con responsabilidad clara.",
+    "technologies": [
+      "Power Automate",
+      "Make (Integromat)",
+      "n8n",
+      "Azure Logic Apps",
+      "Python scripting",
+      "REST APIs"
+    ],
+    "scenario": {
+      "title": "Empresa constructora - reportes semanales de cumplimiento",
+      "context": "Una empresa constructora de Gold Coast pasaba 6 horas cada viernes compilando datos de inspecciones de seguridad de tres aplicaciones diferentes en un solo reporte de cumplimiento para sus gerentes de proyecto.",
+      "solution": "Construimos un flujo en Power Automate que extrae datos de inspeccion de su aplicacion de campo, los cruza con el cronograma del proyecto en SharePoint y genera un reporte en PDF formateado - entregado en la bandeja de entrada de cada gerente los viernes a las 8am.",
+      "outcome": "6 horas de trabajo manual reducidas a cero. Los reportes son mas consistentes y nunca se atrasan."
+    }
+  },
+  "integration": {
+    "meta": {
+      "title": "Integracion de sistemas - Amphibian Labs",
+      "description": "Conecta Microsoft 365, SharePoint, CRMs y APIs de terceros. Sin migraciones - solo una capa liviana que hace que tus sistemas se comuniquen entre si."
+    },
+    "title": "Integracion de sistemas",
+    "subtitle": "Haz que tus sistemas se comuniquen entre si",
+    "problem": "Tu CRM no se comunica con tu software contable. Tu herramienta de gestion de proyectos no sabe que hay en tu bandeja de entrada. Tu equipo copia datos entre tres pestanas porque nada esta conectado. Te han dicho que la unica solucion es migrar todo a una plataforma - pero eso es caro, disruptivo y probablemente no es cierto.",
+    "approach": "Construimos capas de integracion livianas que conectan tus sistemas existentes sin reemplazar ninguno. Trabajamos con las APIs y conectores que tus herramientas ya tienen, agregando solo el middleware necesario para mantener los datos fluyendo. Sin nuevas plataformas que aprender. Sin migraciones de datos. Tu equipo sigue trabajando en las herramientas que ya conoce.",
+    "technologies": [
+      "Microsoft Graph API",
+      "SharePoint REST API",
+      "Power Automate connectors",
+      "Custom REST/GraphQL middleware",
+      "Azure Functions",
+      "Python / FastAPI"
+    ],
+    "scenario": {
+      "title": "Clinica de salud - sincronizacion de ingreso de pacientes",
+      "context": "Una clinica con multiples sedes usaba sistemas separados para formularios de ingreso de pacientes, programacion de citas y facturacion. El personal de recepcion reingresaba manualmente los datos de cada paciente en cada sistema - un promedio de 12 minutos por paciente.",
+      "solution": "Construimos una capa middleware con FastAPI que detecta nuevos formularios de ingreso, valida los datos y los envia a los sistemas de programacion y facturacion a traves de sus APIs. Sin cambios en los formularios del front-end ni en el software existente.",
+      "outcome": "12 minutos por paciente reducidos a cero ingreso manual. La tasa de error bajo del 8% a menos del 1%."
+    }
+  },
+  "ai-extraction": {
+    "meta": {
+      "title": "Extraccion de datos con IA - Amphibian Labs",
+      "description": "Inteligencia documental, OCR y pipelines de NLP que extraen datos estructurados de documentos del mundo real. Construido con Python, FastAPI e IA open source."
+    },
+    "title": "Extraccion de datos con IA",
+    "subtitle": "Convierte documentos en datos estructurados",
+    "problem": "Tu negocio funciona con documentos - facturas, historias clinicas, contratos, reportes de inspeccion, formularios de cumplimiento. Pero los datos atrapados dentro de esos documentos son no estructurados, inconsistentes e imposibles de consultar. Alguien en tu equipo pasa horas cada dia leyendo PDFs y escribiendo numeros en hojas de calculo.",
+    "approach": "Construimos backends con IA que leen, clasifican y extraen datos estructurados de tus documentos - automaticamente. Nuestros pipelines manejan OCR, analisis de diseno, extraccion de entidades y validacion. Disenamos para tus tipos de documentos especificos, no plantillas genericas. Cada pipeline incluye puntuacion de confianza para que sepas cuando confiar en el resultado y cuando marcarlo para revision humana.",
+    "technologies": [
+      "Python",
+      "FastAPI",
+      "Tesseract OCR",
+      "Azure Document Intelligence",
+      "spaCy / Hugging Face",
+      "Docker",
+      "PostgreSQL"
+    ],
+    "scenario": {
+      "title": "Consultorio medico - procesamiento de reportes de patologia",
+      "context": "Un proveedor de patologia envia reportes en PDF con resultados de laboratorio, rangos de referencia y notas clinicas. El personal administrativo del consultorio transcribia manualmente los valores clave en su historia clinica electronica - 15 a 20 reportes por dia, 10 minutos cada uno.",
+      "solution": "Implementamos DocIQ - nuestro motor de inteligencia documental open source - configurado para el formato de reportes de patologia. El pipeline extrae identificadores de pacientes, nombres de pruebas, resultados, unidades y rangos de referencia, y luego genera JSON compatible con FHIR R4 listo para importar en la historia clinica.",
+      "outcome": "3 horas de transcripcion diaria eliminadas. Precision de extraccion superior al 97%. El sistema de alertas detecta los casos limite restantes para revision humana."
+    }
+  },
+  "web-solutions": {
+    "meta": {
+      "title": "Soluciones web y portales - Amphibian Labs",
+      "description": "Portales para clientes, dashboards y aplicaciones web conectadas a tus sistemas backend existentes. Construidos con React, TypeScript y estandares web modernos."
+    },
+    "title": "Soluciones web y portales",
+    "subtitle": "Dale a tus clientes y equipo una puerta de entrada a tus sistemas",
+    "problem": "Tus sistemas internos funcionan, pero tus clientes y personal de campo no tienen forma de interactuar con ellos directamente. Las solicitudes llegan por correo o telefono, tu equipo las procesa manualmente y las actualizaciones de estado salen de la misma forma. Necesitas una capa web - pero no necesitas (ni quieres) reconstruir todo tu backend.",
+    "approach": "Construimos portales web y dashboards que se montan sobre tus sistemas existentes. Tu backend se mantiene igual - agregamos un front-end moderno y responsivo que tus clientes y equipo pueden usar desde cualquier dispositivo. Autenticacion, acceso basado en roles, datos en tiempo real - todo conectado a lo que ya manejas.",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Next.js / Vite",
+      "FastAPI",
+      "Azure AD / Auth0",
+      "PostgreSQL"
+    ],
+    "scenario": {
+      "title": "Firma de servicios profesionales - portal de estado para clientes",
+      "context": "Una firma de consultoria gestionaba todas las actualizaciones de estado de proyectos por correo electronico. Los clientes preguntaban constantemente por actualizaciones y los gerentes de proyecto pasaban 30 minutos por cliente por semana escribiendo correos de estado.",
+      "solution": "Construimos un portal para clientes que extrae datos del proyecto de su herramienta de gestion existente via API. Los clientes inician sesion para ver hitos, entregables y proximos pasos en tiempo real. Correos automaticos reemplazaron las actualizaciones manuales.",
+      "outcome": "Las consultas de estado de clientes se redujeron en un 80%. Los gerentes de proyecto recuperaron mas de 4 horas por semana. Los indices de satisfaccion del cliente mejoraron."
+    }
+  },
+  "vendor-selection": {
+    "meta": {
+      "title": "Seleccion de proveedores y asesoria - Amphibian Labs",
+      "description": "Recomendaciones tecnologicas imparciales para pymes. Recomendamos lo que se adapta - no lo que vendemos. Soluciones existentes, personalizadas o hibridas."
+    },
+    "title": "Seleccion de proveedores y asesoria",
+    "subtitle": "Recomendaciones honestas - incluso cuando no nos incluyen",
+    "problem": "Cada proveedor te dice que su producto es la respuesta. Pero no sabes que preguntas hacer, que funcionalidades realmente importan para tu tamano, o si siquiera necesitas software personalizado. Te han defraudado consultores que recomiendan lo que venden, no lo que necesitas.",
+    "approach": "Evaluamos tus requerimientos contra el mercado - productos existentes, herramientas open source y soluciones personalizadas. Puntuamos cada opcion en adaptabilidad, costo, carga de mantenimiento y riesgo de dependencia. Nuestras recomendaciones son independientes: no revendemos software, y te diremos cuando una herramienta SaaS de $50 al mes supera una solucion personalizada de $50,000. Recibes un informe escrito con nuestro analisis y una recomendacion clara.",
+    "technologies": [
+      "Analisis de requerimientos",
+      "Escaneo de mercado",
+      "Modelado de costo total de propiedad",
+      "Evaluacion de riesgos",
+      "Matrices de comparacion de proveedores",
+      "Informes de asesoria escritos"
+    ],
+    "scenario": {
+      "title": "Negocio de oficios - eleccion de plataforma de gestion de trabajos",
+      "context": "Un negocio de plomeria con 15 empleados estaba evaluando cuatro plataformas de gestion de trabajos. Cada demo del proveedor se veia genial, pero el dueno no podia distinguir que funcionalidades importaban y cuales eran ruido. Compras de software anteriores habian quedado sin uso despues de 3 meses.",
+      "solution": "Realizamos un taller de medio dia para mapear sus flujos de trabajo reales, luego puntuamos cada plataforma contra sus requerimientos reales - no la lista de funcionalidades del proveedor. Recomendamos la opcion mas simple que cubria el 90% de sus necesidades y senalamos la unica funcionalidad faltante que podia cubrirse con un complemento de $20 al mes.",
+      "outcome": "El dueno eligio con confianza. La adopcion de la plataforma alcanzo el 100% en 6 semanas - la primera vez para el negocio."
+    }
+  },
+  "crm-cleanup": {
+    "meta": {
+      "title": "Limpieza y optimizacion de CRM - Amphibian Labs",
+      "description": "Auditoria, deduplicacion, reestructuracion y automatizacion de tu CRM. Deja de trabajar alrededor de tus datos - haz que trabajen para ti."
+    },
+    "title": "Limpieza y optimizacion de CRM",
+    "subtitle": "Haz que tu CRM realmente funcione para tu equipo",
+    "problem": "Tu CRM tiene miles de registros, pero la mitad son duplicados, estan desactualizados o les faltan campos clave. Tu equipo dejo de confiar en los datos y creo soluciones alternativas en hojas de calculo. Los reportes no son confiables. El CRM deberia ahorrar tiempo - en cambio genera mas trabajo.",
+    "approach": "Comenzamos con una auditoria de datos: cuantos registros, cuantos duplicados, que falta, que es inconsistente. Luego limpiamos, deduplicamos y reestructuramos - con el aporte de tu equipo sobre lo que importa. Finalmente, configuramos reglas de validacion y automatizaciones para que los datos se mantengan limpios. Trabajamos con cualquier CRM que ya uses.",
+    "technologies": [
+      "HubSpot",
+      "Salesforce",
+      "Zoho CRM",
+      "Microsoft Dynamics 365",
+      "Scripts de limpieza de datos en Python",
+      "Power Automate / Zapier"
+    ],
+    "scenario": {
+      "title": "Agencia inmobiliaria - renovacion de base de datos de contactos",
+      "context": "Una agencia inmobiliaria tenia 12,000 contactos en su CRM. Despues de 4 anos de uso por multiples agentes, el 30% eran duplicados, el 40% tenia numeros de telefono o correos faltantes, y nadie confiaba lo suficiente en los datos para ejecutar campanas de marketing.",
+      "solution": "Exportamos y perfilamos los datos, construimos un pipeline de deduplicacion en Python usando coincidencia difusa, fusionamos registros con los datos mas completos y reimportamos el dataset limpio. Agregamos reglas de validacion para prevenir futuros duplicados y configuramos enriquecimiento automatico para campos faltantes.",
+      "outcome": "12,000 registros reducidos a 7,800 contactos limpios. La primera campana de correo en 2 anos se envio la semana siguiente. Las tasas de apertura se duplicaron comparadas con el ultimo intento."
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Blog - Amphibian Labs",
+    "description": "Articulos sobre filosofia de IA, analisis tecnicos a fondo y guias practicas para pequenas y medianas empresas."
+  },
+  "hero": {
+    "title": "Desde el laboratorio",
+    "subtitle": "Filosofia, ingenieria y guias practicas para empresas que quieren usar la tecnologia sin que la tecnologia las use a ellas."
+  },
+  "filters": {
+    "all": "Todos",
+    "philosophy": "Filosofia",
+    "engineering": "Ingenieria",
+    "guide": "Guia",
+    "case-study": "Caso de estudio"
+  },
+  "reading_time_suffix": "min de lectura",
+  "by": "Por",
+  "related": "Articulos relacionados",
+  "back_to_blog": "Volver al blog",
+  "cta": {
+    "title": "Quieres conversar sobre lo que acabas de leer?",
+    "body": "Reserva una sesion de claridad gratuita. Sin presentaciones de venta, sin compromiso.",
+    "button": "Reservar una sesion de descubrimiento"
+  },
+  "articles": [
+    {
+      "slug": "why-we-enhance-not-replace",
+      "title": "Por que mejoramos tus sistemas en lugar de reemplazarlos",
+      "excerpt": "La mayoria de los consultores recomiendan lo que venden. Nosotros recomendamos lo que se adapta. Esta es nuestra filosofia sobre mejorar sistemas en lugar de reemplazarlos.",
+      "category": "philosophy",
+      "date": "2026-04-15",
+      "reading_time": 5,
+      "author": "Pierre Montanov",
+      "tags": ["philosophy", "integration", "smb"],
+      "body": [
+        "Toda presentacion de venta de un proveedor empieza igual: 'Dejenos mostrarle como nuestra plataforma reemplaza todo lo que usa actualmente.' Suena limpio. Suena moderno. Y casi nunca funciona como prometen.",
+        "El modelo de reemplazar todo asume que tus sistemas actuales son el problema. Pero la mayoria de las veces, no lo son. Tu CRM funciona. Tu software contable funciona. Tu herramienta de gestion de proyectos funciona. Lo que no funciona es la brecha entre ellos - los pasos manuales, los flujos de copiar y pegar, los datos que viven en la bandeja de alguien en lugar de en tu base de datos.",
+        "En Amphibian Labs, partimos de una premisa diferente: tus sistemas son activos, no pasivos. Nuestro trabajo es hacer que funcionen juntos, no descartarlos.",
+        "## El costo de reemplazar",
+        "Reemplazar un sistema central del negocio no es solo una decision de software - es una disrupcion organizacional. El personal necesita recapacitacion. Los datos necesitan migracion. Los flujos de trabajo necesitan reconstruccion. Y durante la transicion, la productividad cae. Para pequenas y medianas empresas, esta disrupcion puede ser existencial.",
+        "Hemos visto empresas gastar 6 meses y $80,000 migrando a una nueva plataforma solo para descubrir que no maneja un flujo de trabajo que su sistema anterior gestionaba perfectamente. La nueva plataforma es tecnicamente superior - pero no se adapta.",
+        "## Mejora sobre reemplazo",
+        "Mejorar significa agregar una capa inteligente sobre lo que ya tienes. Significa construir una integracion de API que sincronice tu CRM con tu herramienta contable. Significa implementar un backend de IA que lea tus facturas e ingrese los datos por ti. Significa automatizar el proceso de 47 pasos que alguien en tu equipo hace cada lunes por la manana.",
+        "La idea clave es esta: la mayoria de las empresas no necesitan sistemas nuevos. Necesitan que sus sistemas existentes se comuniquen entre si, y que los pasos manuales en el medio desaparezcan.",
+        "## Cuando reemplazar es la decision correcta",
+        "No somos dogmaticos con esto. A veces un sistema genuinamente necesita ser reemplazado - no tiene soporte, es inseguro o esta tan desactualizado que la integracion no es practica. Cuando ese es el caso, lo diremos. Incluso te ayudaremos a evaluar reemplazos.",
+        "Pero nunca recomendaremos un reemplazo porque es mas facil de vender. Y nunca te ataremos a nuestra plataforma - porque no tenemos una.",
+        "## Lo que esto significa para ti",
+        "Si trabajas con nosotros, conservas lo que funciona. Agregas lo que falta. Y cuando terminamos, eres dueno de todo. Ese es el modelo. Esa es la filosofia."
+      ]
+    },
+    {
+      "slug": "how-we-built-dociq",
+      "title": "Como construimos DocIQ: un motor de IA open source para procesamiento de documentos medicos",
+      "excerpt": "Mas de 1,100 pruebas, 3 tipos de documentos, 2 idiomas, compatible con FHIR R4. Un analisis tecnico a fondo sobre la construccion de inteligencia documental de nivel productivo.",
+      "category": "engineering",
+      "date": "2026-04-08",
+      "reading_time": 8,
+      "author": "Pierre Montanov",
+      "tags": ["engineering", "ai", "healthcare", "open-source", "python"],
+      "body": [
+        "DocIQ nacio de una frustracion. Estabamos trabajando con un cliente de salud que recibia docenas de reportes de patologia cada dia - PDFs con resultados de laboratorio, rangos de referencia y notas clinicas. Su personal administrativo pasaba 3 horas cada manana transcribiendo valores clave en su historia clinica electronica. Manualmente. Todos los dias.",
+        "Los datos estaban ahi, en la pagina. Pero estaban atrapados en texto no estructurado, disenos inconsistentes e imagenes escaneadas. Ninguna herramienta existente podia extraerlos de manera confiable.",
+        "Asi que construimos una.",
+        "## Arquitectura",
+        "DocIQ es un backend de IA basado en Python construido con FastAPI. El pipeline tiene cuatro etapas: ingestion, analisis de diseno, extraccion de entidades y formateo de salida.",
+        "**Ingestion** acepta PDFs via REST API. Los documentos escaneados pasan por Tesseract OCR; los PDFs nativos se procesan directamente. El sistema auto-detecta que ruta tomar basandose en la capa de texto del documento.",
+        "**Analisis de diseno** identifica la estructura del documento - encabezados, tablas, pares clave-valor, secciones de texto libre. Aqui es donde la mayoria de las herramientas genericas de OCR fallan: extraen texto pero pierden las relaciones espaciales que le dan significado.",
+        "**Extraccion de entidades** usa una combinacion de patrones basados en reglas y modelos de NLP para identificar entidades clinicas: identificadores de pacientes, nombres de pruebas, resultados numericos, unidades, rangos de referencia y alertas. Entrenamos modelos personalizados para formatos de patologia, radiologia y cartas de referencia.",
+        "**Formateo de salida** convierte las entidades extraidas en recursos JSON compatibles con FHIR R4 - DiagnosticReport, Observation y Patient. La salida esta lista para importar en la historia clinica sin transformacion.",
+        "## Estrategia de pruebas",
+        "Mas de 1,100 pruebas podria sonar excesivo para un motor de procesamiento de documentos. No lo es. La extraccion de datos medicos tiene cero tolerancia a fallos silenciosos. Un punto decimal mal leido en un resultado de laboratorio no es un bug - es un riesgo clinico.",
+        "Nuestra suite de pruebas cubre pruebas unitarias para cada regla de extraccion, pruebas de integracion para procesamiento completo de documentos, pruebas de regresion contra un corpus de documentos del mundo real (anonimizados) y pruebas de conformidad contra la especificacion FHIR R4.",
+        "Cada prueba se ejecuta en CI en cada commit. Sin excepciones.",
+        "## Por que open source?",
+        "Liberamos DocIQ como open source bajo licencia MIT porque el procesamiento de documentos medicos no deberia ser un lujo. Clinicas pequenas, centros de salud comunitarios y consultorios en regiones en desarrollo enfrentan la misma carga de procesamiento de documentos que los grandes hospitales - pero no pueden pagar soluciones empresariales.",
+        "Open source significa que cualquiera puede usarlo, modificarlo y contribuir. Tambien significa que el codigo es auditable - critico para aplicaciones de salud donde la confianza y la transparencia importan.",
+        "## Que sigue",
+        "Estamos expandiendo la cobertura de tipos de documentos de DocIQ, agregando soporte para resumenes de alta y tablas de medicacion. Tambien estamos construyendo una interfaz web de configuracion para que usuarios no tecnicos puedan definir nuevas plantillas de documentos sin escribir codigo.",
+        "Si quieres probar DocIQ, esta en GitHub: github.com/pierremontanov/HealthParse"
+      ]
+    },
+    {
+      "slug": "5-signs-business-ready-for-ai",
+      "title": "5 senales de que tu negocio esta listo para la IA - y 3 senales de que no",
+      "excerpt": "La IA no es magia. Es infraestructura. Asi puedes saber si tu negocio esta realmente listo - y que arreglar primero si no lo esta.",
+      "category": "guide",
+      "date": "2026-03-28",
+      "reading_time": 6,
+      "author": "Pierre Montanov",
+      "tags": ["guide", "ai", "smb", "readiness"],
+      "body": [
+        "Cada conferencia de negocios, cada post en LinkedIn, cada presentacion de ventas te dice lo mismo: necesitas IA. Pero nadie te dice si realmente estas listo para ella. Y si no estas listo, la IA no solo no va a ayudar - va a desperdiciar tu tiempo y dinero.",
+        "Aqui tienes un checklist practico basado en lo que hemos visto trabajando con pequenas y medianas empresas.",
+        "## 5 senales de que estas listo",
+        "**1. Tienes un proceso repetitivo, de alto volumen y basado en reglas.** La IA es excelente en tareas predecibles, repetitivas y basadas en reglas. Si tu equipo procesa 50 facturas al dia, lee 30 reportes a la semana o envia 100 correos de seguimiento al mes - y cada uno sigue aproximadamente el mismo patron - es un candidato fuerte.",
+        "**2. Tienes datos digitales (incluso datos digitales desordenados).** La IA necesita datos con los que trabajar. Si tus documentos ya son digitales - PDFs, hojas de calculo, correos, registros de base de datos - tienes la materia prima. No necesitan estar limpios. Limpiar datos desordenados es literalmente lo que hacemos.",
+        "**3. Puedes describir como se ve un resultado correcto.** Si puedes decirnos 'una factura correctamente procesada tiene estos 7 campos extraidos, validados contra esta referencia e ingresados en este sistema' - podemos construirlo. Objetivos vagos como 'usar IA para mejorar las cosas' no son accionables.",
+        "**4. Tienes un cuello de botella en el flujo de trabajo, no un problema de estrategia.** La IA resuelve problemas de ejecucion, no problemas de estrategia. Si tu cuello de botella es 'no podemos procesar documentos lo suficientemente rapido' - la IA puede ayudar. Si tu cuello de botella es 'no sabemos a que mercado entrar' - la IA no puede ayudar.",
+        "**5. Estas dispuesto a empezar en pequeno.** Las mejores implementaciones de IA comienzan con un proceso, un tipo de documento, un flujo de trabajo. Si estas dispuesto a hacer una prueba piloto con un solo caso de uso antes de escalar, tienes la mentalidad correcta.",
+        "## 3 senales de que no estas listo",
+        "**1. Tus datos estan en papel.** Si tus documentos principales son papel fisico sin copias digitales, la IA no tiene con que trabajar. El primer paso es la digitalizacion - escaneo, OCR y almacenamiento digital basico. Podemos ayudar con esto, pero es un prerequisito, no un proyecto de IA.",
+        "**2. No tienes un proceso definido para automatizar.** Si tu equipo maneja cada caso de forma diferente sin un flujo de trabajo consistente, la IA tendra dificultades. La IA necesita patrones. Antes de automatizar, necesitas estandarizar - aunque sea de forma basica.",
+        "**3. Buscas una solucion magica.** Si esperas que la IA resuelva todos tus problemas de la noche a la manana, te vas a decepcionar. La IA es infraestructura, no magia. Funciona mejor cuando se implementa de forma iterativa: empieza con una cosa, demuestra que funciona, luego expande.",
+        "## Que hacer si aun no estas listo",
+        "No estar listo no es un fracaso - es informacion. Si marcaste una de las senales de 'no listo', empieza por ahi. Digitaliza tus documentos. Estandariza tus flujos de trabajo. Define como se ve el exito. Luego regresa.",
+        "O reserva una sesion de descubrimiento y te ayudaremos a determinar donde estas realmente - y que hacer despues."
+      ]
+    }
+  ]
+}

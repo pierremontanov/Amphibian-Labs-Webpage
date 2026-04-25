@@ -1,13 +1,13 @@
 {
   "cta": {
-    "book_discovery": "Book a discovery session",
-    "see_open_source": "See our open-source work",
-    "email_us": "Email us",
-    "call_us": "Call us",
-    "lets_talk": "Let's talk",
-    "get_started": "Get started",
-    "read_more": "Read more",
-    "view_all_github": "View all on GitHub"
+    "book_discovery": "Reservar una sesion de descubrimiento",
+    "see_open_source": "Ver nuestro trabajo open source",
+    "email_us": "Escribenos",
+    "call_us": "Llamanos",
+    "lets_talk": "Hablemos",
+    "get_started": "Comenzar",
+    "read_more": "Leer mas",
+    "view_all_github": "Ver todo en GitHub"
   },
   "contact_info": {
     "phone": "0420 729 667",
@@ -15,8 +15,8 @@
     "location": "Gold Coast, QLD, Australia"
   },
   "footer": {
-    "copyright": "© {{year}} Amphibian Labs. All rights reserved.",
-    "privacy": "Privacy",
-    "terms": "Terms"
+    "copyright": "© {{year}} Amphibian Labs. Todos los derechos reservados.",
+    "privacy": "Privacidad",
+    "terms": "Terminos"
   }
 }

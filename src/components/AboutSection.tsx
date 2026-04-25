@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { MapPin, GraduationCap, Briefcase, ExternalLink } from "lucide-react";
+import { techLogos } from "./TechLogos";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const techStack = [
   "Python", "FastAPI", "Docker", "Power Automate", "SharePoint",
@@ -8,9 +10,10 @@ const techStack = [
 
 export default function AboutSection() {
   const { t } = useTranslation("home");
+  const sectionRef = useScrollReveal();
 
   return (
-    <section id="about" className="py-24 bg-background">
+    <section id="about" className="py-24 bg-background" ref={sectionRef}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-3xl font-bold text-foreground text-center mb-12">
           {t("about.section_title")}
@@ -73,17 +76,30 @@ export default function AboutSection() {
           </div>
         </div>
 
-        {/* Tech stack strip */}
+        {/* Tech stack SVG logos */}
         <div className="mt-16">
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-3">
-            {techStack.map((name) => (
-              <span
-                key={name}
-                className="text-sm text-muted-foreground/70 font-medium tracking-wide hover:text-foreground transition-colors"
-              >
-                {name}
-              </span>
-            ))}
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4">
+            {techStack.map((name) => {
+              const LogoComp = techLogos[name];
+              return (
+                <div
+                  key={name}
+                  className="group flex flex-col items-center gap-1.5"
+                  title={name}
+                >
+                  {LogoComp ? (
+                    <LogoComp className="w-7 h-7 text-muted-foreground/50 group-hover:text-foreground transition-colors" />
+                  ) : (
+                    <span className="text-sm text-muted-foreground/50 group-hover:text-foreground transition-colors font-medium">
+                      {name}
+                    </span>
+                  )}
+                  <span className="text-[10px] text-muted-foreground/40 group-hover:text-muted-foreground transition-colors">
+                    {name}
+                  </span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

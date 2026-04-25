@@ -1,10 +1,10 @@
 {
   "brand": "Amphibian Labs",
-  "services": "Services",
-  "about": "About",
+  "services": "Servicios",
+  "about": "Nosotros",
   "blog": "Blog",
-  "contact": "Contact",
-  "book_session": "Book a discovery session",
-  "language": "Language",
-  "theme_toggle": "Toggle theme"
+  "contact": "Contacto",
+  "book_session": "Reservar una sesion de descubrimiento",
+  "language": "Idioma",
+  "theme_toggle": "Cambiar tema"
 }
