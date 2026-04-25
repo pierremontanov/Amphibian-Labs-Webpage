@@ -13,6 +13,7 @@ const tierConfig = [
     accent: "bg-teal-50 dark:bg-teal-900/20",
     badge: "bg-muted text-foreground",
     featured: false,
+    stripeUrl: "https://buy.stripe.com/aFa6oG8mjagd4UR8N1grS00",
   },
   {
     key: "builder",
@@ -20,6 +21,7 @@ const tierConfig = [
     accent: "bg-teal-50 dark:bg-teal-900/20",
     badge: "bg-teal-600 text-white",
     featured: true,
+    stripeUrl: "https://buy.stripe.com/dRm9ASfOL9c9fzvd3hgrS01",
   },
   {
     key: "champion",
@@ -27,6 +29,7 @@ const tierConfig = [
     accent: "bg-amber-50 dark:bg-amber-900/20",
     badge: "bg-amber-600 text-white",
     featured: false,
+    stripeUrl: "https://buy.stripe.com/7sY00i8mj885evrd3hgrS02",
   },
 ];
 
@@ -143,14 +146,19 @@ export default function DonatePage() {
                       ))}
                     </ul>
 
-                    {/* Button placeholder */}
-                    <button
-                      disabled
-                      className="w-full py-2.5 text-sm font-medium rounded-lg border border-border bg-muted text-muted-foreground cursor-not-allowed"
-                      title="Payment links coming soon"
+                    {/* Stripe payment link */}
+                    <a
+                      href={tier.stripeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`w-full py-2.5 text-sm font-medium rounded-lg text-center block transition-opacity hover:opacity-90 ${
+                        tier.featured
+                          ? "gradient-teal text-white shadow-button"
+                          : "border border-teal-600 text-teal-600 hover:bg-teal-50 dark:hover:bg-teal-900/20"
+                      }`}
                     >
                       {t("payment.button")}
-                    </button>
+                    </a>
                   </div>
                 );
               })}

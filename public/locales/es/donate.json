@@ -72,7 +72,7 @@
   },
   "payment": {
     "button": "Apoyar este nivel",
-    "note": "Los enlaces de pago se configuraran a traves de Stripe. Por ahora, contactanos directamente para coordinar una contribucion.",
+    "note": "Los pagos se procesan de forma segura a traves de Stripe. Preguntas? Escribenos a",
     "contact_instead": "O escribenos a"
   },
   "cta": {

@@ -72,7 +72,7 @@
   },
   "payment": {
     "button": "Support this tier",
-    "note": "Payment links will be set up via Stripe. For now, reach out directly to arrange a contribution.",
+    "note": "Payments are processed securely via Stripe. Questions? Email us at",
     "contact_instead": "Or email us at"
   },
   "cta": {
