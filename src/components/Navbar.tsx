@@ -2,7 +2,9 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.webp";
+import logoDark from "@/assets/ALL.png";
+import logoLight from "@/assets/ALL2.png";
+import { useTheme } from "next-themes";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -15,9 +17,12 @@ const navLinks = [
 
 export default function Navbar() {
   const { t } = useTranslation("nav");
+  const { resolvedTheme } = useTheme();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const isHome = location.pathname === "/";
+  const logo = (!scrolled && isHome) ? logoDark : (resolvedTheme === "dark" ? logoDark : logoLight);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -60,11 +65,8 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2.5">
-            <img src={logo} alt="Amphibian Labs logo" className="w-8 h-8" />
-            <span className="font-semibold text-foreground text-sm tracking-tight">
-              {t("brand")}
-            </span>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Amphibian Labs logo" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop nav */}

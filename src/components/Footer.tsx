@@ -1,21 +1,22 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo.webp";
+import { useTheme } from "next-themes";
+import logoDark from "@/assets/ALL.png";
+import logoLight from "@/assets/ALL2.png";
 
 export default function Footer() {
   const { t } = useTranslation(["common", "nav"]);
+  const { resolvedTheme } = useTheme();
   const year = new Date().getFullYear();
+  const logo = resolvedTheme === "dark" ? logoDark : logoLight;
 
   return (
     <footer className="border-t border-border bg-card py-8">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           {/* Brand */}
-          <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="Amphibian Labs logo" className="w-6 h-6" />
-            <span className="text-sm font-medium text-foreground">
-              {t("brand", { ns: "nav" })}
-            </span>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Amphibian Labs logo" className="h-8 w-auto" />
           </Link>
 
           {/* Nav links */}
