@@ -62,6 +62,7 @@ export default function AboutPage() {
               addressRegion: "QLD",
               addressCountry: "AU",
             },
+            taxID: "ABN 91 155 211 230",
             description: "Australian tech consultancy that enhances existing business systems with AI-powered backend services, workflow automation, and system integration.",
           })}
         </script>

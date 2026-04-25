@@ -6,29 +6,93 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://amphibianlabs.com.au/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://amphibianlabs.com.au/es/" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://amphibianlabs.com.au/pt-br/" />
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://amphibianlabs.com.au/zh/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://amphibianlabs.com.au/ja/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://amphibianlabs.com.au/" />
-    <lastmod>2026-04-22</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://amphibianlabs.com.au/services</loc>
-    <lastmod>2026-04-22</lastmod>
+    <loc>https://amphibianlabs.com.au/about</loc>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://amphibianlabs.com.au/services</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://amphibianlabs.com.au/services/automation</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://amphibianlabs.com.au/services/integration</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://amphibianlabs.com.au/services/ai-extraction</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://amphibianlabs.com.au/services/web-solutions</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://amphibianlabs.com.au/services/vendor-selection</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://amphibianlabs.com.au/services/crm-cleanup</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://amphibianlabs.com.au/repositories</loc>
-    <lastmod>2026-04-22</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://amphibianlabs.com.au/blog</loc>
-    <lastmod>2026-04-22</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://amphibianlabs.com.au/blog/enhance-not-replace</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://amphibianlabs.com.au/blog/building-dociq</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://amphibianlabs.com.au/blog/ai-readiness-signs</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://amphibianlabs.com.au/donate</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

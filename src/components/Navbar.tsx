@@ -8,7 +8,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 const navLinks = [
   { key: "services", to: "/services" },
-  { key: "about", to: "/#about" },
+  { key: "about", to: "/about" },
   { key: "blog", to: "/blog" },
   { key: "contact", to: "/#contact" },
 ];

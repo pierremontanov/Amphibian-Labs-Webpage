@@ -46,9 +46,9 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* Copyright */}
+        {/* Copyright & ABN */}
         <p className="mt-4 text-center text-xs text-muted-foreground/60">
-          {t("footer.copyright", { year })}
+          {t("footer.copyright", { year })} &middot; ABN 91 155 211 230
         </p>
       </div>
     </footer>
