@@ -1,4 +1,4 @@
-# Amphibian Labs — Webpage Enhancement Roadmap
+# Amphibian Labs - Webpage Enhancement Roadmap
 
 **Date:** April 20, 2026
 **Current stack:** React 18 + TypeScript + Tailwind CSS + shadcn/ui + Vite (Lovable-generated)
@@ -8,7 +8,7 @@
 
 ## Current Site Audit
 
-The existing site is a well-designed single-page landing site. The section flow is: Navbar > Hero > Problem > Services > Outcomes > Process > Testimonials > Options > About > Contact > Footer. It uses a teal/navy color palette with DM Sans + Inter typography, card-based layouts, and responsive grids. The only user actions currently available are email links and a phone call link — there are no forms, no dynamic content, and no backend integration.
+The existing site is a well-designed single-page landing site. The section flow is: Navbar > Hero > Problem > Services > Outcomes > Process > Testimonials > Options > About > Contact > Footer. It uses a teal/navy color palette with DM Sans + Inter typography, card-based layouts, and responsive grids. The only user actions currently available are email links and a phone call link - there are no forms, no dynamic content, and no backend integration.
 
 **What works well:**
 
@@ -29,7 +29,7 @@ The existing site is a well-designed single-page landing site. The section flow 
 
 ---
 
-## Phase 1 — Main Services Section (Rework + Expand)
+## Phase 1 - Main Services Section (Rework + Expand)
 
 ### Goal
 Transform the existing `ServicesSection.tsx` from a flat 6-card grid into a rich, navigable services hub that gives each service its own identity and deep-dive content.
@@ -41,7 +41,7 @@ Transform the existing `ServicesSection.tsx` from a flat 6-card grid into a rich
 **Actions:**
 
 - Group the six services into 2–3 tiers: **Core Services** (operations automation, system integration, AI document processing) and **Supporting Services** (web solutions, vendor selection, CRM cleanup)
-- Add a short intro paragraph above the grid that frames what Amphibian Labs *does* in one sentence — something anchored to the tagline "We turn problems into working systems"
+- Add a short intro paragraph above the grid that frames what Amphibian Labs *does* in one sentence - something anchored to the tagline "We turn problems into working systems"
 - Consider a tabbed or accordion layout for mobile instead of stacking all 6 cards vertically
 
 ### 1.2 Add Individual Service Detail Pages (or Expandable Panels)
@@ -66,11 +66,11 @@ Transform the existing `ServicesSection.tsx` from a flat 6-card grid into a rich
 **Actions:**
 
 - Below or within the services section, add a logo strip showing tools: Power Automate, SharePoint, Dynamics 365, Teams, plus any others (Azure, Power BI, etc.)
-- This is partially in `AboutSection.tsx` as badge pills — pull it out into its own visual component with actual logos
+- This is partially in `AboutSection.tsx` as badge pills - pull it out into its own visual component with actual logos
 
 ---
 
-## Phase 2 — Repositories Section (New)
+## Phase 2 - Repositories Section (New)
 
 ### Goal
 Showcase open-source projects, templates, tools, or sample automations that Amphibian Labs has built or contributed to. This builds credibility and creates a community touchpoint.
@@ -120,31 +120,31 @@ Showcase open-source projects, templates, tools, or sample automations that Amph
 
 ---
 
-## Phase 3 — Donation Portal (New)
+## Phase 3 - Donation Portal (New)
 
 ### Goal
-Allow visitors to support Amphibian Labs through one-time or recurring donations — particularly relevant if any of the repositories or tools are open-source community projects.
+Allow visitors to support Amphibian Labs through one-time or recurring donations - particularly relevant if any of the repositories or tools are open-source community projects.
 
 ### 3.1 Create a `DonationSection.tsx` Component
 
 **Actions:**
 
-- Add a new section (or dedicated page at `/donate`) with a warm, transparent message about why donations matter — e.g., funding open-source development, maintaining community tools, supporting SMB automation education
+- Add a new section (or dedicated page at `/donate`) with a warm, transparent message about why donations matter - e.g., funding open-source development, maintaining community tools, supporting SMB automation education
 - Include clear tiers or suggested amounts
 
 ### 3.2 Payment Integration Options
 
-**Option A — Stripe (Recommended for full control):**
+**Option A - Stripe (Recommended for full control):**
 - Create a Stripe account and set up a payment link or Stripe Checkout session
 - Use Stripe's embeddable pricing table or payment links (no backend required for simple donations)
 - For recurring donations, use Stripe's subscription mode
 
-**Option B — Ko-fi / Buy Me a Coffee / GitHub Sponsors (Fastest to ship):**
+**Option B - Ko-fi / Buy Me a Coffee / GitHub Sponsors (Fastest to ship):**
 - Embed a Ko-fi or Buy Me a Coffee widget directly on the page
 - Link to a GitHub Sponsors profile for developer-focused donations
 - Pros: zero backend work, instant setup. Cons: less brand control, platform fees
 
-**Option C — PayPal Donate Button:**
+**Option C - PayPal Donate Button:**
 - Embed a PayPal donation button (simple HTML embed)
 - Supports one-time donations out of the box
 
@@ -176,7 +176,7 @@ Allow visitors to support Amphibian Labs through one-time or recurring donations
 
 ---
 
-## Phase 4 — Additional Recommendations
+## Phase 4 - Additional Recommendations
 
 ### 4.1 Add Multi-Page Routing
 
@@ -223,14 +223,14 @@ Allow visitors to support Amphibian Labs through one-time or recurring donations
 
 ### 4.5 Performance & Asset Optimization
 
-**Current state:** `logo.png` is 1.4 MB — very large for a small navbar logo.
+**Current state:** `logo.png` is 1.4 MB - very large for a small navbar logo.
 
 **Actions:**
 
 - Compress `logo.png` to WebP format (should drop to ~30–50KB)
 - Add `loading="lazy"` to below-fold images
 - Consider code-splitting service detail pages with `React.lazy()`
-- Audit the shadcn/ui component imports — many are installed but unused (carousel, calendar, chart, etc.), which may inflate the bundle
+- Audit the shadcn/ui component imports - many are installed but unused (carousel, calendar, chart, etc.), which may inflate the bundle
 
 ### 4.6 Blog or Case Studies Section
 
@@ -331,7 +331,7 @@ src/
     BlogPage.tsx           (FUTURE)
     NotFound.tsx
   hooks/
-    useGitHubRepos.ts     (NEW — React Query hook for GitHub API)
+    useGitHubRepos.ts     (NEW - React Query hook for GitHub API)
   lib/
     utils.ts
 ```
