@@ -104,10 +104,21 @@ export default function ContactSection() {
               {t("contact.subtitle")}
             </p>
 
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-5">
               {/* Email */}
-              <div className="flex items-center gap-3">
-                <span className="text-base">📧</span>
+              <div className="flex items-center gap-3.5">
+                <div
+                  className="w-9 h-9 rounded-[10px] flex items-center justify-center flex-shrink-0"
+                  style={{
+                    background: "rgba(29,158,117,0.12)",
+                    border: "1px solid rgba(29,158,117,0.25)",
+                  }}
+                >
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="#1D9E75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="4" width="16" height="12" rx="2" />
+                    <path d="M2 6l8 5 8-5" />
+                  </svg>
+                </div>
                 <a
                   href="mailto:info@amphibianlabs.com.au"
                   className="text-[15px] transition-colors duration-200"
@@ -119,8 +130,18 @@ export default function ContactSection() {
                 </a>
               </div>
               {/* Phone */}
-              <div className="flex items-center gap-3">
-                <span className="text-base">📞</span>
+              <div className="flex items-center gap-3.5">
+                <div
+                  className="w-9 h-9 rounded-[10px] flex items-center justify-center flex-shrink-0"
+                  style={{
+                    background: "rgba(29,158,117,0.12)",
+                    border: "1px solid rgba(29,158,117,0.25)",
+                  }}
+                >
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="#1D9E75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 2H8.5L10 6.5 8 8C9 10.5 11 12.5 13.5 13.5L15 11.5L19 13V16.5C19 17.3 18.3 18 17.5 18C9 17.5 2 10.5 2 3.5C2 2.7 2.7 2 3.5 2H5Z" />
+                  </svg>
+                </div>
                 <a
                   href="tel:0420729667"
                   className="text-[15px] transition-colors duration-200"
@@ -131,11 +152,24 @@ export default function ContactSection() {
                   0420 729 667
                 </a>
               </div>
-              {/* Location */}
-              <div className="flex items-center gap-3">
-                <span className="text-base">📍</span>
+              {/* Location — Australia */}
+              <div className="flex items-center gap-3.5">
+                <div
+                  className="w-9 h-9 rounded-[10px] flex items-center justify-center flex-shrink-0"
+                  style={{
+                    background: "rgba(29,158,117,0.12)",
+                    border: "1px solid rgba(29,158,117,0.25)",
+                  }}
+                >
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="#1D9E75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="10" cy="10" r="8" />
+                    <path d="M2 10h16" />
+                    <path d="M10 2c2.5 2.5 4 5.2 4 8s-1.5 5.5-4 8" />
+                    <path d="M10 2c-2.5 2.5-4 5.2-4 8s1.5 5.5 4 8" />
+                  </svg>
+                </div>
                 <span className="text-[15px]" style={{ color: "rgba(185,210,225,0.82)" }}>
-                  Gold Coast, QLD, Australia
+                  Australia
                 </span>
               </div>
             </div>

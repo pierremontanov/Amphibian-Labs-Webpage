@@ -1,11 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { MapPin, GraduationCap, Briefcase, ExternalLink } from "lucide-react";
-import { techLogos } from "./TechLogos";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const techStack = [
   "Python", "FastAPI", "Docker", "Power Automate", "SharePoint",
-  "Microsoft 365", "Azure", "Tesseract", "GitHub",
+  "Microsoft 365", "Azure", "n8n", "GitHub",
 ];
 
 export default function AboutSection() {
@@ -13,93 +11,220 @@ export default function AboutSection() {
   const sectionRef = useScrollReveal();
 
   return (
-    <section id="about" className="py-24 bg-background" ref={sectionRef}>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl font-bold text-foreground text-center mb-12">
-          {t("about.section_title")}
-        </h2>
+    <section
+      id="about"
+      className="py-28 relative overflow-hidden"
+      style={{ background: "#0C1F2C" }}
+      ref={sectionRef}
+    >
+      {/* Grid texture */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(29,158,117,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(29,158,117,0.04) 1px, transparent 1px)",
+          backgroundSize: "48px 48px",
+        }}
+      />
 
-        <div className="grid lg:grid-cols-[1fr_320px] gap-12 items-start">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section header */}
+        <div className="mb-16">
+          <div
+            className="font-mono text-[11px] font-medium uppercase mb-3.5"
+            style={{ letterSpacing: "0.12em", color: "#6DCBAB" }}
+          >
+            The team
+          </div>
+          <h2
+            className="font-bold text-white"
+            style={{
+              fontSize: "clamp(32px, 4vw, 52px)",
+              letterSpacing: "-0.025em",
+              lineHeight: 1.05,
+            }}
+          >
+            {t("about.section_title")}
+          </h2>
+        </div>
+
+        {/* Two-column layout */}
+        <div className="grid lg:grid-cols-[1fr_340px] gap-12 lg:gap-[72px] items-start">
           {/* Bio */}
-          <div className="space-y-5">
-            <p className="text-foreground leading-relaxed">{t("about.bio_p1")}</p>
-            <p className="text-muted-foreground leading-relaxed">{t("about.bio_p2")}</p>
-            <p className="text-muted-foreground leading-relaxed">{t("about.bio_p3")}</p>
+          <div>
+            <p
+              className="text-lg mb-5"
+              style={{ color: "rgba(220,235,245,0.95)", lineHeight: 1.78 }}
+            >
+              {t("about.bio_p1")}
+            </p>
+            <p
+              className="text-base mb-5"
+              style={{ color: "rgba(185,210,225,0.85)", lineHeight: 1.78 }}
+            >
+              {t("about.bio_p2")}
+            </p>
+            <p
+              className="text-base"
+              style={{ color: "rgba(185,210,225,0.85)", lineHeight: 1.78 }}
+            >
+              {t("about.bio_p3")}
+            </p>
 
             {/* Philosophy quote */}
-            <blockquote className="border-l-2 border-teal-600 pl-4 mt-6">
-              <p className="text-foreground italic">{t("about.philosophy")}</p>
+            <blockquote
+              className="mt-9"
+              style={{
+                borderLeft: "3px solid #1D9E75",
+                paddingLeft: 22,
+              }}
+            >
+              <p
+                className="text-[17px] italic"
+                style={{ color: "rgba(220,235,245,0.92)", lineHeight: 1.65 }}
+              >
+                "{t("about.philosophy")}"
+              </p>
             </blockquote>
           </div>
 
           {/* Credentials card */}
-          <div className="rounded-xl border border-border bg-card p-6 shadow-card">
-            <h3 className="font-semibold text-foreground mb-4">
+          <div
+            className="rounded-[20px] p-7"
+            style={{
+              background: "rgba(255,255,255,0.03)",
+              border: "1px solid rgba(255,255,255,0.07)",
+              boxShadow: "0 1px 3px rgba(0,0,0,0.1), 0 4px 18px -2px rgba(0,0,0,0.15)",
+            }}
+          >
+            {/* Avatar circle */}
+            <div
+              className="w-[60px] h-[60px] rounded-full flex items-center justify-center text-white text-[22px] font-bold mb-4.5"
+              style={{
+                background: "linear-gradient(135deg, #0F6E56, #1D9E75)",
+              }}
+            >
+              P
+            </div>
+
+            <div
+              className="text-lg font-bold mb-1"
+              style={{ color: "white" }}
+            >
               {t("about.credentials.name")}
-            </h3>
-            <p className="text-sm text-teal-600 font-medium mb-4">
+            </div>
+            <div
+              className="text-[13px] font-medium mb-5"
+              style={{ color: "#1D9E75" }}
+            >
               {t("about.credentials.title")}
-            </p>
-            <div className="space-y-3 text-sm text-muted-foreground">
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-muted-foreground/60" />
-                {t("about.credentials.location")}
+            </div>
+
+            {/* Info rows */}
+            <div className="space-y-3.5">
+              {/* Location */}
+              <div className="flex items-center gap-3 text-sm" style={{ color: "rgba(185,210,225,0.82)" }}>
+                <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style={{ background: "rgba(29,158,117,0.12)", border: "1px solid rgba(29,158,117,0.25)" }}>
+                  <svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="#1D9E75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="10" cy="10" r="8" />
+                    <path d="M2 10h16" />
+                    <path d="M10 2c2.5 2.5 4 5.2 4 8s-1.5 5.5-4 8" />
+                    <path d="M10 2c-2.5 2.5-4 5.2-4 8s1.5 5.5 4 8" />
+                  </svg>
+                </div>
+                <span>{t("about.credentials.location")}</span>
               </div>
-              <div className="flex items-center gap-2">
-                <GraduationCap className="w-4 h-4 text-muted-foreground/60" />
-                {t("about.credentials.degree")}
+              {/* Degree */}
+              <div className="flex items-center gap-3 text-sm" style={{ color: "rgba(185,210,225,0.82)" }}>
+                <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style={{ background: "rgba(2,132,199,0.12)", border: "1px solid rgba(2,132,199,0.25)" }}>
+                  <svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="#0284C7" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M10 2L2 6l8 4 8-4-8-4z" />
+                    <path d="M4 8v5c0 2 3 3.5 6 3.5s6-1.5 6-3.5V8" />
+                    <path d="M17 6v7" />
+                  </svg>
+                </div>
+                <span>{t("about.credentials.degree")}</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Briefcase className="w-4 h-4 text-muted-foreground/60" />
-                {t("about.credentials.experience")}
+              {/* Experience */}
+              <div className="flex items-center gap-3 text-sm" style={{ color: "rgba(185,210,225,0.82)" }}>
+                <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style={{ background: "rgba(239,159,39,0.12)", border: "1px solid rgba(239,159,39,0.25)" }}>
+                  <svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="#EF9F27" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="3" y="7" width="14" height="10" rx="1.5" />
+                    <path d="M7 7V5a3 3 0 0 1 6 0v2" />
+                    <path d="M10 11v2" />
+                  </svg>
+                </div>
+                <span>{t("about.credentials.experience")}</span>
               </div>
             </div>
+
             {/* Social links */}
-            <div className="mt-5 pt-4 border-t border-border flex gap-4">
-              <a
-                href="https://linkedin.com/in/pierremontanov"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
-              >
-                LinkedIn <ExternalLink className="w-3 h-3" />
-              </a>
-              <a
-                href="https://github.com/pierremontanov"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
-              >
-                GitHub <ExternalLink className="w-3 h-3" />
-              </a>
+            <div
+              className="mt-4 pt-4 flex gap-4"
+              style={{ borderTop: "1px solid rgba(255,255,255,0.07)" }}
+            >
+              {[
+                ["LinkedIn", "https://linkedin.com/in/pierremontanov"],
+                ["GitHub", "https://github.com/pierremontanov"],
+              ].map(([label, href]) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[13px] no-underline transition-colors duration-200"
+                  style={{ color: "rgba(185,210,225,0.6)" }}
+                  onMouseEnter={(e) =>
+                    ((e.target as HTMLElement).style.color = "white")
+                  }
+                  onMouseLeave={(e) =>
+                    ((e.target as HTMLElement).style.color = "rgba(185,210,225,0.6)")
+                  }
+                >
+                  {label} ↗
+                </a>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* Tech stack SVG logos */}
-        <div className="mt-16">
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4">
-            {techStack.map((name) => {
-              const LogoComp = techLogos[name];
-              return (
-                <div
-                  key={name}
-                  className="group flex flex-col items-center gap-1.5"
-                  title={name}
-                >
-                  {LogoComp ? (
-                    <LogoComp className="w-7 h-7 text-muted-foreground/50 group-hover:text-foreground transition-colors" />
-                  ) : (
-                    <span className="text-sm text-muted-foreground/50 group-hover:text-foreground transition-colors font-medium">
-                      {name}
-                    </span>
-                  )}
-                  <span className="text-[10px] text-muted-foreground/40 group-hover:text-muted-foreground transition-colors">
-                    {name}
-                  </span>
-                </div>
-              );
-            })}
+        {/* Tech stack chips */}
+        <div
+          className="mt-16 pt-12 text-center"
+          style={{ borderTop: "1px solid rgba(255,255,255,0.07)" }}
+        >
+          <div
+            className="font-mono text-[11px] font-medium uppercase mb-6"
+            style={{ letterSpacing: "0.1em", color: "rgba(185,210,225,0.5)" }}
+          >
+            Tech stack
+          </div>
+          <div className="flex flex-wrap justify-center gap-2.5">
+            {techStack.map((name) => (
+              <span
+                key={name}
+                className="font-mono text-xs px-4 py-1.5 rounded-lg cursor-default transition-all duration-200"
+                style={{
+                  border: "1px solid rgba(255,255,255,0.08)",
+                  color: "rgba(185,210,225,0.7)",
+                  background: "rgba(255,255,255,0.03)",
+                }}
+                onMouseEnter={(e) => {
+                  const el = e.currentTarget;
+                  el.style.borderColor = "#1D9E75";
+                  el.style.color = "#1D9E75";
+                  el.style.background = "rgba(29,158,117,0.08)";
+                }}
+                onMouseLeave={(e) => {
+                  const el = e.currentTarget;
+                  el.style.borderColor = "rgba(255,255,255,0.08)";
+                  el.style.color = "rgba(185,210,225,0.7)";
+                  el.style.background = "rgba(255,255,255,0.03)";
+                }}
+              >
+                {name}
+              </span>
+            ))}
           </div>
         </div>
       </div>
