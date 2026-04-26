@@ -4,17 +4,18 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "sonner";
 import { useState } from "react";
-import { Mail, Loader2 } from "lucide-react";
+import { Loader2 } from "lucide-react";
 
 const contactSchema = z.object({
   name: z.string().min(1, "Name is required"),
   email: z.string().email("Valid email required"),
   industry: z.string().optional(),
   frustration: z.string().optional(),
-  referral: z.string().optional(),
 });
 
 type ContactForm = z.infer<typeof contactSchema>;
+
+const industries = ["healthcare", "construction", "professional", "trades", "retail", "other"];
 
 export default function ContactSection() {
   const { t } = useTranslation("home");
@@ -45,135 +46,192 @@ export default function ContactSection() {
         toast.error("Something went wrong. Please try email instead.");
       }
     } catch {
-      // Fallback - open mailto
       toast.error("Connection error. Please try email instead.");
     }
   };
 
-  const industries = ["healthcare", "construction", "professional", "trades", "retail", "other"];
+  const inputStyle: React.CSSProperties = {
+    width: "100%",
+    padding: "13px 16px",
+    border: "1px solid rgba(255,255,255,0.1)",
+    borderRadius: 10,
+    background: "rgba(255,255,255,0.06)",
+    color: "white",
+    fontFamily: "inherit",
+    fontSize: 15,
+    outline: "none",
+    transition: "border-color 0.2s",
+  };
 
   return (
-    <section id="contact" className="py-24 bg-muted/50">
-      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl font-bold text-foreground text-center mb-3">
-          {t("contact.section_title")}
-        </h2>
-        <p className="text-center text-muted-foreground mb-10">
-          {t("contact.subtitle")}
-        </p>
+    <section
+      id="contact"
+      className="py-28 relative overflow-hidden"
+      style={{ background: "#06111A" }}
+    >
+      {/* Radial glow */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: "radial-gradient(ellipse at 80% 60%, rgba(29,158,117,0.09) 0%, transparent 55%)",
+        }}
+      />
 
-        {submitted ? (
-          <div className="text-center py-12">
-            <div className="w-12 h-12 mx-auto rounded-full bg-teal-100 dark:bg-teal-900/30 flex items-center justify-center mb-4">
-              <Mail className="w-6 h-6 text-teal-600" />
-            </div>
-            <p className="text-lg font-medium text-foreground">
-              {t("contact.confirmation")}
-            </p>
-          </div>
-        ) : (
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
-            {/* Name */}
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">
-                {t("contact.name_label")} *
-              </label>
-              <input
-                id="name"
-                type="text"
-                {...register("name")}
-                className="w-full rounded-lg border border-border bg-card px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-teal-600/30 focus:border-teal-600 transition-colors"
-              />
-              {errors.name && (
-                <p className="mt-1 text-xs text-red-600">{errors.name.message}</p>
-              )}
-            </div>
-
-            {/* Email */}
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1.5">
-                {t("contact.email_label")} *
-              </label>
-              <input
-                id="email"
-                type="email"
-                {...register("email")}
-                className="w-full rounded-lg border border-border bg-card px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-teal-600/30 focus:border-teal-600 transition-colors"
-              />
-              {errors.email && (
-                <p className="mt-1 text-xs text-red-600">{errors.email.message}</p>
-              )}
-            </div>
-
-            {/* Industry */}
-            <div>
-              <label htmlFor="industry" className="block text-sm font-medium text-foreground mb-1.5">
-                {t("contact.industry_label")}
-              </label>
-              <select
-                id="industry"
-                {...register("industry")}
-                className="w-full rounded-lg border border-border bg-card px-4 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-teal-600/30 focus:border-teal-600 transition-colors"
-              >
-                <option value="">{t("contact.industry_options.placeholder")}</option>
-                {industries.map((key) => (
-                  <option key={key} value={key}>
-                    {t(`contact.industry_options.${key}`)}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            {/* Frustration */}
-            <div>
-              <label htmlFor="frustration" className="block text-sm font-medium text-foreground mb-1.5">
-                {t("contact.frustration_label")}
-              </label>
-              <textarea
-                id="frustration"
-                rows={4}
-                {...register("frustration")}
-                className="w-full rounded-lg border border-border bg-card px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-teal-600/30 focus:border-teal-600 transition-colors resize-none"
-              />
-            </div>
-
-            {/* Referral */}
-            <div>
-              <label htmlFor="referral" className="block text-sm font-medium text-foreground mb-1.5">
-                {t("contact.referral_label")}
-              </label>
-              <input
-                id="referral"
-                type="text"
-                {...register("referral")}
-                className="w-full rounded-lg border border-border bg-card px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-teal-600/30 focus:border-teal-600 transition-colors"
-              />
-            </div>
-
-            {/* Submit */}
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium text-white rounded-lg gradient-teal shadow-button hover:opacity-90 transition-opacity disabled:opacity-60"
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-2 gap-16 lg:gap-[88px] items-center">
+          {/* Left side: contact info */}
+          <div>
+            <div
+              className="font-mono text-[11px] font-medium uppercase mb-3.5"
+              style={{ letterSpacing: "0.12em", color: "#6DCBAB" }}
             >
-              {isSubmitting ? (
-                <Loader2 className="w-4 h-4 animate-spin" />
-              ) : null}
-              {t("contact.submit")}
-            </button>
-          </form>
-        )}
+              Get in touch
+            </div>
+            <h2
+              className="font-bold text-white mb-5"
+              style={{
+                fontSize: "clamp(36px, 4.5vw, 60px)",
+                letterSpacing: "-0.025em",
+                lineHeight: 1.05,
+              }}
+            >
+              {t("contact.section_title")}
+            </h2>
+            <p
+              className="text-lg mb-11"
+              style={{ color: "rgba(185,210,225,0.92)", lineHeight: 1.7 }}
+            >
+              {t("contact.subtitle")}
+            </p>
 
-        {/* Fallback email */}
-        <p className="mt-6 text-center text-xs text-muted-foreground">
-          {t("contact.fallback")}{" "}
-          <a
-            href="mailto:info@amphibianlabs.com.au"
-            className="text-teal-600 hover:underline"
-          >
-            info@amphibianlabs.com.au
-          </a>
-        </p>
+            <div className="flex flex-col gap-4">
+              {/* Email */}
+              <div className="flex items-center gap-3">
+                <span className="text-base">📧</span>
+                <a
+                  href="mailto:info@amphibianlabs.com.au"
+                  className="text-[15px] transition-colors duration-200"
+                  style={{ color: "rgba(185,210,225,0.88)", textDecoration: "none" }}
+                  onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "white")}
+                  onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "rgba(185,210,225,0.88)")}
+                >
+                  info@amphibianlabs.com.au
+                </a>
+              </div>
+              {/* Phone */}
+              <div className="flex items-center gap-3">
+                <span className="text-base">📞</span>
+                <a
+                  href="tel:0420729667"
+                  className="text-[15px] transition-colors duration-200"
+                  style={{ color: "rgba(185,210,225,0.88)", textDecoration: "none" }}
+                  onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "white")}
+                  onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "rgba(185,210,225,0.88)")}
+                >
+                  0420 729 667
+                </a>
+              </div>
+              {/* Location */}
+              <div className="flex items-center gap-3">
+                <span className="text-base">📍</span>
+                <span className="text-[15px]" style={{ color: "rgba(185,210,225,0.82)" }}>
+                  Gold Coast, QLD, Australia
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Right side: form */}
+          <div>
+            {submitted ? (
+              <div
+                className="rounded-[20px] text-center"
+                style={{
+                  background: "rgba(29,158,117,0.08)",
+                  border: "1px solid rgba(29,158,117,0.25)",
+                  padding: "52px 40px",
+                }}
+              >
+                <div className="text-[40px] mb-5" style={{ color: "#1D9E75" }}>✓</div>
+                <div className="text-xl font-semibold text-white mb-2.5">
+                  {t("contact.confirmation")}
+                </div>
+                <div style={{ color: "rgba(185,210,225,0.86)", fontSize: 15 }}>
+                  We'll be in touch within 24 hours.
+                </div>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-3.5">
+                {/* Name + Email row */}
+                <div className="grid grid-cols-2 gap-3">
+                  <div>
+                    <input
+                      placeholder={t("contact.name_label")}
+                      {...register("name")}
+                      style={inputStyle}
+                      onFocus={(e) => (e.target.style.borderColor = "rgba(29,158,117,0.45)")}
+                      onBlur={(e) => (e.target.style.borderColor = "rgba(255,255,255,0.1)")}
+                    />
+                    {errors.name && (
+                      <p className="mt-1 text-xs text-red-400">{errors.name.message}</p>
+                    )}
+                  </div>
+                  <div>
+                    <input
+                      placeholder={t("contact.email_label")}
+                      type="email"
+                      {...register("email")}
+                      style={inputStyle}
+                      onFocus={(e) => (e.target.style.borderColor = "rgba(29,158,117,0.45)")}
+                      onBlur={(e) => (e.target.style.borderColor = "rgba(255,255,255,0.1)")}
+                    />
+                    {errors.email && (
+                      <p className="mt-1 text-xs text-red-400">{errors.email.message}</p>
+                    )}
+                  </div>
+                </div>
+
+                {/* Industry */}
+                <select
+                  {...register("industry")}
+                  style={{
+                    ...inputStyle,
+                    color: "rgba(185,210,225,0.75)",
+                  }}
+                >
+                  <option value="" disabled>
+                    {t("contact.industry_options.placeholder")}
+                  </option>
+                  {industries.map((key) => (
+                    <option key={key} value={key} style={{ color: "black", background: "white" }}>
+                      {t(`contact.industry_options.${key}`)}
+                    </option>
+                  ))}
+                </select>
+
+                {/* Message */}
+                <textarea
+                  placeholder={t("contact.frustration_label")}
+                  rows={4}
+                  {...register("frustration")}
+                  style={{ ...inputStyle, resize: "vertical" }}
+                  onFocus={(e) => (e.target.style.borderColor = "rgba(29,158,117,0.45)")}
+                  onBlur={(e) => (e.target.style.borderColor = "rgba(255,255,255,0.1)")}
+                />
+
+                {/* Submit */}
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 text-[15px] font-medium text-white rounded-[10px] gradient-teal shadow-button hover:opacity-90 transition-opacity disabled:opacity-60"
+                >
+                  {isSubmitting && <Loader2 className="w-4 h-4 animate-spin" />}
+                  {t("contact.submit")}
+                </button>
+              </form>
+            )}
+          </div>
+        </div>
       </div>
     </section>
   );
