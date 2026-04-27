@@ -76,13 +76,20 @@
     "technologies": [
       "Python",
       "FastAPI",
-      "Tesseract OCR",
-      "Azure Document Intelligence",
-      "spaCy / Hugging Face",
-      "Docker",
-      "PostgreSQL",
+      "Uvicorn",
+      "Pydantic",
+      "PyMuPDF / fitz",
+      "pdf2image / Poppler",
+      "Tesseract OCR / pytesseract",
+      "OpenCV",
+      "Pillow",
+      "NumPy",
+      "langdetect",
       "FHIR R4",
-      "REST APIs"
+      "pytest / httpx",
+      "Docker / Docker Compose",
+      "Nginx",
+      "YAML config"
     ],
     "scenario": {
       "title": "Medical practice - pathology report processing",
