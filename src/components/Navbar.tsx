@@ -37,17 +37,29 @@ export default function Navbar() {
     setOpen(false);
   }, [location.pathname]);
 
+  // Scroll to hash after navigating to home page (handles cross-page hash links)
+  useEffect(() => {
+    if (location.hash && location.pathname === "/") {
+      // Small delay to let the page render before scrolling
+      const timer = setTimeout(() => {
+        const el = document.querySelector(location.hash);
+        el?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [location.pathname, location.hash]);
+
   // Handle hash scrolling when navigating to home page sections
   const handleNavClick = (to: string) => {
     if (to.startsWith("/#")) {
-      const hash = to.slice(1); // e.g. "#about"
+      const hash = to.slice(1); // e.g. "#contact"
       if (location.pathname === "/") {
         // Already on home, just scroll
         const el = document.querySelector(hash);
         el?.scrollIntoView({ behavior: "smooth" });
       }
-      // If not on home, the Link will navigate to / and the hash
-      // will be handled by the browser
+      // If not on home, the Link navigates to /#hash and the
+      // useEffect above handles scrolling after render
     }
   };
 
