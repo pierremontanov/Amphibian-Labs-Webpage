@@ -1,12 +1,12 @@
 {
   "brand": "Amphibian Labs",
-  "services": "Services",
-  "about": "About",
+  "services": "サービス",
+  "about": "会社概要",
   "repositories": "リポジトリ",
   "donate": "寄付センター",
   "blog": "ブログ",
   "contact": "お問い合わせ",
-  "book_session": "Book a discovery session",
-  "language": "Language",
-  "theme_toggle": "Toggle theme"
+  "book_session": "ディスカバリーセッションを予約",
+  "language": "言語",
+  "theme_toggle": "テーマ切替"
 }

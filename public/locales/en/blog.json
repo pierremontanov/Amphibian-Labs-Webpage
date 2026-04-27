@@ -31,7 +31,7 @@
       "category": "philosophy",
       "date": "2026-04-15",
       "reading_time": 5,
-      "author": "Pierre Montanov",
+      "author": "Amphibian Labs",
       "tags": ["philosophy", "integration", "smb"],
       "body": [
         "Every vendor pitch starts the same way: 'Let us show you how our platform replaces everything you currently use.' It sounds clean. It sounds modern. It almost never works as neatly as promised.",
@@ -63,7 +63,7 @@
       "category": "engineering",
       "date": "2026-04-08",
       "reading_time": 8,
-      "author": "Pierre Montanov",
+      "author": "Amphibian Labs",
       "tags": ["engineering", "ai", "healthcare", "open-source", "python"],
       "body": [
         "DocIQ started with a practical frustration. A healthcare workflow depended on PDFs: pathology reports, clinical notes, referral letters, and other documents that contained important structured information trapped inside inconsistent layouts.",
@@ -95,7 +95,7 @@
       "category": "guide",
       "date": "2026-03-28",
       "reading_time": 6,
-      "author": "Pierre Montanov",
+      "author": "Amphibian Labs",
       "tags": ["guide", "ai", "smb", "readiness"],
       "body": [
         "Every business conference, LinkedIn post, and software vendor seems to say the same thing: you need AI. Maybe you do. Maybe you don't.",

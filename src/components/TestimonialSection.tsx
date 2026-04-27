@@ -2,7 +2,7 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Pierre helped us automate our quoting process — what used to take two days now takes 20 minutes.",
+    quote: "Amphibian Labs helped us automate our quoting process - what used to take two days now takes 20 minutes.",
     name: "Operations Manager",
     business: "Trades & Services",
     stars: 5,

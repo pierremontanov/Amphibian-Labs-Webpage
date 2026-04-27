@@ -1,12 +1,12 @@
 {
   "brand": "Amphibian Labs",
-  "services": "Services",
-  "about": "About",
+  "services": "服务",
+  "about": "关于我们",
   "repositories": "代码仓库",
   "donate": "捐赠中心",
   "blog": "博客",
   "contact": "联系我们",
-  "book_session": "Book a discovery session",
-  "language": "Language",
-  "theme_toggle": "Toggle theme"
+  "book_session": "预约探索会议",
+  "language": "语言",
+  "theme_toggle": "切换主题"
 }

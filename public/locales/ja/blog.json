@@ -31,7 +31,7 @@
       "category": "philosophy",
       "date": "2026-04-15",
       "reading_time": 5,
-      "author": "Pierre Montanov",
+      "author": "Amphibian Labs",
       "tags": ["philosophy", "integration", "smb"],
       "body": [
         "ベンダーのプレゼンはいつも同じ言葉から始まります。「現在お使いのすべてを置き換えるプラットフォームをご紹介します。」すっきりして見えます。モダンに聞こえます。しかし、約束通りにうまくいくことはほとんどありません。",
@@ -63,7 +63,7 @@
       "category": "engineering",
       "date": "2026-04-08",
       "reading_time": 8,
-      "author": "Pierre Montanov",
+      "author": "Amphibian Labs",
       "tags": ["engineering", "ai", "healthcare", "open-source", "python"],
       "body": [
         "DocIQ は実践的な課題意識から生まれました。ある医療ワークフローが PDF に依存していました。病理レポート、臨床ノート、紹介状など、不規則なレイアウトの中に重要な構造化情報が埋め込まれた文書です。",
@@ -95,7 +95,7 @@
       "category": "guide",
       "date": "2026-03-28",
       "reading_time": 6,
-      "author": "Pierre Montanov",
+      "author": "Amphibian Labs",
       "tags": ["guide", "ai", "smb", "readiness"],
       "body": [
         "ビジネスカンファレンス、LinkedIn の投稿、ソフトウェアベンダーはどれも同じことを言っているようです。AI が必要だと。おそらく必要でしょう。でも、そうではないかもしれません。",

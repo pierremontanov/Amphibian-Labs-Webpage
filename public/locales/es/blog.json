@@ -31,7 +31,7 @@
       "category": "philosophy",
       "date": "2026-04-15",
       "reading_time": 5,
-      "author": "Pierre Montanov",
+      "author": "Amphibian Labs",
       "tags": ["philosophy", "integration", "smb"],
       "body": [
         "Toda presentacion de venta de un proveedor empieza igual: 'Dejenos mostrarle como nuestra plataforma reemplaza todo lo que usa actualmente.' Suena limpio. Suena moderno. Y casi nunca funciona como prometen.",
@@ -57,7 +57,7 @@
       "category": "engineering",
       "date": "2026-04-08",
       "reading_time": 8,
-      "author": "Pierre Montanov",
+      "author": "Amphibian Labs",
       "tags": ["engineering", "ai", "healthcare", "open-source", "python"],
       "body": [
         "DocIQ nacio de una frustracion. Estabamos trabajando con un cliente de salud que recibia docenas de reportes de patologia cada dia - PDFs con resultados de laboratorio, rangos de referencia y notas clinicas. Su personal administrativo pasaba 3 horas cada manana transcribiendo valores clave en su historia clinica electronica. Manualmente. Todos los dias.",
@@ -88,7 +88,7 @@
       "category": "guide",
       "date": "2026-03-28",
       "reading_time": 6,
-      "author": "Pierre Montanov",
+      "author": "Amphibian Labs",
       "tags": ["guide", "ai", "smb", "readiness"],
       "body": [
         "Cada conferencia de negocios, cada post en LinkedIn, cada presentacion de ventas te dice lo mismo: necesitas IA. Pero nadie te dice si realmente estas listo para ella. Y si no estas listo, la IA no solo no va a ayudar - va a desperdiciar tu tiempo y dinero.",

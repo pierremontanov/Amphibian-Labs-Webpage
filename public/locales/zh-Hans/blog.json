@@ -31,7 +31,7 @@
       "category": "philosophy",
       "date": "2026-04-15",
       "reading_time": 5,
-      "author": "Pierre Montanov",
+      "author": "Amphibian Labs",
       "tags": ["philosophy", "integration", "smb"],
       "body": [
         "每一次供应商演示都以同样的方式开场：'让我们向您展示，我们的平台如何替代您目前使用的一切。'听起来干净利落，听起来现代时髦，却几乎从未如承诺般顺利落地。",
@@ -63,7 +63,7 @@
       "category": "engineering",
       "date": "2026-04-08",
       "reading_time": 8,
-      "author": "Pierre Montanov",
+      "author": "Amphibian Labs",
       "tags": ["engineering", "ai", "healthcare", "open-source", "python"],
       "body": [
         "DocIQ 源于一个切实的痛点。某个医疗工作流程依赖 PDF 文件运转：病理报告、临床记录、转诊信及其他文档，其中包含困于不规则排版中的重要结构化信息。",
@@ -95,7 +95,7 @@
       "category": "guide",
       "date": "2026-03-28",
       "reading_time": 6,
-      "author": "Pierre Montanov",
+      "author": "Amphibian Labs",
       "tags": ["guide", "ai", "smb", "readiness"],
       "body": [
         "每一场行业会议、每一篇 LinkedIn 文章、每一家软件供应商似乎都在说同一件事：您需要 AI。也许您确实需要，也许并不需要。",

@@ -147,16 +147,16 @@
   },
   "about": {
     "section_title": "Nosotros",
-    "bio_p1": "Amphibian Labs fue fundada por Pierre Montanov - un consultor tecnico e ingeniero con mas de 5 anos en la industria, una Maestria en TI y doble experiencia en analisis de negocio e ingenieria de software.",
-    "bio_p2": "Pierre vio de primera mano como las pequenas y medianas empresas quedan desatendidas por la industria tecnologica. Las herramientas empresariales existen, pero estan disenadas y presupuestadas para grandes empresas. Las pymes merecen la misma calidad de tecnologia - construida a su escala, su presupuesto y sus sistemas existentes.",
-    "bio_p3": "Amphibian Labs cierra esa brecha. No reemplazamos lo que funciona. Lo mejoramos con backends de IA, automatizacion de flujos de trabajo e integracion de sistemas. Y cuando terminamos, tu eres dueno de todo.",
+    "bio_p1": "Amphibian Labs es una consultora tecnologica australiana que ayuda a pequenas y medianas empresas a automatizar trabajo repetitivo, conectar sistemas desconectados y aplicar IA donde genera valor operativo medible.",
+    "bio_p2": "La empresa se construyo alrededor de un patron que se repite en todas las industrias: las empresas tienen sistemas funcionales y equipos capaces, pero demasiado valor queda atrapado entre herramientas. Pasos manuales, plataformas desconectadas e informacion que nunca llega al lugar correcto en el momento adecuado.",
+    "bio_p3": "Amphibian Labs toma un enfoque diferente. No comenzamos reemplazando tu stack. Comenzamos entendiendolo. Luego anadimos la capa que falta: automatizacion, integracion, extraccion con IA, datos estructurados, dashboards o asesoria. El objetivo es simple: mantener lo que funciona, mejorar lo que te frena y dejarte un sistema que es tuyo.",
     "philosophy": "Amphibian Labs es un laboratorio en el sentido mas autentico - creamos, experimentamos, publicamos y ayudamos.",
     "credentials": {
-      "name": "Pierre Montanov",
-      "title": "Fundador y Consultor Tecnico",
+      "name": "Amphibian Labs",
+      "title": "Consultora Tecnologica",
       "location": "Australia",
-      "degree": "Maestria en Tecnologias de la Informacion",
-      "experience": "Mas de 5 anos de experiencia en la industria"
+      "focus": "IA, Automatizacion e Integracion de Sistemas",
+      "experience": "Ayudando a pymes a trabajar mejor"
     }
   },
   "engagement": {

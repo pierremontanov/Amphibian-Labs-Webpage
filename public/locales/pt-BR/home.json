@@ -147,16 +147,16 @@
   },
   "about": {
     "section_title": "Sobre",
-    "bio_p1": "A Amphibian Labs foi fundada por Pierre Montanov - um consultor tecnico e engenheiro com mais de 5 anos de experiencia no setor, mestrado em TI e dupla especializacao em analise de negocios e engenharia de software.",
-    "bio_p2": "Pierre viu de perto como pequenas e medias empresas sao mal atendidas pelo setor de tecnologia. Ferramentas corporativas existem, mas sao precificadas e dimensionadas para grandes empresas. PMEs merecem a mesma qualidade de tecnologia - construida para sua escala, seu orcamento e seus sistemas existentes.",
-    "bio_p3": "A Amphibian Labs preenche essa lacuna. Nao substituimos o que funciona. Aprimoramos com backends de IA, automacao de workflows e integracao de sistemas. E quando terminamos, voce e dono de tudo.",
+    "bio_p1": "A Amphibian Labs e uma consultoria de tecnologia australiana que ajuda pequenas e medias empresas a automatizar trabalho repetitivo, conectar sistemas desconectados e aplicar IA onde gera valor operacional mensuravel.",
+    "bio_p2": "A empresa foi construida em torno de um padrao que se repete em todos os setores: empresas tem sistemas funcionais e equipes capazes, mas muito valor fica preso entre ferramentas. Etapas manuais, plataformas desconectadas e informacao que nunca chega ao lugar certo na hora certa.",
+    "bio_p3": "A Amphibian Labs adota uma abordagem diferente. Nao comecamos substituindo sua stack. Comecamos entendendo-a. Depois adicionamos a camada que falta: automacao, integracao, extracao com IA, dados estruturados, dashboards ou consultoria. O objetivo e simples: manter o que funciona, melhorar o que atrasa e deixar voce com um sistema que e seu.",
     "philosophy": "A Amphibian Labs e um laboratorio no sentido verdadeiro - criamos, experimentamos, publicamos e ajudamos.",
     "credentials": {
-      "name": "Pierre Montanov",
-      "title": "Fundador e Consultor Tecnico",
+      "name": "Amphibian Labs",
+      "title": "Consultoria de Tecnologia",
       "location": "Australia",
-      "degree": "Mestrado em Tecnologia da Informacao",
-      "experience": "Mais de 5 anos de experiencia no setor"
+      "focus": "IA, Automacao e Integracao de Sistemas",
+      "experience": "Ajudando PMEs a trabalhar melhor"
     }
   },
   "engagement": {
