@@ -9,9 +9,11 @@ import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const navLinks = [
-  { key: "services", to: "/services" },
   { key: "about", to: "/about" },
+  { key: "services", to: "/services" },
   { key: "blog", to: "/blog" },
+  { key: "repositories", to: "/repositories" },
+  { key: "donate", to: "/donate" },
   { key: "contact", to: "/#contact" },
 ];
 
@@ -77,7 +79,7 @@ export default function Navbar() {
                   key={link.key}
                   to={link.to}
                   onClick={() => handleNavClick(link.to)}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  className="text-sm text-muted-foreground hover:text-teal-400 transition-colors"
                 >
                   {t(link.key)}
                 </Link>
@@ -89,7 +91,7 @@ export default function Navbar() {
                     `text-sm transition-colors ${
                       isActive || isActiveRoute(link.to)
                         ? "text-teal-600 font-medium"
-                        : "text-muted-foreground hover:text-foreground"
+                        : "text-muted-foreground hover:text-teal-400"
                     }`
                   }
                 >

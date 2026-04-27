@@ -34,7 +34,7 @@ export default function LanguageSwitcher() {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1.5 px-2 py-1.5 rounded-md text-slate-500 hover:text-foreground transition-colors"
+        className="flex items-center gap-1.5 px-2 py-1.5 rounded-md text-slate-500 hover:text-teal-400 transition-colors"
         aria-label="Change language"
       >
         <Globe className="w-4 h-4" />

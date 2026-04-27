@@ -80,18 +80,18 @@ function RepoCard({ repo, t }: { repo: GitHubRepo; t: (key: string) => string })
       href={repo.html_url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group rounded-lg border border-border bg-card p-5 hover:shadow-card-hover hover:border-teal-400 dark:hover:border-teal-600 transition-all"
+      className="group rounded-lg border border-border dark:border-slate-700 bg-card dark:bg-slate-800/50 p-5 hover:shadow-card-hover hover:border-teal-400 dark:hover:border-teal-600 transition-all"
     >
       <div className="flex items-start justify-between gap-2 mb-2">
-        <h3 className="text-sm font-semibold text-foreground group-hover:text-teal-600 transition-colors truncate">
+        <h3 className="text-sm font-semibold text-foreground dark:text-white group-hover:text-teal-600 transition-colors truncate">
           {repo.name}
         </h3>
         <ExternalLink className="w-3.5 h-3.5 text-muted-foreground/40 group-hover:text-teal-600 transition-colors flex-shrink-0 mt-0.5" />
       </div>
-      <p className="text-sm text-muted-foreground leading-relaxed mb-4 line-clamp-2">
+      <p className="text-sm text-muted-foreground dark:text-slate-400 leading-relaxed mb-4 line-clamp-2">
         {repo.description || t("all_repos.no_description")}
       </p>
-      <div className="flex items-center gap-3 text-xs text-muted-foreground">
+      <div className="flex items-center gap-3 text-xs text-muted-foreground dark:text-slate-500">
         {repo.language && (
           <span className="flex items-center gap-1.5">
             <span className={`w-2.5 h-2.5 rounded-full ${langColors[repo.language] || "bg-slate-400"}`} />
@@ -181,28 +181,28 @@ export default function RepositoriesPage() {
 
           {/* Hero */}
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+            <h1 className="text-3xl sm:text-4xl font-bold text-foreground dark:text-white mb-4">
               {t("hero.title")}
             </h1>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground dark:text-slate-300 leading-relaxed">
               {t("hero.subtitle")}
             </p>
           </div>
 
           {/* DocIQ Spotlight */}
-          <div className="mb-16 rounded-xl border border-teal-200 dark:border-teal-700/30 bg-gradient-to-br from-teal-50 to-white dark:from-teal-900/20 dark:to-card p-6 sm:p-8">
+          <div className="mb-16 rounded-xl border border-teal-200 dark:border-teal-700/40 bg-gradient-to-br from-teal-50 to-white dark:from-teal-950/40 dark:to-slate-900 p-6 sm:p-8">
             <div className="flex items-center gap-2 mb-4">
               <span className="px-2.5 py-0.5 text-xs font-medium rounded-full bg-teal-600 text-white">
                 {t("spotlight.label")}
               </span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">
+            <h2 className="text-2xl sm:text-3xl font-bold text-foreground dark:text-white mb-2">
               {t("spotlight.title")}
             </h2>
-            <p className="text-muted-foreground mb-1">
+            <p className="text-muted-foreground dark:text-slate-300 mb-1">
               {t("spotlight.tagline")}
             </p>
-            <p className="text-sm text-muted-foreground leading-relaxed mb-6 max-w-2xl">
+            <p className="text-sm text-muted-foreground dark:text-slate-400 leading-relaxed mb-6 max-w-2xl">
               {t("spotlight.description")}
             </p>
 
@@ -250,7 +250,7 @@ export default function RepositoriesPage() {
           {/* Pinned Repos */}
           {pinned.length > 0 && (
             <div className="mb-16">
-              <h2 className="text-xl font-semibold text-foreground mb-6">
+              <h2 className="text-xl font-semibold text-foreground dark:text-white mb-6">
                 {t("pinned.title")}
               </h2>
               <div className="grid gap-4 sm:grid-cols-2">
@@ -264,7 +264,7 @@ export default function RepositoriesPage() {
           {/* All Repos */}
           <div>
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
-              <h2 className="text-xl font-semibold text-foreground">
+              <h2 className="text-xl font-semibold text-foreground dark:text-white">
                 {t("all_repos.title")}
               </h2>
               <a
@@ -287,7 +287,7 @@ export default function RepositoriesPage() {
                   className={`px-3 py-1.5 text-sm rounded-full border transition-colors ${
                     filter === key
                       ? "bg-teal-600 text-white border-teal-600"
-                      : "bg-card text-muted-foreground border-border hover:border-teal-400 hover:text-foreground"
+                      : "bg-card dark:bg-slate-800/50 text-muted-foreground dark:text-slate-400 border-border dark:border-slate-700 hover:border-teal-400 hover:text-foreground dark:hover:text-white"
                   }`}
                 >
                   {t(`filters.${key}`)}
@@ -306,11 +306,11 @@ export default function RepositoriesPage() {
 
             {/* Error state */}
             {isError && (
-              <div className="rounded-lg border border-border bg-card p-8 text-center">
-                <h3 className="text-sm font-semibold text-foreground mb-2">
+              <div className="rounded-lg border border-border dark:border-slate-700 bg-card dark:bg-slate-800/50 p-8 text-center">
+                <h3 className="text-sm font-semibold text-foreground dark:text-white mb-2">
                   {t("error.title")}
                 </h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <p className="text-sm text-muted-foreground dark:text-slate-400 mb-4">
                   {t("error.body")}
                 </p>
                 <a

@@ -2,8 +2,10 @@
   "brand": "Amphibian Labs",
   "services": "Services",
   "about": "About",
-  "blog": "Blog",
-  "contact": "Contact",
+  "repositories": "リポジトリ",
+  "donate": "寄付センター",
+  "blog": "ブログ",
+  "contact": "お問い合わせ",
   "book_session": "Book a discovery session",
   "language": "Language",
   "theme_toggle": "Toggle theme"

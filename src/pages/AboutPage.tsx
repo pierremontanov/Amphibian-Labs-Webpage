@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import {
-  MapPin, GraduationCap, Briefcase, ExternalLink,
+  MapPin, Briefcase, ExternalLink,
   ArrowRight, Code, Users, Heart, Cpu,
 } from "lucide-react";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -43,24 +43,15 @@ export default function AboutPage() {
     <>
       <Helmet>
         <title>About Amphibian Labs | Australian AI, Automation & Integration Consultancy</title>
-        <meta name="description" content="Amphibian Labs is an Australian AI, automation, and system integration consultancy founded by Pierre Montanov. We help SMBs enhance existing systems with practical AI backends, workflow automation, and API integrations." />
+        <meta name="description" content="Amphibian Labs is an Australian AI, automation, and system integration consultancy. We help SMBs enhance existing systems with practical AI backends, workflow automation, and API integrations." />
         <meta property="og:title" content="About Amphibian Labs | Australian AI, Automation & Integration Consultancy" />
-        <meta property="og:description" content="Australian AI, automation, and system integration consultancy founded by Pierre Montanov. Practical AI backends, workflow automation, and API integrations for SMBs." />
+        <meta property="og:description" content="Australian AI, automation, and system integration consultancy. Practical AI backends, workflow automation, and API integrations for SMBs." />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "Amphibian Labs",
             url: "https://amphibianlabs.com.au",
-            founder: {
-              "@type": "Person",
-              name: "Pierre Montanov",
-              jobTitle: "Founder & Technical Consultant",
-              alumniOf: {
-                "@type": "EducationalOrganization",
-                name: "University (Master's in Information Technology)",
-              },
-            },
             address: {
               "@type": "PostalAddress",
               addressLocality: "Gold Coast",
@@ -105,7 +96,7 @@ export default function AboutPage() {
             </blockquote>
           </section>
 
-          {/* Credentials */}
+          {/* Company card */}
           <section className="mb-16">
             <div className="rounded-xl border border-border bg-card p-6 shadow-card max-w-sm">
               <h2 className="font-semibold text-foreground mb-4">
@@ -120,8 +111,8 @@ export default function AboutPage() {
                   {t("about.credentials.location")}
                 </div>
                 <div className="flex items-center gap-2">
-                  <GraduationCap className="w-4 h-4 text-muted-foreground/60" />
-                  {t("about.credentials.degree")}
+                  <Cpu className="w-4 h-4 text-muted-foreground/60" />
+                  {t("about.credentials.focus")}
                 </div>
                 <div className="flex items-center gap-2">
                   <Briefcase className="w-4 h-4 text-muted-foreground/60" />
@@ -130,15 +121,7 @@ export default function AboutPage() {
               </div>
               <div className="mt-5 pt-4 border-t border-border flex gap-4">
                 <a
-                  href="https://linkedin.com/in/pierremontanov"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  LinkedIn <ExternalLink className="w-3 h-3" />
-                </a>
-                <a
-                  href="https://github.com/pierremontanov"
+                  href="https://github.com/amphibian-labs"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors"

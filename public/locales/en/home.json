@@ -1,7 +1,7 @@
 {
   "hero": {
-    "headline": "Your business already runs. We make it run smarter.",
-    "subheadline": "Amphibian Labs builds practical AI backends, workflow automations, and system integrations for Australian small and medium-sized businesses. We connect the tools you already use, remove manual work, and add intelligent layers without forcing a full platform migration.",
+    "headline": "Your business runs. We make it smarter.",
+    "subheadline": "AI backends, automations, and integrations for Australian businesses that want less manual work and better systems.",
     "cta_primary": "Book a discovery session",
     "cta_secondary": "Explore our open-source work",
     "trust_strip": "Built with"
@@ -148,15 +148,15 @@
   "about": {
     "section_title": "About",
     "bio_p1": "Amphibian Labs is an Australian technology consultancy that helps small and medium-sized businesses automate repetitive work, connect disconnected systems, and apply AI where it creates measurable operational value.",
-    "bio_p2": "Founded by Pierre Montanov, a technical consultant and engineer with experience across business analysis, software engineering, automation, and AI-enabled backend development. Pierre created Amphibian Labs after seeing the same pattern across industries: businesses had working systems and capable teams, but too much value was trapped between tools.",
-    "bio_p3": "Amphibian Labs takes a different approach. We don't start by replacing your stack. We start by understanding it. Then we add the missing layer: automation, integration, AI extraction, structured data, dashboards, or advisory. The goal is simple: keep what works, improve what slows you down, and leave you with a system you own.",
+    "bio_p2": "The company was built around a pattern that repeats across industries: businesses have working systems and capable teams, but too much value stays trapped between tools. Manual steps, disconnected platforms, and information that never reaches the right place at the right time.",
+    "bio_p3": "Amphibian Labs takes a different approach. We do not start by replacing your stack. We start by understanding it. Then we add the missing layer: automation, integration, AI extraction, structured data, dashboards, or advisory. The goal is simple: keep what works, improve what slows you down, and leave you with a system you own.",
     "philosophy": "Amphibian Labs is a lab in the true sense - we create, experiment, publish, and help.",
     "credentials": {
-      "name": "Pierre Montanov",
-      "title": "Founder & Technical Consultant",
+      "name": "Amphibian Labs",
+      "title": "Technology Consultancy",
       "location": "Australia",
-      "degree": "Master's in Information Technology",
-      "experience": "5+ years industry experience"
+      "focus": "AI, Automation & System Integration",
+      "experience": "Helping SMBs work smarter"
     }
   },
   "engagement": {

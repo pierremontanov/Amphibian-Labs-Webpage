@@ -48,7 +48,7 @@ export default function HeroSection() {
           <h1
             className="font-bold text-white leading-none tracking-tight animate-fade-up"
             style={{
-              fontSize: "clamp(52px, 7vw, 100px)",
+              fontSize: "clamp(44px, 6vw, 80px)",
               letterSpacing: "-0.03em",
               lineHeight: 1.0,
             }}

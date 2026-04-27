@@ -34,7 +34,7 @@ export default function AboutSection() {
             className="font-mono text-[11px] font-medium uppercase mb-3.5"
             style={{ letterSpacing: "0.12em", color: "#6DCBAB" }}
           >
-            The team
+            The company
           </div>
           <h2
             className="font-bold text-white"
@@ -97,14 +97,14 @@ export default function AboutSection() {
               boxShadow: "0 1px 3px rgba(0,0,0,0.1), 0 4px 18px -2px rgba(0,0,0,0.15)",
             }}
           >
-            {/* Avatar circle */}
+            {/* Company icon */}
             <div
               className="w-[60px] h-[60px] rounded-full flex items-center justify-center text-white text-[22px] font-bold mb-4.5"
               style={{
                 background: "linear-gradient(135deg, #0F6E56, #1D9E75)",
               }}
             >
-              P
+              AL
             </div>
 
             <div
@@ -134,16 +134,15 @@ export default function AboutSection() {
                 </div>
                 <span>{t("about.credentials.location")}</span>
               </div>
-              {/* Degree */}
+              {/* Focus */}
               <div className="flex items-center gap-3 text-sm" style={{ color: "rgba(185,210,225,0.82)" }}>
                 <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style={{ background: "rgba(2,132,199,0.12)", border: "1px solid rgba(2,132,199,0.25)" }}>
                   <svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="#0284C7" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M10 2L2 6l8 4 8-4-8-4z" />
-                    <path d="M4 8v5c0 2 3 3.5 6 3.5s6-1.5 6-3.5V8" />
-                    <path d="M17 6v7" />
+                    <circle cx="10" cy="10" r="7" />
+                    <path d="M10 7v3l2 2" />
                   </svg>
                 </div>
-                <span>{t("about.credentials.degree")}</span>
+                <span>{t("about.credentials.focus")}</span>
               </div>
               {/* Experience */}
               <div className="flex items-center gap-3 text-sm" style={{ color: "rgba(185,210,225,0.82)" }}>
@@ -164,8 +163,7 @@ export default function AboutSection() {
               style={{ borderTop: "1px solid rgba(255,255,255,0.07)" }}
             >
               {[
-                ["LinkedIn", "https://linkedin.com/in/pierremontanov"],
-                ["GitHub", "https://github.com/pierremontanov"],
+                ["GitHub", "https://github.com/amphibian-labs"],
               ].map(([label, href]) => (
                 <a
                   key={label}
