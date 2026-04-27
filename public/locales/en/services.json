@@ -1,63 +1,63 @@
 {
   "meta": {
-    "title": "Services - Amphibian Labs",
-    "description": "AI backends, system integration, workflow automation, and honest consultancy for small and mid-sized businesses. No vendor lock-in."
+    "title": "AI Automation, System Integration & Workflow Automation Services | Amphibian Labs",
+    "description": "Explore Amphibian Labs services: AI-powered data extraction, workflow automation, Microsoft 365 and SharePoint integration, API middleware, client portals, CRM cleanup, and vendor advisory for Australian SMBs."
   },
   "hero": {
     "title": "What can we build together?",
-    "subtitle": "We enhance what you already have with AI, automation, and integration. Every engagement starts with listening and ends with you owning everything."
+    "subtitle": "We enhance your existing business systems with AI, automation, and integration. Every engagement starts with understanding the workflow and ends with clear ownership."
   },
   "tiers": {
     "understand": {
       "title": "Understand",
       "subtitle": "Consultancy and business analysis",
-      "description": "Before we build anything, we listen. Discovery sessions, stakeholder workshops, and honest recommendations - even if that means suggesting a competitor."
+      "description": "Before building anything, we map the workflow, systems, constraints, risks, and business goal. This avoids expensive technical theatre and creates a clean path from problem to solution."
     },
     "build": {
       "title": "Build",
       "subtitle": "Engineering and delivery",
-      "description": "AI-powered backends, system integrations, and workflow automations - built iteratively, delivered with documentation, and fully owned by you."
+      "description": "We build the agreed system: automation, integration, backend service, portal, data pipeline, or AI extraction engine. Delivery is iterative, testable, and documented."
     },
     "share": {
       "title": "Share",
       "subtitle": "Open source and community",
-      "description": "Production-grade tools under MIT license. Templates, blueprints, and reference architectures that any business can use."
+      "description": "We publish tools, templates, blueprints, and technical notes where they can help others. Our open-source work reflects the same engineering principle we bring to clients: useful beats shiny."
     }
   },
   "services": {
     "automation": {
       "title": "Workflow automation",
-      "excerpt": "Eliminate manual steps across platforms with Power Automate, Make, and n8n.",
+      "excerpt": "Eliminate repetitive tasks across Microsoft 365, SharePoint, Teams, CRMs, spreadsheets, email, and third-party tools using Power Automate, Make, n8n, and custom scripts.",
       "icon": "zap",
       "tier": "build"
     },
     "integration": {
       "title": "System integration",
-      "excerpt": "Connect Microsoft 365, SharePoint, CRMs, and third-party APIs without migrating anything.",
+      "excerpt": "Connect tools that were never designed to work together using API integrations, middleware, data sync, and event-driven workflows.",
       "icon": "network",
       "tier": "build"
     },
     "ai-extraction": {
       "title": "AI-powered data extraction",
-      "excerpt": "Document intelligence, unstructured data extraction, and NLP pipelines for real-world documents.",
+      "excerpt": "Turn PDFs, scanned documents, invoices, reports, forms, and clinical documents into structured data using OCR, NLP, validation rules, and confidence scoring.",
       "icon": "brain",
       "tier": "build"
     },
     "web-solutions": {
       "title": "Web solutions and portals",
-      "excerpt": "Client-facing portals, dashboards, and web applications that connect to your existing backend systems.",
+      "excerpt": "Create client portals, internal dashboards, status trackers, and operational interfaces connected to your existing backend systems.",
       "icon": "globe",
       "tier": "build"
     },
     "vendor-selection": {
       "title": "Vendor selection and advisory",
-      "excerpt": "Unbiased technology recommendations. We'll tell you when an off-the-shelf product beats a custom build.",
+      "excerpt": "Compare SaaS products, open-source tools, automation platforms, and custom builds based on real requirements, total cost of ownership, and lock-in risk.",
       "icon": "search",
       "tier": "understand"
     },
     "crm-cleanup": {
       "title": "CRM cleanup and optimisation",
-      "excerpt": "Audit, deduplicate, restructure, and automate your CRM so it actually works for your team.",
+      "excerpt": "Audit, deduplicate, restructure, and automate CRM data so your team can trust reports, campaigns, follow-ups, and customer records again.",
       "icon": "database",
       "tier": "understand"
     }
@@ -67,33 +67,33 @@
     "items": [
       {
         "question": "Do I need to replace my existing systems?",
-        "answer": "No. Our entire approach is built around enhancing what you already have. We add intelligent layers on top of your current tools - no migrations, no disruption."
+        "answer": "No. Amphibian Labs is built around enhancement rather than replacement. If your existing tools still serve the business, we connect them, automate around them, or add an intelligent backend layer."
       },
       {
         "question": "What industries do you work with?",
-        "answer": "We work across healthcare, construction, professional services, trades, and retail. Our tools are industry-agnostic - what matters is the workflow, not the sector."
+        "answer": "We work with Australian small and medium-sized businesses across healthcare, construction, trades, professional services, retail, and operations-heavy teams. The key factor is the workflow, not the industry label."
       },
       {
         "question": "How long does a typical project take?",
-        "answer": "Discovery sessions take 2 hours. A scoped automation or integration project typically runs 2 to 6 weeks. Larger AI backend projects run 6 to 12 weeks with iterative delivery throughout."
+        "answer": "Discovery sessions take 2 hours. A scoped automation or integration project usually takes 2–6 weeks. Larger AI backend or portal projects may take 6–12 weeks depending on data quality, integrations, testing requirements, and deployment complexity."
       },
       {
         "question": "Will I own the code you build?",
-        "answer": "Yes. Everything we build is yours. Full source code, documentation, and BAU handover. No vendor lock-in, no recurring license fees for code we wrote."
+        "answer": "Yes. You receive documentation, handover, and source code where applicable. We avoid vendor lock-in and do not charge recurring licence fees for custom code we wrote."
       },
       {
         "question": "What if I just need advice, not a build?",
-        "answer": "That's exactly what our Discovery tier is for. We run stakeholder workshops, map your current state, and deliver a written report with recommendations - which may or may not include us."
+        "answer": "That's what the Discover tier is for. We can map your workflow, compare options, and recommend the right path without forcing a build."
       },
       {
         "question": "Do you offer ongoing support after a project?",
-        "answer": "Yes. Our Evolve tier provides a monthly retainer for ongoing integrations, expanding automation coverage, and keeping your systems aligned as your business grows."
+        "answer": "Yes. The Evolve tier is designed for businesses that want a technical partner to maintain, extend, and improve their automations and integrations over time."
       }
     ]
   },
   "cta": {
     "title": "Not sure which service fits?",
-    "body": "Book a discovery session. We'll listen to what's broken and recommend the right path - even if it's not us.",
+    "body": "Book a discovery session. We'll map the problem and recommend the most practical path - even if that path is not us.",
     "button": "Book a discovery session"
   }
 }

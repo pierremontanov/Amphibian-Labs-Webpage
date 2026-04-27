@@ -152,7 +152,7 @@ export default function ContactSection() {
                   0420 729 667
                 </a>
               </div>
-              {/* Location — Australia */}
+              {/* Location - Australia */}
               <div className="flex items-center gap-3.5">
                 <div
                   className="w-9 h-9 rounded-[10px] flex items-center justify-center flex-shrink-0"

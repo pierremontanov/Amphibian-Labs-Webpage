@@ -1,21 +1,21 @@
 {
   "meta": {
-    "title": "Open Source - Amphibian Labs",
-    "description": "Explore our open-source projects: AI document intelligence, automation blueprints, templates, and community tools. All MIT licensed."
+    "title": "Open-Source AI Tools, Automation Blueprints & Document Intelligence | Amphibian Labs",
+    "description": "Explore Amphibian Labs open-source projects, including DocIQ, an AI document intelligence engine for healthcare document processing, OCR, structured extraction, and FHIR R4-compatible output."
   },
   "hero": {
     "title": "Open source",
-    "subtitle": "Production-grade tools, templates, and blueprints - all under MIT license. We build in the open because good tools should be accessible to everyone."
+    "subtitle": "Production-grade tools, templates, and blueprints - built in the open. Useful technology should not only belong to organisations with enterprise budgets."
   },
   "spotlight": {
     "label": "Flagship project",
     "title": "DocIQ",
     "tagline": "AI document intelligence engine for healthcare",
-    "description": "Open-source AI backend that reads, classifies, and extracts structured data from medical documents. Built for real-world clinical workflows with FHIR R4 compliance.",
+    "description": "Open-source AI backend that reads, classifies, extracts, validates, and structures data from medical documents. Designed for real-world clinical workflows where documents arrive as native PDFs, scanned images, inconsistent layouts, or mixed-language text.",
     "tests": "1,100+ tests",
-    "languages": "2 languages",
-    "fhir": "FHIR R4 compliant",
-    "license": "MIT license",
+    "languages": "Bilingual processing",
+    "fhir": "FHIR R4 compatible",
+    "license": "MIT licence",
     "view_on_github": "View on GitHub",
     "read_case_study": "Read the case study"
   },
@@ -36,6 +36,10 @@
     "utilities": "Utilities",
     "documentation": "Documentation"
   },
+  "why": {
+    "title": "Why open source?",
+    "body": "Open source creates transparency. For AI systems, especially in document processing and healthcare-adjacent workflows, trust matters. Teams should be able to inspect how a system works, understand its limits, and adapt it to their operational reality."
+  },
   "loading": {
     "fetching": "Loading repositories from GitHub..."
   },
@@ -43,5 +47,10 @@
     "title": "Could not load repositories",
     "body": "GitHub API is temporarily unavailable. You can browse all repositories directly on GitHub.",
     "link": "View on GitHub"
+  },
+  "cta": {
+    "title": "Get involved",
+    "body": "Explore the repositories, use the tools, open an issue, or contribute improvements. Good tools get better when people can see them.",
+    "button": "View on GitHub"
   }
 }

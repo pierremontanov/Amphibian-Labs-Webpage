@@ -1,26 +1,26 @@
 {
   "meta": {
-    "title": "Support Open Source - Amphibian Labs",
-    "description": "Fund open-source AI tools, community resources, and documentation. Every dollar goes directly to development, testing, and infrastructure."
+    "title": "Support Open-Source AI Tools & Document Intelligence | Amphibian Labs",
+    "description": "Support Amphibian Labs open-source work, including AI document intelligence, automation blueprints, technical guides, testing, and infrastructure. Donations fund development, documentation, and community resources."
   },
   "hero": {
     "title": "Support open source",
-    "subtitle": "Amphibian Labs builds production-grade tools and gives them away for free. Your support keeps that possible."
+    "subtitle": "Amphibian Labs builds practical tools and gives them away where open access matters. Your support helps keep that work moving."
   },
   "why": {
     "title": "Why support us?",
     "items": [
       {
         "title": "Fund real tools, not promises",
-        "body": "Every dollar goes to building, testing, and maintaining open-source software that businesses actually use. DocIQ alone has 1,100+ tests and processes real clinical documents."
+        "body": "Every contribution supports practical software, test coverage, documentation, infrastructure, and release work. DocIQ alone represents serious engineering effort across OCR, document parsing, validation, healthcare data structures, and backend architecture."
       },
       {
         "title": "Keep AI accessible",
-        "body": "Enterprise AI tools cost six figures. Our tools are free and MIT licensed. Your support helps small clinics, community organisations, and sole traders access the same technology."
+        "body": "Enterprise AI tools can be expensive and opaque. Open-source alternatives give smaller teams a way to inspect, adapt, and build responsibly."
       },
       {
         "title": "Support independent work",
-        "body": "We don't take VC money or run ads. We're funded by client work and community support. That independence means we build what's needed, not what's fundable."
+        "body": "Amphibian Labs is funded through client work and community support, not ads or venture capital. That independence matters - it means we can build what is useful, not only what is fundable."
       }
     ]
   },
@@ -30,7 +30,7 @@
       "label": "Supporter",
       "price": "$5 - $10",
       "frequency": "one-time or monthly",
-      "description": "Help keep the lights on. Your contribution covers hosting, CI/CD, and domain costs.",
+      "description": "Help cover small but constant costs like hosting, CI/CD, domains, and project maintenance.",
       "perks": [
         "Name in the supporters list",
         "Early access to release notes"
@@ -40,7 +40,7 @@
       "label": "Builder",
       "price": "$25 - $50",
       "frequency": "one-time or monthly",
-      "description": "Fund a feature. Your contribution goes directly to new capabilities, test coverage, and documentation.",
+      "description": "Help fund new capabilities, test coverage, examples, and documentation.",
       "perks": [
         "Everything in Supporter",
         "Vote on the next feature",
@@ -51,7 +51,7 @@
       "label": "Champion",
       "price": "$100+",
       "frequency": "one-time or monthly",
-      "description": "Sponsor a release. Your contribution funds a full development sprint - new document types, language support, or integrations.",
+      "description": "Sponsor a meaningful release or focused development sprint.",
       "perks": [
         "Everything in Builder",
         "Logo on the README",
@@ -68,7 +68,7 @@
       { "label": "Documentation and guides", "percent": 15 },
       { "label": "Community support", "percent": 5 }
     ],
-    "note": "100% of donations go to open-source work. Client revenue covers business operations."
+    "note": "Client revenue covers business operations. Donations support open-source work."
   },
   "payment": {
     "button": "Support this tier",
@@ -77,7 +77,7 @@
   },
   "cta": {
     "title": "Prefer to contribute code?",
-    "body": "We welcome pull requests, bug reports, and documentation improvements. Every contribution matters.",
+    "body": "Pull requests, bug reports, documentation improvements, and examples are welcome. Every contribution matters.",
     "button": "View repositories"
   }
 }

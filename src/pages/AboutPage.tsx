@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import {
   MapPin, GraduationCap, Briefcase, ExternalLink,
-  ArrowRight, Code, Users, Heart,
+  ArrowRight, Code, Users, Heart, Cpu,
 } from "lucide-react";
 import Breadcrumb from "@/components/Breadcrumb";
 import { techLogos } from "@/components/TechLogos";
@@ -17,17 +17,22 @@ const values = [
   {
     icon: Heart,
     title: "Enhancement over replacement",
-    body: "We don't tear down what works. We add intelligent layers on top of your existing systems - no migrations, no disruption.",
+    body: "Most businesses don't need to tear down their existing systems. They need those systems to communicate, automate, and expose useful data. We add intelligent layers on top of your current tools wherever possible.",
   },
   {
     icon: Users,
     title: "Radical honesty",
-    body: "We'll recommend a competitor if they're a better fit. We'll tell you when you don't need us. Our reputation is built on trust, not sales.",
+    body: "If an off-the-shelf product solves the problem better than a custom build, we'll recommend it. If you're not ready for AI yet, we'll tell you what needs to happen first. Trust beats short-term sales.",
   },
   {
     icon: Code,
-    title: "You own everything",
-    body: "Full source code, documentation, and knowledge transfer. No vendor lock-in, no recurring fees for code we wrote. When we're done, it's yours.",
+    title: "Ownership matters",
+    body: "You should not be trapped by the consultant who built your system. We deliver documentation, handover, and source code where applicable. No recurring licence fees for code we wrote.",
+  },
+  {
+    icon: Cpu,
+    title: "Practical AI, not theatre",
+    body: "AI is useful when it has a defined job: extract fields, classify documents, validate records, summarise operational data, or reduce repetitive decisions. We focus on use cases with measurable outcomes.",
   },
 ];
 
@@ -37,10 +42,10 @@ export default function AboutPage() {
   return (
     <>
       <Helmet>
-        <title>About - Amphibian Labs</title>
-        <meta name="description" content="Amphibian Labs is an Australian tech consultancy founded by Pierre Montanov. AI backends, system integration, and workflow automation for SMBs." />
-        <meta property="og:title" content="About - Amphibian Labs" />
-        <meta property="og:description" content="AI backends, system integration, and workflow automation. Founded by Pierre Montanov on the Gold Coast." />
+        <title>About Amphibian Labs | Australian AI, Automation & Integration Consultancy</title>
+        <meta name="description" content="Amphibian Labs is an Australian AI, automation, and system integration consultancy founded by Pierre Montanov. We help SMBs enhance existing systems with practical AI backends, workflow automation, and API integrations." />
+        <meta property="og:title" content="About Amphibian Labs | Australian AI, Automation & Integration Consultancy" />
+        <meta property="og:description" content="Australian AI, automation, and system integration consultancy founded by Pierre Montanov. Practical AI backends, workflow automation, and API integrations for SMBs." />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -63,7 +68,7 @@ export default function AboutPage() {
               addressCountry: "AU",
             },
             taxID: "ABN 91 155 211 230",
-            description: "Australian tech consultancy that enhances existing business systems with AI-powered backend services, workflow automation, and system integration.",
+            description: "Australian AI, automation, and system integration consultancy that helps small and medium-sized businesses connect existing tools, automate repetitive workflows, and build practical AI backends.",
           })}
         </script>
       </Helmet>
@@ -83,7 +88,7 @@ export default function AboutPage() {
               About Amphibian Labs
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Intelligence. Inspired by nature.
+              Intelligently curious, purposefully active.
             </p>
           </div>
 
@@ -149,7 +154,7 @@ export default function AboutPage() {
             <h2 className="text-xl font-semibold text-foreground mb-8">
               What we believe
             </h2>
-            <div className="grid gap-6 sm:grid-cols-3">
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {values.map((v, i) => {
                 const Icon = v.icon;
                 return (
@@ -193,7 +198,7 @@ export default function AboutPage() {
               Want to work together?
             </h2>
             <p className="text-sm text-slate-300 mb-5">
-              Start with a discovery session. No pitch, no commitment.
+              Start with a discovery session. No pitch. No pressure. Just a clear view of what's worth fixing.
             </p>
             <Link
               to="/#contact"

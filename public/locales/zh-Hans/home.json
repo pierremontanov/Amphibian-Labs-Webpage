@@ -1,225 +1,231 @@
 {
   "hero": {
-    "headline": "Your business already runs. We make it run smarter.",
-    "subheadline": "We plug AI into what you already have. No migrations. No disruption. No vendor lock-in.",
-    "cta_primary": "Book a discovery session",
-    "cta_secondary": "See our open-source work",
-    "trust_strip": "Built with"
+    "headline": "您的业务已经在运行。我们让它更智能。",
+    "subheadline": "Amphibian Labs为澳大利亚中小企业构建实用的AI后端、工作流程自动化和系统集成。我们连接您已有的工具，消除手动工作，在不强制平台迁移的情况下添加智能层。",
+    "cta_primary": "预约探索会议",
+    "cta_secondary": "探索我们的开源项目",
+    "trust_strip": "技术栈"
   },
   "problems": {
-    "section_title": "Sound familiar?",
+    "section_title": "听起来熟悉吗？",
     "tech_gap": {
-      "title": "The tech gap",
-      "body": "Edge technology exists, but it's built for companies with 500+ employees and six-figure IT budgets. Small and mid-sized businesses get left behind - or get sold oversized solutions they can't maintain."
+      "title": "您的系统在运行，但彼此不协作",
+      "body": "您的CRM、邮箱、电子表格、会计软件、SharePoint文件夹和项目工具都有有用的数据。问题在于它们之间的鸿沟。员工在标签页之间复制信息、追踪缺失字段、重新输入客户数据、手动处理PDF、每周重建相同的报告。这不是人的问题--这是工作流程架构问题。"
     },
     "rip_replace": {
-      "title": "The rip-and-replace trap",
-      "body": "Every vendor wants to replace your entire stack. You didn't ask for a migration. You asked for help. Your systems work - they just need an intelligent layer on top."
+      "title": "企业级AI太贵、太广泛或太难维护",
+      "body": "大多数AI和自动化平台是为拥有内部IT团队和六位数实施预算的大型组织设计和定价的。中小企业只剩下两个糟糕的选择：过度购买复杂平台或继续手动工作。Amphibian Labs存在于两者之间的空间。"
     },
     "trust_gap": {
-      "title": "The trust gap",
-      "body": "You've been burned by consultants who recommend what they sell, not what you need. You need someone who'll tell you when an off-the-shelf product beats a custom build - even if it means less work for them."
+      "title": "您不需要另一个试图替换一切的供应商",
+      "body": "很多顾问从他们想卖的产品开始。我们从您的工作流程开始。有时最好的答案是定制AI后端。有时是Power Automate。有时是现成的SaaS工具。如果更简单的选项能解决问题，我们会直说。"
     }
   },
   "services": {
-    "section_title": "What we do",
-    "intro": "We turn problems into working systems.",
+    "section_title": "我们构建什么",
+    "intro": "我们将运营摩擦转化为可运行的系统。",
     "understand": {
-      "title": "Understand",
-      "subtitle": "Consultancy & business analysis",
+      "title": "理解",
+      "subtitle": "咨询与业务分析",
       "discovery": {
-        "title": "Discovery & requirements",
-        "body": "Stakeholder workshops, current-state analysis, pain-point identification."
+        "title": "探索与需求",
+        "body": "探索会议、利益相关者研讨会、当前状态工作流程映射和需求分析。"
       },
       "advisory": {
-        "title": "Solution design & advisory",
-        "body": "We recommend off-the-shelf vs custom vs AI backend based on fit, not vendor pressure. We'll suggest competitors if they're a better fit."
+        "title": "解决方案设计与咨询",
+        "body": "AI和自动化就绪评估、供应商选择、构建与购买建议，以及实施路线图。"
       },
       "training": {
-        "title": "Workshops & training",
-        "body": "Sessions on AI adoption, automation strategy, and tech literacy for SMBs."
+        "title": "研讨会与培训",
+        "body": "面向中小企业的AI采用和自动化素养研讨会。"
       }
     },
     "build": {
-      "title": "Build",
-      "subtitle": "Engineering & delivery",
+      "title": "构建",
+      "subtitle": "工程与交付",
       "ai_backends": {
-        "title": "AI-powered backends",
-        "body": "Document intelligence, unstructured data extraction, NLP pipelines. Python, FastAPI, containerised microservices."
+        "title": "AI驱动后端",
+        "body": "文档智能、OCR、NLP、分类和验证管道。Python、FastAPI、容器化微服务。"
       },
       "integration": {
-        "title": "System integration",
-        "body": "Microsoft 365, SharePoint, Teams, CRMs, third-party APIs. No migration required."
+        "title": "系统集成",
+        "body": "Microsoft 365、SharePoint、Teams、CRM、EHR、会计工具和第三方API集成。无需迁移。"
       },
       "automation": {
-        "title": "Workflow automation",
-        "body": "Power Automate, Make, n8n - eliminate manual steps across platforms."
+        "title": "工作流程自动化",
+        "body": "Power Automate、Make、n8n、Azure Logic Apps--消除跨平台的手动步骤。"
       }
     },
     "share": {
-      "title": "Share",
-      "subtitle": "Open source & community",
+      "title": "共享",
+      "subtitle": "开源与社区",
       "open_source": {
-        "title": "Open-source projects",
-        "body": "Production-grade tools under MIT license. DocIQ is the flagship."
+        "title": "开源项目",
+        "body": "MIT许可证下的生产级工具。DocIQ是旗舰AI文档智能引擎。"
       },
       "community": {
-        "title": "Community resources",
-        "body": "Templates, automation blueprints, reference architectures."
+        "title": "社区资源",
+        "body": "自动化模板、参考架构、技术指南和面向中小企业的实用AI采用资源。"
       }
     }
   },
   "outcomes": {
-    "section_title": "What changes",
+    "section_title": "改变了什么",
+    "before_label": "之前",
+    "after_label": "之后",
     "rows": [
       {
-        "before": "Staff spend 4 hours/day copying data between PDFs and your system",
-        "after": "An AI backend extracts, validates, and loads it in seconds"
+        "before": "员工花费数小时阅读PDF、复制数值并将数据输入内部系统",
+        "after": "AI后端提取结构化数据、验证、分配置信度分数，并将干净的输出发送到正确的目标"
       },
       {
-        "before": "Your CRM, EHR, and accounting tool don't talk to each other",
-        "after": "A lightweight integration layer syncs them - no new platform needed"
+        "before": "您的CRM、会计软件、邮箱和运营工具彼此不通信",
+        "after": "轻量级集成层在系统之间自动移动数据--无需平台迁移"
       },
       {
-        "before": "You're told you need to replace everything",
-        "after": "You keep what works. We add what's missing"
+        "before": "周报、跟进和合规文档依赖手动操作",
+        "after": "自动化在正确的时间触发，从正确的系统获取数据，生成团队可以信赖的一致输出"
       },
       {
-        "before": "AI tools feel inaccessible or oversold",
-        "after": "You attend a workshop and leave with a working prototype"
+        "before": "AI听起来有用，但不清楚适合在哪里或企业是否已准备好",
+        "after": "您在探索会议结束后将获得映射的用例、技术建议和现实的实施路径"
       }
     ]
   },
   "process": {
-    "section_title": "How it works",
+    "section_title": "如何运作",
+    "key_message": "映射您需求的人就是理解架构并构建解决方案的人。更少的交接损失。更多的责任。更清晰的执行。",
     "steps": [
       {
-        "title": "Listen",
-        "body": "Free clarity session. You tell us what's broken. No pitch, no commitment."
+        "title": "倾听",
+        "body": "清晰会议。您说明工作流程、涉及的系统、痛点和成功的样子。没有推销。没有强制承诺。"
       },
       {
-        "title": "Map",
-        "body": "We document your current state - systems, workflows, pain points, budget constraints."
+        "title": "映射",
+        "body": "我们记录当前状态：系统、数据流、手动步骤、边缘情况、风险、约束、预算和所有权。"
       },
       {
-        "title": "Recommend",
-        "body": "We design a solution - and it might not include us. If an off-the-shelf tool solves it, we'll say so."
+        "title": "推荐",
+        "body": "我们设计正确的路径：现成工具、工作流程自动化、API集成、AI后端、定制门户或混合方案。如果最佳选项不涉及我们，我们会直说。"
       },
       {
-        "title": "Build",
-        "body": "We build what's agreed. Iterative delivery, not a 6-month black box. You see working software early and often."
+        "title": "构建",
+        "body": "我们迭代交付。您可以尽早看到可运行的软件，在实际工作流程中测试，并在系统最终确定之前提供反馈。没有六个月的黑箱。"
       },
       {
-        "title": "Handover",
-        "body": "Full documentation, BAU handover, knowledge transfer. You own everything. No lock-in."
+        "title": "交接",
+        "body": "文档、适用的源代码、部署说明、BAU交接和知识转移。系统归您所有。没有供应商锁定。"
       }
     ]
   },
   "blog_preview": {
-    "section_title": "Latest from the lab",
-    "read_more": "Read more on the blog",
+    "section_title": "实验室最新动态",
+    "read_more": "在博客阅读更多",
     "articles": [
       {
-        "title": "Why we enhance your systems instead of replacing them",
-        "excerpt": "Most consultants recommend what they sell. We recommend what fits. Here's our philosophy on system enhancement over replacement.",
-        "category": "Philosophy",
+        "title": "为什么我们增强您的系统而不是替换它们",
+        "excerpt": "大多数企业不需要全平台迁移。他们需要已经信任的系统交换数据、自动化手动步骤，并在正确的时间展示信息。",
+        "category": "理念",
         "date": "2026-04-15",
-        "reading_time": "5 min read"
+        "reading_time": "5分钟阅读"
       },
       {
-        "title": "How we built DocIQ: an open-source AI engine for medical document processing",
-        "excerpt": "1,100+ tests, 3 document types, 2 languages, FHIR R4 compliant. A technical deep-dive into building production-grade document intelligence.",
-        "category": "Engineering",
+        "title": "我们如何构建DocIQ：用于医疗文档处理的开源AI引擎",
+        "excerpt": "DocIQ的技术深度解析：用于OCR、分类、实体提取、验证和FHIR R4兼容医疗输出的Python和FastAPI文档智能后端。",
+        "category": "工程",
         "date": "2026-04-08",
-        "reading_time": "8 min read"
+        "reading_time": "8分钟阅读"
       },
       {
-        "title": "5 signs your business is ready for AI - and 3 signs you're not",
-        "excerpt": "AI isn't magic. It's infrastructure. Here's how to tell if your business is actually ready - and what to fix first if you're not.",
-        "category": "Guide",
+        "title": "您的企业是否已准备好使用AI的5个信号--以及3个未准备好的信号",
+        "excerpt": "当有清晰的工作流程、数字数据、可重复的规则和可衡量的结果时，AI才能成功。本指南帮助中小企业判断AI是否是正确的下一步。",
+        "category": "指南",
         "date": "2026-03-28",
-        "reading_time": "6 min read"
+        "reading_time": "6分钟阅读"
       }
     ]
   },
   "about": {
-    "section_title": "About",
-    "bio_p1": "Amphibian Labs was founded by Pierre Montanov - a technical consultant and engineer with 5+ years in the industry, a Master's in IT, and dual expertise in business analysis and software engineering.",
-    "bio_p2": "Pierre saw first-hand how small and mid-sized businesses get underserved by the tech industry. Enterprise tools exist, but they're priced and scoped for enterprises. SMBs deserve the same calibre of technology - built to fit their scale, their budget, and their existing systems.",
-    "bio_p3": "Amphibian Labs closes that gap. We don't replace what works. We enhance it with AI backends, workflow automation, and system integration. And when we're done, you own everything.",
-    "philosophy": "Amphibian Labs is a lab in the true sense - we create, experiment, publish, and help.",
+    "section_title": "关于",
+    "bio_p1": "Amphibian Labs是一家澳大利亚技术咨询公司，帮助中小企业自动化重复性工作、连接断开的系统，并在能创造可衡量运营价值的地方应用AI。",
+    "bio_p2": "由Pierre Montanov创立，他是一位在业务分析、软件工程、自动化和AI后端开发方面拥有丰富经验的技术顾问和工程师。Pierre在各行业中看到了相同的模式：企业拥有正常运行的系统和有能力的团队，但太多价值被困在工具之间。",
+    "bio_p3": "Amphibian Labs采取不同的方法。我们不从替换您的技术栈开始。我们从理解它开始。然后添加缺失的层：自动化、集成、AI提取、结构化数据、仪表板或咨询。目标很简单：保留有效的部分，改进拖慢您的部分，留给您一个属于自己的系统。",
+    "philosophy": "Amphibian Labs是真正意义上的实验室--我们创造、实验、发布和帮助。",
     "credentials": {
       "name": "Pierre Montanov",
-      "title": "Founder & Technical Consultant",
-      "location": "Australia",
-      "degree": "Master's in Information Technology",
-      "experience": "5+ years industry experience"
+      "title": "创始人兼技术顾问",
+      "location": "澳大利亚",
+      "degree": "信息技术硕士",
+      "experience": "5年以上行业经验"
     }
   },
   "engagement": {
-    "section_title": "Ways to work together",
-    "intro": "Flexible options - no lock-in contracts. Start small and scale up when you're ready.",
+    "section_title": "合作方式",
+    "intro": "灵活选项--无锁定合同。从小处开始，准备好后再扩展。",
     "discovery": {
       "price": "$300",
-      "duration": "2 hours",
-      "title": "Discovery session",
-      "description": "2-hour session (remote or in-person). We listen to the pain, ask diagnostic questions, and map your current state. Written report delivered within 48 hours: what we found, what we recommend, 2–3 actionable suggestions - which may or may not include Amphibian Labs. No obligation.",
-      "cta": "Book a discovery session - $300 for 2 hours of honest answers and a written report."
+      "duration": "2小时",
+      "title": "探索会议",
+      "description": "为希望在承诺构建之前获得清晰度的企业提供的聚焦诊断会议。我们倾听工作流程问题，提出技术和运营问题，映射当前状态，识别自动化、集成或AI的最高价值机会。48小时内交付书面报告，包含当前状态摘要、关键痛点、建议的下一步、2-3个实用改进选项和构建与购买指导。无义务。",
+      "cta": "预约探索会议--$300换2小时的诚实回答和书面报告。"
     },
     "discover": {
-      "label": "Discover",
-      "title": "Understand what you have and what you need",
+      "label": "探索",
+      "title": "了解您拥有什么和需要什么",
       "bullets": [
-        "Stakeholder workshops",
-        "Current-state mapping",
-        "Solution recommendations",
-        "Written report"
+        "利益相关者研讨会",
+        "工作流程和系统映射",
+        "需求分析",
+        "解决方案建议",
+        "书面报告和实施路线图"
       ],
-      "best_for": "Businesses who know something isn't working but aren't sure what to fix first."
+      "best_for": "知道某些地方不对劲但不确定先修复什么的企业。"
     },
     "build": {
-      "label": "Build",
-      "title": "Scoped project with defined outcomes",
+      "label": "构建",
+      "title": "交付具有明确成果的范围化技术解决方案",
       "bullets": [
-        "AI backends & system integrations",
-        "Workflow automations",
-        "Iterative delivery",
-        "Documentation & BAU handover"
+        "AI后端和文档提取系统",
+        "API集成和中间件",
+        "工作流程自动化",
+        "客户门户和仪表板",
+        "测试、文档和BAU交接"
       ],
-      "best_for": "Businesses ready to act."
+      "best_for": "已准备好自动化、集成或部署AI系统的企业。"
     },
     "evolve": {
-      "label": "Evolve",
-      "title": "Monthly retainer for evolving needs",
+      "label": "进化",
+      "title": "随着业务变化持续改进您的系统",
       "bullets": [
-        "New integrations as you grow",
-        "Expanding automation coverage",
-        "Keeping systems aligned",
-        "Your tech partner on call"
+        "随系统变化的新集成",
+        "扩展自动化覆盖范围",
+        "监控和改进现有工作流程",
+        "未来工具和供应商的技术建议",
+        "持续文档和系统对齐"
       ],
-      "best_for": "Businesses that want a tech partner on call."
+      "best_for": "希望在新需求出现时有技术合作伙伴可用的企业。"
     },
-    "scoped": "Scoped to your project."
+    "scoped": "根据您的项目范围定制。"
   },
   "contact": {
-    "section_title": "Let's talk",
-    "subtitle": "Tell us what's broken. We'll reply with the next step.",
-    "name_label": "First name",
-    "email_label": "Email",
-    "industry_label": "Business type / industry",
+    "section_title": "告诉我们什么出了问题",
+    "subtitle": "描述造成最大摩擦的工作流程、系统或手动流程。我们将回复实用的下一步：探索、咨询、自动化、集成，或推荐使用现有工具。",
+    "name_label": "姓名",
+    "email_label": "邮箱",
+    "industry_label": "业务类型/行业",
     "industry_options": {
-      "placeholder": "Select your industry",
-      "healthcare": "Healthcare",
-      "construction": "Construction",
-      "professional": "Professional Services",
-      "trades": "Trades",
-      "retail": "Retail",
-      "other": "Other"
+      "placeholder": "选择您的行业",
+      "healthcare": "医疗健康",
+      "construction": "建筑",
+      "professional": "专业服务",
+      "trades": "贸易",
+      "retail": "零售",
+      "other": "其他"
     },
-    "frustration_label": "What's your biggest frustration?",
-    "referral_label": "How did you find us?",
-    "submit": "Tell us what's broken",
-    "confirmation": "Got it. We'll be in touch within 24 hours.",
-    "fallback": "Prefer email? Reach us at"
+    "frustration_label": "您最大的工作流程困扰是什么？",
+    "referral_label": "您是如何找到我们的？",
+    "submit": "告诉我们什么出了问题",
+    "confirmation": "收到。我们将审阅您的消息并回复下一个实用步骤。",
+    "fallback": "更喜欢邮件？请联系"
   }
 }

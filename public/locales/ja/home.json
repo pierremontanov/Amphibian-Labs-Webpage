@@ -1,225 +1,231 @@
 {
   "hero": {
-    "headline": "Your business already runs. We make it run smarter.",
-    "subheadline": "We plug AI into what you already have. No migrations. No disruption. No vendor lock-in.",
-    "cta_primary": "Book a discovery session",
-    "cta_secondary": "See our open-source work",
-    "trust_strip": "Built with"
+    "headline": "ビジネスはすでに動いている。私たちがもっと賢くします。",
+    "subheadline": "Amphibian Labsは、オーストラリアの中小企業向けに実用的なAIバックエンド、ワークフロー自動化、システム統合を構築します。既存のツールを接続し、手作業を削減し、プラットフォーム移行を強制することなくインテリジェントなレイヤーを追加します。",
+    "cta_primary": "ディスカバリーセッションを予約",
+    "cta_secondary": "オープンソースの取り組みを見る",
+    "trust_strip": "使用技術"
   },
   "problems": {
-    "section_title": "Sound familiar?",
+    "section_title": "こんな状況に覚えがありませんか？",
     "tech_gap": {
-      "title": "The tech gap",
-      "body": "Edge technology exists, but it's built for companies with 500+ employees and six-figure IT budgets. Small and mid-sized businesses get left behind - or get sold oversized solutions they can't maintain."
+      "title": "システムは動いているが、連携していない",
+      "body": "CRM、メール、スプレッドシート、会計ソフト、SharePointフォルダ、プロジェクトツール - すべてに有用なデータがあります。問題はそれらの間のギャップです。スタッフはタブ間で情報をコピーし、欠けているフィールドを追跡し、顧客データを再入力し、PDFを手動で処理し、毎週同じレポートを作り直しています。これは人の問題ではなく、ワークフローアーキテクチャの問題です。"
     },
     "rip_replace": {
-      "title": "The rip-and-replace trap",
-      "body": "Every vendor wants to replace your entire stack. You didn't ask for a migration. You asked for help. Your systems work - they just need an intelligent layer on top."
+      "title": "エンタープライズAIは高すぎるか、広すぎるか、維持が難しい",
+      "body": "ほとんどのAIや自動化プラットフォームは、社内ITチームと多額の導入予算を持つ大企業向けに設計されています。中小企業には二つの悪い選択肢しかありません：複雑なプラットフォームを過剰に購入するか、手作業を続けるか。Amphibian Labsはその中間の領域に存在します。"
     },
     "trust_gap": {
-      "title": "The trust gap",
-      "body": "You've been burned by consultants who recommend what they sell, not what you need. You need someone who'll tell you when an off-the-shelf product beats a custom build - even if it means less work for them."
+      "title": "すべてを置き換えようとするベンダーは不要",
+      "body": "多くのコンサルタントは売りたい製品から始めます。私たちはワークフローから始めます。最善の答えがカスタムAIバックエンドの場合もあれば、Power Automateの場合も、既存のSaaSツールの場合もあります。よりシンプルな選択肢で問題が解決するなら、そうお伝えします。"
     }
   },
   "services": {
-    "section_title": "What we do",
-    "intro": "We turn problems into working systems.",
+    "section_title": "構築するもの",
+    "intro": "業務の摩擦を動くシステムに変えます。",
     "understand": {
-      "title": "Understand",
-      "subtitle": "Consultancy & business analysis",
+      "title": "理解する",
+      "subtitle": "コンサルティングとビジネス分析",
       "discovery": {
-        "title": "Discovery & requirements",
-        "body": "Stakeholder workshops, current-state analysis, pain-point identification."
+        "title": "ディスカバリーと要件定義",
+        "body": "ディスカバリーセッション、ステークホルダーワークショップ、現状ワークフローマッピング、要件分析。"
       },
       "advisory": {
-        "title": "Solution design & advisory",
-        "body": "We recommend off-the-shelf vs custom vs AI backend based on fit, not vendor pressure. We'll suggest competitors if they're a better fit."
+        "title": "ソリューション設計とアドバイザリー",
+        "body": "AI・自動化準備評価、ベンダー選定、構築vs購入アドバイス、実装ロードマップ。"
       },
       "training": {
-        "title": "Workshops & training",
-        "body": "Sessions on AI adoption, automation strategy, and tech literacy for SMBs."
+        "title": "ワークショップとトレーニング",
+        "body": "中小企業向けAI導入と自動化リテラシーワークショップ。"
       }
     },
     "build": {
-      "title": "Build",
-      "subtitle": "Engineering & delivery",
+      "title": "構築する",
+      "subtitle": "エンジニアリングとデリバリー",
       "ai_backends": {
-        "title": "AI-powered backends",
-        "body": "Document intelligence, unstructured data extraction, NLP pipelines. Python, FastAPI, containerised microservices."
+        "title": "AI搭載バックエンド",
+        "body": "ドキュメントインテリジェンス、OCR、NLP、分類、バリデーションパイプライン。Python、FastAPI、コンテナ化マイクロサービス。"
       },
       "integration": {
-        "title": "System integration",
-        "body": "Microsoft 365, SharePoint, Teams, CRMs, third-party APIs. No migration required."
+        "title": "システム統合",
+        "body": "Microsoft 365、SharePoint、Teams、CRM、EHR、会計ツール、サードパーティAPI統合。移行不要。"
       },
       "automation": {
-        "title": "Workflow automation",
-        "body": "Power Automate, Make, n8n - eliminate manual steps across platforms."
+        "title": "ワークフロー自動化",
+        "body": "Power Automate、Make、n8n、Azure Logic Apps - プラットフォーム間の手動ステップを排除。"
       }
     },
     "share": {
-      "title": "Share",
-      "subtitle": "Open source & community",
+      "title": "共有する",
+      "subtitle": "オープンソースとコミュニティ",
       "open_source": {
-        "title": "Open-source projects",
-        "body": "Production-grade tools under MIT license. DocIQ is the flagship."
+        "title": "オープンソースプロジェクト",
+        "body": "MITライセンスのプロダクションレベルツール。DocIQはフラッグシップのAIドキュメントインテリジェンスエンジンです。"
       },
       "community": {
-        "title": "Community resources",
-        "body": "Templates, automation blueprints, reference architectures."
+        "title": "コミュニティリソース",
+        "body": "自動化テンプレート、リファレンスアーキテクチャ、技術ガイド、中小企業向けの実践的AI導入リソース。"
       }
     }
   },
   "outcomes": {
-    "section_title": "What changes",
+    "section_title": "何が変わるか",
+    "before_label": "導入前",
+    "after_label": "導入後",
     "rows": [
       {
-        "before": "Staff spend 4 hours/day copying data between PDFs and your system",
-        "after": "An AI backend extracts, validates, and loads it in seconds"
+        "before": "スタッフがPDFを読み、値をコピーし、社内システムにデータを入力する作業に何時間も費やしている",
+        "after": "AIバックエンドが構造化データを抽出・検証し、信頼度スコアを付与して、正しい送信先にクリーンな出力を送信"
       },
       {
-        "before": "Your CRM, EHR, and accounting tool don't talk to each other",
-        "after": "A lightweight integration layer syncs them - no new platform needed"
+        "before": "CRM、会計ソフト、メール、業務ツールが互いに連携していない",
+        "after": "軽量な統合レイヤーがシステム間でデータを自動的に移動 - プラットフォーム移行不要"
       },
       {
-        "before": "You're told you need to replace everything",
-        "after": "You keep what works. We add what's missing"
+        "before": "週次レポート、フォローアップ、コンプライアンス文書が手作業に依存",
+        "after": "自動化が適切なタイミングで起動し、正しいシステムからデータを取得し、チームが信頼できる一貫した出力を生成"
       },
       {
-        "before": "AI tools feel inaccessible or oversold",
-        "after": "You attend a workshop and leave with a working prototype"
+        "before": "AIは有用そうだが、どこに適合するか、ビジネスの準備ができているかが不明確",
+        "after": "ディスカバリーセッションで、マッピングされたユースケース、技術的推奨事項、現実的な実装パスを得られる"
       }
     ]
   },
   "process": {
-    "section_title": "How it works",
+    "section_title": "仕組み",
+    "key_message": "要件をマッピングする人がアーキテクチャを理解し、ソリューションを構築する人と同じです。引き継ぎロスが少なく、責任が明確で、実行がクリーンです。",
     "steps": [
       {
-        "title": "Listen",
-        "body": "Free clarity session. You tell us what's broken. No pitch, no commitment."
+        "title": "聞く",
+        "body": "クラリティセッション。ワークフロー、関係するシステム、課題、成功の姿をご説明ください。セールスピッチなし。強制的なコミットメントなし。"
       },
       {
-        "title": "Map",
-        "body": "We document your current state - systems, workflows, pain points, budget constraints."
+        "title": "マッピング",
+        "body": "現状を文書化：システム、データフロー、手動ステップ、エッジケース、リスク、制約、予算、責任範囲。"
       },
       {
-        "title": "Recommend",
-        "body": "We design a solution - and it might not include us. If an off-the-shelf tool solves it, we'll say so."
+        "title": "推奨",
+        "body": "最適なパスを設計：既存ツール、ワークフロー自動化、API統合、AIバックエンド、カスタムポータル、またはハイブリッドアプローチ。最善の選択肢が私たちを含まない場合でも、そうお伝えします。"
       },
       {
-        "title": "Build",
-        "body": "We build what's agreed. Iterative delivery, not a 6-month black box. You see working software early and often."
+        "title": "構築",
+        "body": "反復的にデリバリー。早い段階で動くソフトウェアを確認し、実際のワークフローでテストし、システム完成前にフィードバック可能。6ヶ月のブラックボックスなし。"
       },
       {
-        "title": "Handover",
-        "body": "Full documentation, BAU handover, knowledge transfer. You own everything. No lock-in."
+        "title": "引き渡し",
+        "body": "ドキュメント、該当するソースコード、デプロイメントノート、BAU引き渡し、ナレッジトランスファー。システムはあなたのもの。ベンダーロックインなし。"
       }
     ]
   },
   "blog_preview": {
-    "section_title": "Latest from the lab",
-    "read_more": "Read more on the blog",
+    "section_title": "ラボからの最新情報",
+    "read_more": "ブログで続きを読む",
     "articles": [
       {
-        "title": "Why we enhance your systems instead of replacing them",
-        "excerpt": "Most consultants recommend what they sell. We recommend what fits. Here's our philosophy on system enhancement over replacement.",
-        "category": "Philosophy",
+        "title": "なぜシステムを置き換えるのではなく強化するのか",
+        "excerpt": "ほとんどの企業はプラットフォーム全体の移行を必要としません。すでに信頼しているシステムがデータを交換し、手動ステップを自動化し、適切なタイミングで情報を表示することが必要です。",
+        "category": "フィロソフィー",
         "date": "2026-04-15",
-        "reading_time": "5 min read"
+        "reading_time": "5分で読めます"
       },
       {
-        "title": "How we built DocIQ: an open-source AI engine for medical document processing",
-        "excerpt": "1,100+ tests, 3 document types, 2 languages, FHIR R4 compliant. A technical deep-dive into building production-grade document intelligence.",
-        "category": "Engineering",
+        "title": "DocIQの構築方法：医療文書処理のためのオープンソースAIエンジン",
+        "excerpt": "DocIQの技術的ディープダイブ：OCR、分類、エンティティ抽出、バリデーション、FHIR R4互換の医療出力のためのPythonとFastAPIドキュメントインテリジェンスバックエンド。",
+        "category": "エンジニアリング",
         "date": "2026-04-08",
-        "reading_time": "8 min read"
+        "reading_time": "8分で読めます"
       },
       {
-        "title": "5 signs your business is ready for AI - and 3 signs you're not",
-        "excerpt": "AI isn't magic. It's infrastructure. Here's how to tell if your business is actually ready - and what to fix first if you're not.",
-        "category": "Guide",
+        "title": "あなたのビジネスがAIに準備できている5つのサイン - そして準備できていない3つのサイン",
+        "excerpt": "AIは明確なワークフロー、デジタルデータ、反復可能なルール、測定可能な結果がある場合に成功します。このガイドはSMBがAIが正しい次のステップかどうかを判断するのに役立ちます。",
+        "category": "ガイド",
         "date": "2026-03-28",
-        "reading_time": "6 min read"
+        "reading_time": "6分で読めます"
       }
     ]
   },
   "about": {
-    "section_title": "About",
-    "bio_p1": "Amphibian Labs was founded by Pierre Montanov - a technical consultant and engineer with 5+ years in the industry, a Master's in IT, and dual expertise in business analysis and software engineering.",
-    "bio_p2": "Pierre saw first-hand how small and mid-sized businesses get underserved by the tech industry. Enterprise tools exist, but they're priced and scoped for enterprises. SMBs deserve the same calibre of technology - built to fit their scale, their budget, and their existing systems.",
-    "bio_p3": "Amphibian Labs closes that gap. We don't replace what works. We enhance it with AI backends, workflow automation, and system integration. And when we're done, you own everything.",
-    "philosophy": "Amphibian Labs is a lab in the true sense - we create, experiment, publish, and help.",
+    "section_title": "概要",
+    "bio_p1": "Amphibian Labsは、中小企業が繰り返しの作業を自動化し、分断されたシステムを接続し、測定可能な業務価値を生み出すAIを適用するのを支援するオーストラリアのテクノロジーコンサルタンシーです。",
+    "bio_p2": "ビジネス分析、ソフトウェアエンジニアリング、自動化、AI対応バックエンド開発の経験を持つ技術コンサルタント兼エンジニアのPierre Montanovが設立。業界を超えて同じパターンを見てきました：機能するシステムと有能なチームを持ちながら、ツール間に多くの価値が閉じ込められている企業。",
+    "bio_p3": "Amphibian Labsは異なるアプローチを取ります。スタックの置き換えからは始めません。まず理解することから始めます。そして不足しているレイヤーを追加します：自動化、統合、AI抽出、構造化データ、ダッシュボード、またはアドバイザリー。目標はシンプルです：動いているものを維持し、遅くしているものを改善し、あなたが所有するシステムを残すこと。",
+    "philosophy": "Amphibian Labsは真の意味でのラボです - 創造し、実験し、公開し、支援します。",
     "credentials": {
       "name": "Pierre Montanov",
-      "title": "Founder & Technical Consultant",
-      "location": "Australia",
-      "degree": "Master's in Information Technology",
-      "experience": "5+ years industry experience"
+      "title": "創設者兼テクニカルコンサルタント",
+      "location": "オーストラリア",
+      "degree": "情報技術修士",
+      "experience": "5年以上の業界経験"
     }
   },
   "engagement": {
-    "section_title": "Ways to work together",
-    "intro": "Flexible options - no lock-in contracts. Start small and scale up when you're ready.",
+    "section_title": "協働の方法",
+    "intro": "柔軟なオプション - ロックイン契約なし。小さく始めて、準備ができたらスケールアップ。",
     "discovery": {
       "price": "$300",
-      "duration": "2 hours",
-      "title": "Discovery session",
-      "description": "2-hour session (remote or in-person). We listen to the pain, ask diagnostic questions, and map your current state. Written report delivered within 48 hours: what we found, what we recommend, 2–3 actionable suggestions - which may or may not include Amphibian Labs. No obligation.",
-      "cta": "Book a discovery session - $300 for 2 hours of honest answers and a written report."
+      "duration": "2時間",
+      "title": "ディスカバリーセッション",
+      "description": "構築にコミットする前に明確さを求める企業のための集中診断セッション。ワークフローの問題をヒアリングし、技術的・業務的な質問をし、現状をマッピングし、自動化・統合・AIの最も価値の高い機会を特定します。48時間以内に現状の要約、主要な課題、推奨される次のステップ、2〜3つの実践的な改善オプション、構築vs購入ガイダンスを含む書面レポートをお届けします。義務なし。",
+      "cta": "ディスカバリーセッションを予約 - $300で2時間の正直な回答と書面レポート。"
     },
     "discover": {
-      "label": "Discover",
-      "title": "Understand what you have and what you need",
+      "label": "ディスカバー",
+      "title": "現状と必要なものを理解する",
       "bullets": [
-        "Stakeholder workshops",
-        "Current-state mapping",
-        "Solution recommendations",
-        "Written report"
+        "ステークホルダーワークショップ",
+        "ワークフローとシステムマッピング",
+        "要件分析",
+        "ソリューション推奨",
+        "書面レポートと実装ロードマップ"
       ],
-      "best_for": "Businesses who know something isn't working but aren't sure what to fix first."
+      "best_for": "何かがうまくいっていないとわかっているが、何を最初に修正すべきかわからない企業。"
     },
     "build": {
-      "label": "Build",
-      "title": "Scoped project with defined outcomes",
+      "label": "ビルド",
+      "title": "定義された成果を持つスコープされた技術ソリューションを提供",
       "bullets": [
-        "AI backends & system integrations",
-        "Workflow automations",
-        "Iterative delivery",
-        "Documentation & BAU handover"
+        "AIバックエンドとドキュメント抽出システム",
+        "API統合とミドルウェア",
+        "ワークフロー自動化",
+        "クライアントポータルとダッシュボード",
+        "テスト、ドキュメント、BAU引き渡し"
       ],
-      "best_for": "Businesses ready to act."
+      "best_for": "自動化、統合、またはAI対応システムのデプロイの準備ができた企業。"
     },
     "evolve": {
-      "label": "Evolve",
-      "title": "Monthly retainer for evolving needs",
+      "label": "エボルブ",
+      "title": "ビジネスの変化に合わせてシステムを継続的に改善",
       "bullets": [
-        "New integrations as you grow",
-        "Expanding automation coverage",
-        "Keeping systems aligned",
-        "Your tech partner on call"
+        "システム変更に応じた新しい統合",
+        "自動化カバレッジの拡大",
+        "既存ワークフローの監視と改善",
+        "将来のツールとベンダーに関する技術アドバイス",
+        "継続的なドキュメントとシステム整合性"
       ],
-      "best_for": "Businesses that want a tech partner on call."
+      "best_for": "新しい要件が発生した際に利用できる技術パートナーを求める企業。"
     },
-    "scoped": "Scoped to your project."
+    "scoped": "プロジェクトに合わせてスコープ。"
   },
   "contact": {
-    "section_title": "Let's talk",
-    "subtitle": "Tell us what's broken. We'll reply with the next step.",
-    "name_label": "First name",
-    "email_label": "Email",
-    "industry_label": "Business type / industry",
+    "section_title": "何が壊れているか教えてください",
+    "subtitle": "最も摩擦を引き起こしているワークフロー、システム、または手動プロセスを説明してください。ディスカバリー、アドバイザリー、自動化、統合、または既存ツールの使用推奨といった実践的な次のステップでお返事します。",
+    "name_label": "お名前",
+    "email_label": "メール",
+    "industry_label": "業種",
     "industry_options": {
-      "placeholder": "Select your industry",
-      "healthcare": "Healthcare",
-      "construction": "Construction",
-      "professional": "Professional Services",
-      "trades": "Trades",
-      "retail": "Retail",
-      "other": "Other"
+      "placeholder": "業種を選択",
+      "healthcare": "ヘルスケア",
+      "construction": "建設",
+      "professional": "プロフェッショナルサービス",
+      "trades": "トレード",
+      "retail": "小売",
+      "other": "その他"
     },
-    "frustration_label": "What's your biggest frustration?",
-    "referral_label": "How did you find us?",
-    "submit": "Tell us what's broken",
-    "confirmation": "Got it. We'll be in touch within 24 hours.",
-    "fallback": "Prefer email? Reach us at"
+    "frustration_label": "ワークフローで最大の不満は何ですか？",
+    "referral_label": "どのようにして私たちを見つけましたか？",
+    "submit": "何が壊れているか教えてください",
+    "confirmation": "受け取りました。メッセージを確認し、次の実践的なステップでお返事します。",
+    "fallback": "メールをご希望の場合はこちらへ"
   }
 }

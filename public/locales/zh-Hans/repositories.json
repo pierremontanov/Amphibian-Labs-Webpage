@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "开源 AI 工具、自动化蓝图与文档智能 | Amphibian Labs",
+    "description": "探索 Amphibian Labs 的开源项目，包括 DocIQ -- 一款面向医疗文档处理的 AI 文档智能引擎，支持 OCR、结构化提取及 FHIR R4 兼容输出。"
+  },
+  "hero": {
+    "title": "开源",
+    "subtitle": "生产级工具、模板与蓝图--公开构建。实用技术不应只属于拥有企业预算的大型机构。"
+  },
+  "spotlight": {
+    "label": "旗舰项目",
+    "title": "DocIQ",
+    "tagline": "面向医疗行业的 AI 文档智能引擎",
+    "description": "开源 AI 后端，能够读取、分类、提取、验证并结构化医疗文档中的数据。专为真实临床工作流程设计，可处理原生 PDF、扫描图像、不规则排版及多语言混合文本。",
+    "tests": "1,100+ 项测试",
+    "languages": "双语处理",
+    "fhir": "FHIR R4 兼容",
+    "license": "MIT 许可证",
+    "view_on_github": "在 GitHub 上查看",
+    "read_case_study": "阅读案例研究"
+  },
+  "pinned": {
+    "title": "精选代码库"
+  },
+  "all_repos": {
+    "title": "全部代码库",
+    "view_all": "在 GitHub 上查看全部",
+    "stars": "星标",
+    "updated": "更新于",
+    "no_description": "暂无描述。"
+  },
+  "filters": {
+    "all": "全部",
+    "automations": "自动化",
+    "templates": "模板",
+    "utilities": "工具库",
+    "documentation": "文档"
+  },
+  "why": {
+    "title": "为什么选择开源？",
+    "body": "开源带来透明度。对于 AI 系统--尤其是文档处理和医疗相关工作流程中的系统--信任至关重要。团队应当能够审查系统的工作原理，了解其局限性，并根据实际运营需求加以调整。"
+  },
+  "loading": {
+    "fetching": "正在从 GitHub 加载代码库..."
+  },
+  "error": {
+    "title": "无法加载代码库",
+    "body": "GitHub API 暂时不可用。您可以直接在 GitHub 上浏览所有代码库。",
+    "link": "在 GitHub 上查看"
+  },
+  "cta": {
+    "title": "参与其中",
+    "body": "探索代码库，使用工具，提交 Issue，或贡献改进。优秀的工具因人而益。",
+    "button": "在 GitHub 上查看"
+  }
+}
