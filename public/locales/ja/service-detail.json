@@ -76,7 +76,8 @@
     "technologies": [
       "Python",
       "FastAPI",
-      "Tesseract OCR",
+      "PaddleOCR 3.4+ (PP-OCRv4)",
+      "PaddlePaddle",
       "Azure Document Intelligence",
       "spaCy / Hugging Face",
       "Docker",

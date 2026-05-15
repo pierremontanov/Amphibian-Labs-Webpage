@@ -72,7 +72,7 @@
     "title": "AI-powered data extraction",
     "subtitle": "Turn documents into structured, usable data.",
     "problem": "Your business runs on documents: invoices, medical reports, contracts, compliance forms, inspection reports, referral letters, pathology results, and spreadsheets. The data is there, but it's trapped inside PDFs, scanned images, inconsistent layouts, and unstructured text. Someone on your team reads the document, finds the useful fields, checks the numbers, and types the result into another system. That work is slow, expensive, and easy to get wrong.",
-    "approach": "We build AI-powered document processing backends that read, classify, extract, validate, and structure document data. A typical pipeline includes PDF ingestion, OCR for scanned documents, layout analysis for tables and key-value pairs, entity extraction using rules and NLP, field validation with confidence scoring, and structured output to CRMs, EHRs, SharePoint, or operational systems. The system is designed around your document types, not generic templates.",
+    "approach": "We build AI-powered document processing backends that read, classify, extract, validate, and structure document data. A typical pipeline includes PDF ingestion, OCR via PaddleOCR for scanned documents, bilingual language detection, accent-flexible regex extraction that handles both accented and unaccented text transparently, entity extraction using rules and NLP, Pydantic validation, and structured output to CRMs, EHRs, SharePoint, or operational systems. Full OCR output is preserved alongside structured fields for future LLM enrichment. The system runs 100% locally with no external API calls, suitable for sensitive data. It is designed around your document types, not generic templates.",
     "technologies": [
       "Python",
       "FastAPI",
@@ -80,9 +80,8 @@
       "Pydantic",
       "PyMuPDF / fitz",
       "pdf2image / Poppler",
-      "Tesseract OCR / pytesseract",
-      "OpenCV",
-      "Pillow",
+      "PaddleOCR 3.4+ (PP-OCRv4)",
+      "PaddlePaddle",
       "NumPy",
       "langdetect",
       "FHIR R4",
@@ -94,7 +93,7 @@
     "scenario": {
       "title": "Medical practice - pathology report processing",
       "context": "A medical practice received 15–20 pathology reports per day. Admin staff manually transcribed patient identifiers, test names, results, units, and reference ranges into the EHR.",
-      "solution": "We configured DocIQ, our open-source document intelligence engine, for pathology report layouts. The pipeline extracted structured clinical data and produced FHIR R4-compatible JSON ready for downstream import.",
+      "solution": "We configured DocIQ, our open-source document intelligence engine, for pathology report layouts. The pipeline uses PaddleOCR for scanned document recognition, accent-flexible regex for bilingual field extraction (English and Spanish), and produces FHIR R4-compatible JSON ready for downstream import. Everything runs locally — no patient data leaves the network.",
       "outcome": "Approximately 3 hours of daily transcription removed, with confidence-based review for edge cases."
     }
   },
