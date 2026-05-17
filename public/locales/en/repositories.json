@@ -11,7 +11,7 @@
     "label": "Flagship project",
     "title": "DocIQ",
     "tagline": "AI document intelligence engine for healthcare",
-    "description": "Open-source AI backend that reads, classifies, extracts, validates, and structures data from medical documents. Designed for real-world clinical workflows where documents arrive as native PDFs, scanned images, inconsistent layouts, or mixed-language text.",
+    "description": "Open-source AI backend that reads, classifies, extracts (rule-based + LLM), validates, and structures data from medical documents. Designed for real-world clinical workflows where documents arrive as native PDFs, scanned images, inconsistent layouts, or mixed-language text.",
     "tests": "1,100+ tests",
     "languages": "Bilingual processing",
     "fhir": "FHIR R4 compatible",
