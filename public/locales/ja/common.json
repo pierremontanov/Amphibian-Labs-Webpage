@@ -1,13 +1,13 @@
 {
   "cta": {
-    "book_discovery": "Book a discovery session",
-    "see_open_source": "See our open-source work",
-    "email_us": "Email us",
-    "call_us": "Call us",
-    "lets_talk": "Let's talk",
-    "get_started": "Get started",
-    "read_more": "Read more",
-    "view_all_github": "View all on GitHub"
+    "book_discovery": "ディスカバリーセッションを予約",
+    "see_open_source": "オープンソースプロジェクトを見る",
+    "email_us": "メールで問い合わせ",
+    "call_us": "お電話ください",
+    "lets_talk": "お問い合わせ",
+    "get_started": "始めましょう",
+    "read_more": "続きを読む",
+    "view_all_github": "GitHub で全て見る"
   },
   "contact_info": {
     "phone": "0420 729 667",
@@ -16,7 +16,7 @@
   },
   "footer": {
     "copyright": "© {{year}} Amphibian Labs. All rights reserved.",
-    "privacy": "Privacy",
-    "terms": "Terms"
+    "privacy": "プライバシー",
+    "terms": "利用規約"
   }
 }

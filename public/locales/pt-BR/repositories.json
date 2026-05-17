@@ -36,6 +36,10 @@
     "utilities": "Utilitarios",
     "documentation": "Documentacao"
   },
+  "why": {
+    "title": "Por que open source?",
+    "body": "O codigo aberto gera transparencia. Em sistemas de IA, especialmente em processamento de documentos e fluxos de trabalho relacionados a saude, a confianca importa. As equipes devem poder inspecionar como um sistema funciona, entender seus limites e adapta-lo a sua realidade operacional."
+  },
   "loading": {
     "fetching": "Carregando repositorios do GitHub..."
   },
@@ -43,5 +47,10 @@
     "title": "Nao foi possivel carregar os repositorios",
     "body": "A API do GitHub esta temporariamente indisponivel. Voce pode navegar por todos os repositorios diretamente no GitHub.",
     "link": "Ver no GitHub"
+  },
+  "cta": {
+    "title": "Participe",
+    "body": "Explore os repositorios, use as ferramentas, abra uma issue ou contribua com melhorias. Boas ferramentas melhoram quando as pessoas podem ve-las.",
+    "button": "Ver no GitHub"
   }
 }

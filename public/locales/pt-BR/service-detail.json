@@ -10,87 +10,103 @@
   },
   "automation": {
     "meta": {
-      "title": "Automacao de Workflows - Amphibian Labs",
-      "description": "Elimine etapas manuais entre plataformas com Power Automate, Make e n8n. Sem alteracoes de codigo nos seus sistemas existentes."
+      "title": "Consultor de Automacao de Fluxos de Trabalho na Australia | Power Automate, Make, n8n e Microsoft 365",
+      "description": "Automatize fluxos de trabalho repetitivos com Power Automate, Make, n8n, Azure Logic Apps, scripts Python e REST APIs. A Amphibian Labs ajuda PMEs australianas a eliminar tarefas administrativas manuais sem substituir sistemas existentes."
     },
-    "title": "Automacao de workflows",
-    "subtitle": "Elimine etapas manuais entre plataformas",
-    "problem": "Sua equipe gasta horas toda semana em tarefas repetitivas: copiando dados entre sistemas, enviando e-mails de acompanhamento, atualizando planilhas, gerando relatorios. Essas tarefas nao sao complexas - sao apenas tediosas. E cada etapa manual e uma chance de erros, atrasos e frustracao.",
-    "approach": "Mapeamos seus fluxos de trabalho existentes de ponta a ponta, identificamos os gargalos manuais e os automatizamos usando a ferramenta certa para o trabalho. Nao forcamos uma unica plataforma - escolhemos o motor de automacao que se encaixa na sua infraestrutura e no nivel de conforto tecnico da sua equipe. Cada automacao e documentada, testada e entregue com responsabilidade clara.",
+    "title": "Automacao de fluxos de trabalho",
+    "subtitle": "Remova tarefas administrativas repetitivas nas ferramentas que sua equipe ja utiliza.",
+    "problem": "Sua equipe gasta horas toda semana copiando dados, enviando e-mails de acompanhamento, atualizando planilhas, renomeando arquivos, gerando relatorios, verificando caixas de entrada e movendo informacoes entre sistemas. Nada desse trabalho e estrategico. A maior parte segue regras. Isso o torna um forte candidato para automacao. O custo real nao e apenas tempo - fluxos manuais criam atrasos, resultados inconsistentes, acompanhamentos perdidos, erros em relatorios e frustracao silenciosa.",
+    "approach": "Mapeamos o fluxo de trabalho de ponta a ponta, identificamos os passos manuais, definimos as regras de negocio e selecionamos o padrao de automacao correto. As vezes isso significa Power Automate dentro do Microsoft 365. As vezes significa Make ou n8n. As vezes significa um script leve em Python, uma Azure Logic App, webhook ou fluxo orientado por API. Cada automacao e projetada com propriedade em mente: gatilhos claros, logs visiveis, tratamento de erros, documentacao e entrega.",
     "technologies": [
       "Power Automate",
       "Make (Integromat)",
       "n8n",
       "Azure Logic Apps",
-      "Python scripting",
-      "REST APIs"
+      "Microsoft 365",
+      "SharePoint",
+      "Teams",
+      "Python",
+      "REST APIs",
+      "Graph API"
     ],
     "scenario": {
-      "title": "Empresa de construcao - relatorio semanal de conformidade",
-      "context": "Uma construtora de Gold Coast gastava 6 horas toda sexta-feira compilando dados de inspecao de seguranca de tres aplicativos diferentes em um unico relatorio de conformidade para seus gerentes de projeto.",
-      "solution": "Construimos um fluxo no Power Automate que extrai dados de inspecao do aplicativo de campo, cruza com o cronograma do projeto no SharePoint e gera um relatorio em PDF formatado - entregue na caixa de entrada de cada gerente de projeto ate as 8h de sexta-feira.",
-      "outcome": "6 horas de trabalho manual reduzidas a zero. Relatorios mais consistentes e nunca atrasados."
+      "title": "Empresa de construcao - relatorios semanais de conformidade",
+      "context": "Uma empresa de construcao gastava 6 horas toda sexta-feira compilando dados de inspecoes de seguranca de multiplas ferramentas de campo em um relatorio de conformidade para os gerentes de projeto.",
+      "solution": "Construimos uma automacao que coleta dados de inspecao, cruza com informacoes de projetos do SharePoint, gera um relatorio PDF formatado e o envia aos gerentes de projeto antes da reuniao semanal.",
+      "outcome": "O tempo de relatorios manuais foi reduzido de 6 horas para zero, com relatorios mais consistentes e menos entregas atrasadas."
     }
   },
   "integration": {
     "meta": {
-      "title": "Integracao de Sistemas - Amphibian Labs",
-      "description": "Conecte Microsoft 365, SharePoint, CRMs e APIs de terceiros. Sem migracoes - apenas uma camada leve que faz seus sistemas conversarem entre si."
+      "title": "Consultor de Integracao de Sistemas na Australia | API, Microsoft 365, SharePoint e Integracao CRM",
+      "description": "Conecte Microsoft 365, SharePoint, CRMs, ferramentas contabeis, PEPs e plataformas de terceiros com integracoes API leves e middleware. A Amphibian Labs ajuda PMEs a evitar migracoes desnecessarias."
     },
     "title": "Integracao de sistemas",
-    "subtitle": "Faca seus sistemas conversarem entre si",
-    "problem": "Seu CRM nao conversa com seu software de contabilidade. Sua ferramenta de gerenciamento de projetos nao sabe o que tem na sua caixa de entrada. Sua equipe copia dados entre tres abas porque nada esta conectado. Disseram que a unica solucao e migrar tudo para uma unica plataforma - mas isso e caro, disruptivo e provavelmente nao e verdade.",
-    "approach": "Construimos camadas de integracao leves que conectam seus sistemas existentes sem substituir nenhum deles. Trabalhamos com as APIs e conectores que suas ferramentas ja oferecem, adicionando apenas o middleware necessario para manter os dados fluindo. Sem novas plataformas para aprender. Sem migracao de dados. Sua equipe continua trabalhando nas ferramentas que ja conhece.",
+    "subtitle": "Faca seus sistemas existentes se comunicarem.",
+    "problem": "Os dados do seu negocio estao espalhados em lugares demais. Seu CRM nao se comunica com sua ferramenta contabil. Seu sistema de gestao de projetos nao sabe o que esta na sua caixa de entrada. Suas pastas do SharePoint estao desconectadas dos seus formularios. Sua equipe copia a mesma informacao em multiplas plataformas porque nada flui automaticamente. Talvez tenham dito que a unica solucao e migrar tudo para uma unica plataforma. Isso geralmente e caro, disruptivo e desnecessario.",
+    "approach": "Construimos camadas de integracao leves entre os sistemas que voce ja usa. Isso pode significar integracao direta via API, middleware, conectores do Power Automate, sincronizacao programada, webhooks ou servicos backend orientados por eventos. O objetivo nao e criar uma nova plataforma. O objetivo e fazer com que as ferramentas que voce ja usa troquem dados limpos e validados.",
     "technologies": [
       "Microsoft Graph API",
       "SharePoint REST API",
-      "Power Automate connectors",
-      "Custom REST/GraphQL middleware",
+      "Power Automate",
       "Azure Functions",
-      "Python / FastAPI"
+      "Python",
+      "FastAPI",
+      "REST APIs",
+      "GraphQL",
+      "PostgreSQL",
+      "Docker"
     ],
     "scenario": {
-      "title": "Clinica de saude - sincronizacao de cadastro de pacientes",
-      "context": "Uma clinica com varias unidades usava sistemas separados para formularios de cadastro de pacientes, agendamento de consultas e faturamento. A equipe da recepcao reinseriva manualmente os dados do paciente em cada sistema - em media 12 minutos por paciente.",
-      "solution": "Construimos uma camada de middleware em FastAPI que escuta novos cadastros, valida os dados e os envia para os sistemas de agendamento e faturamento via APIs. Sem alteracoes nos formularios ou no software existente.",
-      "outcome": "12 minutos por paciente reduzidos a zero de entrada manual. A taxa de erro caiu de 8% para menos de 1%."
+      "title": "Clinica de saude - sincronizacao de admissao de pacientes",
+      "context": "Uma clinica com multiplas unidades usava ferramentas separadas para formularios de admissao de pacientes, agendamento de consultas e faturamento. A equipe de recepcao reinseriva manualmente os dados de cada paciente em cada sistema, levando cerca de 12 minutos por paciente e criando erros evitaveis.",
+      "solution": "Construimos uma camada middleware com FastAPI que detecta novas submissoes de admissao, valida os dados e os envia para os sistemas de agendamento e faturamento atraves de suas APIs.",
+      "outcome": "A reinsercao manual foi reduzida a zero, com dados mais limpos e menos correcoes posteriores."
     }
   },
   "ai-extraction": {
     "meta": {
-      "title": "Extracao de Dados com IA - Amphibian Labs",
-      "description": "Inteligencia documental, OCR e pipelines de NLP que extraem dados estruturados de documentos do mundo real. Construido com Python, FastAPI e IA open source."
+      "title": "Extracao de Dados com IA e Automacao OCR na Australia | Amphibian Labs",
+      "description": "Extraia dados estruturados de PDFs, documentos digitalizados, faturas, relatorios, prontuarios medicos e formularios usando OCR, extracao baseada em regras, aprimoramento com LLM local, regras de validacao e pipelines de inteligencia documental com IA."
     },
     "title": "Extracao de dados com IA",
-    "subtitle": "Transforme documentos em dados estruturados",
-    "problem": "Sua empresa funciona com documentos - notas fiscais, prontuarios medicos, contratos, relatorios de inspecao, formularios de conformidade. Mas os dados dentro desses documentos sao nao estruturados, inconsistentes e impossiveis de consultar. Alguem da sua equipe gasta horas todo dia lendo PDFs e digitando numeros em planilhas.",
-    "approach": "Construimos backends com IA que leem, classificam e extraem dados estruturados dos seus documentos - automaticamente. Nossos pipelines lidam com OCR, analise de layout, extracao de entidades e validacao. Projetamos para seus tipos de documentos especificos, nao templates genericos. Cada pipeline inclui pontuacao de confianca para que voce saiba quando confiar na saida e quando sinalizar para revisao humana.",
+    "subtitle": "Transforme documentos em dados estruturados e utilizaveis.",
+    "problem": "Seu negocio funciona com documentos: faturas, relatorios medicos, contratos, formularios de conformidade, relatorios de inspecao, cartas de encaminhamento, resultados de patologia e planilhas. Os dados estao la, mas estao presos dentro de PDFs, imagens digitalizadas, layouts inconsistentes e texto nao estruturado. Alguem na sua equipe le o documento, encontra os campos uteis, verifica os numeros e digita o resultado em outro sistema. Esse trabalho e lento, caro e facil de errar.",
+    "approach": "Construimos backends de processamento documental com IA que leem, classificam, extraem, validam e estruturam dados de documentos. Um pipeline tipico inclui ingestao de PDFs, OCR via PaddleOCR para documentos digitalizados, deteccao de idioma bilingue, extracao regex flexivel com acentos que lida com texto acentuado e nao acentuado de forma transparente, extracao de entidades usando uma abordagem dual: padroes baseados em regras sao executados primeiro, depois uma camada opcional de aprimoramento com LLM (alimentada pelo Ollama rodando localmente) preenche os campos vazios restantes campo a campo. Os valores baseados em regras sempre tem prioridade; o sistema recorre silenciosamente aos resultados baseados em regras se o LLM nao estiver disponivel. Por fim, a validacao com Pydantic garante a qualidade dos dados antes da saida estruturada para CRMs, PEPs, SharePoint ou sistemas operacionais. O sistema roda 100% localmente sem chamadas API externas, incluindo a inferencia LLM, adequado para dados sensiveis. E projetado para seus tipos de documentos, nao templates genericos.",
     "technologies": [
       "Python",
       "FastAPI",
+      "Uvicorn",
+      "Pydantic",
+      "PyMuPDF / fitz",
+      "pdf2image / Poppler",
       "PaddleOCR 3.4+ (PP-OCRv4)",
       "PaddlePaddle",
-      "Azure Document Intelligence",
-      "spaCy / Hugging Face",
-      "Docker",
-      "PostgreSQL"
+      "NumPy",
+      "langdetect",
+      "FHIR R4",
+      "pytest / httpx",
+      "Docker / Docker Compose",
+      "Nginx",
+      "YAML config",
+      "Ollama (local LLM inference)"
     ],
     "scenario": {
       "title": "Consultorio medico - processamento de laudos de patologia",
-      "context": "Um laboratorio de patologia envia laudos em PDF com resultados de exames, faixas de referencia e notas clinicas. A equipe administrativa do consultorio transcrevia manualmente os valores-chave no prontuario eletronico - 15 a 20 laudos por dia, 10 minutos cada.",
-      "solution": "Implantamos o DocIQ - nosso motor de inteligencia documental open source - configurado para layouts de laudos de patologia. O pipeline extrai identificadores do paciente, nomes dos exames, resultados, unidades e faixas de referencia, e gera JSON compativel com FHIR R4 pronto para importacao no prontuario eletronico.",
-      "outcome": "3 horas de transcricao diaria eliminadas. Precisao de extracao acima de 97%. Sistema de sinalizacao captura os casos restantes para revisao humana."
+      "context": "Um consultorio medico recebia de 15 a 20 laudos de patologia por dia. A equipe administrativa transcrevia manualmente identificadores de pacientes, nomes de exames, resultados, unidades e faixas de referencia no prontuario eletronico.",
+      "solution": "Configuramos o DocIQ, nosso motor de inteligencia documental open source, para os formatos de laudos de patologia. O pipeline usa PaddleOCR para reconhecimento de documentos digitalizados, regex flexivel com acentos para extracao bilingue de campos (ingles e espanhol), e produz JSON compativel com FHIR R4 pronto para importacao. Tudo roda localmente - nenhum dado de paciente sai da rede.",
+      "outcome": "Aproximadamente 3 horas de transcricao diaria eliminadas, com revisao baseada em confianca para casos limite. A camada LLM captura campos que o regex nao detecta - como nomes de medicos em OCR ruidoso ou diagnosticos estruturados de paragrafos de texto livre - sem que nenhum dado saia da rede local."
     }
   },
   "web-solutions": {
     "meta": {
-      "title": "Solucoes Web e Portais - Amphibian Labs",
-      "description": "Portais para clientes, dashboards e aplicacoes web conectadas aos seus sistemas de backend existentes. Construidos com React, TypeScript e padroes web modernos."
+      "title": "Portais para Clientes, Dashboards e Aplicacoes Web para PMEs | Amphibian Labs",
+      "description": "Construa portais para clientes, dashboards, ferramentas internas e aplicacoes web conectadas aos seus sistemas de negocio existentes. A Amphibian Labs cria solucoes web praticas usando React, TypeScript, FastAPI e APIs modernas."
     },
     "title": "Solucoes web e portais",
-    "subtitle": "De aos seus clientes e equipe uma porta de entrada para seus sistemas",
-    "problem": "Seus sistemas internos funcionam, mas seus clientes e equipe de campo nao tem como interagir diretamente com eles. Solicitacoes chegam por e-mail ou telefone, sua equipe processa manualmente, e atualizacoes de status saem do mesmo jeito. Voce precisa de uma camada web - mas nao precisa (nem quer) reconstruir todo o seu backend.",
-    "approach": "Construimos portais web e dashboards que ficam por cima dos seus sistemas existentes. Seu backend permanece o mesmo - nos adicionamos um front-end moderno e responsivo que seus clientes e equipe podem usar de qualquer dispositivo. Autenticacao, controle de acesso por funcao, dados em tempo real - tudo conectado ao que voce ja utiliza.",
+    "subtitle": "De a clientes, equipe e gestores uma porta de entrada limpa para seus sistemas.",
+    "problem": "Seus sistemas backend podem funcionar, mas as pessoas ainda precisam pedir informacoes manualmente. Clientes enviam e-mails pedindo atualizacoes de status. Equipe de campo liga para o escritorio pedindo detalhes de trabalhos. Gestores esperam por planilhas. Equipes administrativas enviam manualmente a mesma informacao toda semana. A informacao existe, mas nao esta acessivel no lugar certo, na hora certa, para a pessoa certa.",
+    "approach": "Construimos portais web, dashboards e ferramentas internas que se conectam aos seus sistemas existentes. Seu backend nao precisa ser substituido - adicionamos uma interface segura que se conecta as suas APIs, bancos de dados, SharePoint, CRM ou ferramentas de gestao de projetos. Dependendo do caso de uso, a solucao pode incluir autenticacao, acesso baseado em funcoes, status em tempo real, upload de documentos, relatorios, notificacoes e integracao com fluxos de automacao.",
     "technologies": [
       "React",
       "TypeScript",
@@ -98,61 +114,65 @@
       "Next.js / Vite",
       "FastAPI",
       "Azure AD / Auth0",
-      "PostgreSQL"
+      "PostgreSQL",
+      "REST APIs",
+      "Docker"
     ],
     "scenario": {
-      "title": "Empresa de servicos profissionais - portal de status para clientes",
-      "context": "Uma consultoria gerenciava todas as atualizacoes de status de projetos por e-mail. Clientes constantemente pediam atualizacoes, e os gerentes de projeto gastavam 30 minutos por cliente por semana escrevendo e-mails de status.",
-      "solution": "Construimos um portal para clientes que puxa dados do projeto da ferramenta de gerenciamento existente via API. Clientes acessam para ver marcos, entregaveis e proximos passos em tempo real. Resumos automaticos por e-mail substituiram as atualizacoes manuais.",
-      "outcome": "Consultas de status dos clientes caíram 80%. Gerentes de projeto recuperaram mais de 4 horas por semana. Indices de satisfacao dos clientes melhoraram."
+      "title": "Firma de servicos profissionais - portal de status para clientes",
+      "context": "Uma firma de consultoria gerenciava todas as atualizacoes de clientes por e-mail. Os clientes pediam atualizacoes de status com frequencia, e os gerentes de projeto gastavam horas toda semana preparando resumos manuais.",
+      "solution": "Construimos um portal para clientes conectado ao sistema de gestao de projetos existente. Os clientes podiam fazer login para ver marcos, entregas, proximos passos e resumos de progresso automatizados.",
+      "outcome": "As consultas de status dos clientes diminuiram significativamente, e os gerentes de projeto recuperaram tempo que antes gastavam escrevendo atualizacoes manuais."
     }
   },
   "vendor-selection": {
     "meta": {
-      "title": "Selecao de Fornecedores e Consultoria - Amphibian Labs",
-      "description": "Recomendacoes de tecnologia imparciais para PMEs. Recomendamos o que se encaixa - nao o que vendemos. Solucoes prontas, personalizadas ou hibridas."
+      "title": "Selecao de Fornecedores de Tecnologia e Consultoria de Software para PMEs | Amphibian Labs",
+      "description": "Consultoria tecnologica independente para PMEs. Compare ferramentas SaaS, desenvolvimentos sob medida, plataformas de automacao e opcoes open source com base em adequacao, custo, manutenibilidade e risco de dependencia."
     },
     "title": "Selecao de fornecedores e consultoria",
-    "subtitle": "Recomendacoes honestas - mesmo quando nao nos incluem",
-    "problem": "Todo fornecedor diz que o produto dele e a resposta. Mas voce nao sabe quais perguntas fazer, quais funcionalidades realmente importam para o seu porte, ou se voce sequer precisa de software personalizado. Voce ja se decepcionou com consultores que recomendam o que vendem, nao o que voce precisa.",
-    "approach": "Avaliamos seus requisitos contra o mercado - produtos prontos, ferramentas open source e solucoes personalizadas. Pontuamos cada opcao por adequacao, custo, carga de manutencao e risco de dependencia. Nossas recomendacoes sao independentes: nao revendemos software, e diremos quando uma ferramenta SaaS de $50/mes supera uma solucao personalizada de $50.000. Voce recebe um relatorio escrito com nossa analise e uma recomendacao clara.",
+    "subtitle": "Recomendacoes tecnicas honestas, mesmo quando nao nos incluem.",
+    "problem": "Todo fornecedor diz que seu produto e a resposta. Mas seu negocio precisa saber quais funcionalidades importam, qual sera o custo real, se o sistema se integra com seu stack e se sua equipe realmente vai usa-lo. A ferramenta errada nao so desperica dinheiro - cria divida de processos.",
+    "approach": "Avaliamos seus requisitos contra opcoes realistas: ferramentas SaaS, software open source, plataformas de automacao, desenvolvimentos sob medida e abordagens hibridas. Pontuamos as opcoes com base em adequacao funcional, capacidade de integracao, custo total de propriedade, carga de manutencao, portabilidade de dados, requisitos de seguranca e conformidade, risco de dependencia e complexidade de implementacao. Nosso conselho e independente - nao revendemos software e nao precisamos forcar um desenvolvimento sob medida quando uma ferramenta simples funciona melhor.",
     "technologies": [
       "Analise de requisitos",
       "Varredura de mercado",
       "Modelagem de TCO",
       "Avaliacao de riscos",
       "Matrizes de comparacao de fornecedores",
-      "Relatorios consultivos escritos"
+      "Relatorios de consultoria escritos"
     ],
     "scenario": {
-      "title": "Empresa de servicos - escolha de plataforma de gestao de trabalho",
-      "context": "Uma empresa de servicos com 15 funcionarios estava avaliando quatro plataformas de gestao de trabalho. Cada demonstracao de fornecedor parecia otima, mas o proprietario nao conseguia distinguir quais funcionalidades importavam e quais eram ruido. Compras anteriores de software tinham ficado sem uso apos 3 meses.",
-      "solution": "Realizamos um workshop de meio dia para mapear os fluxos de trabalho reais, e entao pontuamos cada plataforma contra os requisitos reais - nao a lista de funcionalidades do fornecedor. Recomendamos a opcao mais simples que cobria 90% das necessidades e sinalizamos a unica lacuna que poderia ser preenchida com um complemento de $20/mes.",
-      "outcome": "O proprietario escolheu com confianca. A adocao da plataforma atingiu 100% em 6 semanas - pela primeira vez na empresa."
+      "title": "Empresa de servicos - escolha de plataforma de gestao de trabalhos",
+      "context": "Uma empresa de encanamento com 15 funcionarios estava comparando varias plataformas de gestao de trabalhos. Cada demonstracao parecia otima, mas o proprietario nao conseguia separar funcionalidades uteis do discurso comercial.",
+      "solution": "Mapeamos o fluxo de trabalho real, identificamos as funcionalidades necessarias, pontuamos cada plataforma contra as necessidades operacionais e recomendamos a opcao mais simples que cobria a maioria dos casos de uso.",
+      "outcome": "A empresa escolheu com confianca e evitou comprar software que nao precisava."
     }
   },
   "crm-cleanup": {
     "meta": {
-      "title": "Limpeza e Otimizacao de CRM - Amphibian Labs",
-      "description": "Auditoria, deduplicacao, reestruturacao e automacao do seu CRM. Pare de contornar seus dados - faca-os trabalhar para voce."
+      "title": "Consultor de Limpeza, Deduplicacao e Automacao de CRM | Amphibian Labs",
+      "description": "Limpe, deduplique, reestruture e automatize dados de CRM no HubSpot, Salesforce, Zoho, Dynamics 365 e outros CRMs. A Amphibian Labs ajuda PMEs a tornar os dados de clientes confiaveis novamente."
     },
     "title": "Limpeza e otimizacao de CRM",
-    "subtitle": "Faca seu CRM realmente funcionar para sua equipe",
-    "problem": "Seu CRM tem milhares de registros, mas metade deles sao duplicatas, desatualizados ou com campos-chave faltando. Sua equipe parou de confiar nos dados e criou solucoes alternativas em planilhas. Relatorios sao nao confiaveis. O CRM deveria economizar tempo - em vez disso, gera mais trabalho.",
-    "approach": "Comecamos com uma auditoria de dados: quantos registros, quantas duplicatas, o que esta faltando, o que esta inconsistente. Depois limpamos, deduplicamos e reestruturamos - com a contribuicao da sua equipe sobre o que importa. Por fim, configuramos regras de validacao e automacoes para que os dados permanecam limpos daqui para frente. Trabalhamos com qualquer CRM que voce ja use.",
+    "subtitle": "Faca seu CRM ser util novamente.",
+    "problem": "Seu CRM deveria criar clareza. Em vez disso, contem contatos duplicados, registros incompletos, campos inconsistentes, pipelines abandonados, relatorios nao confiaveis e dados em que ninguem confia totalmente. Quando as pessoas param de confiar no CRM, criam planilhas paralelas. Entao o CRM se torna um arquivo historico em vez de um sistema operacional.",
+    "approach": "Comecamos com uma auditoria de dados. Identificamos duplicatas, campos ausentes, formatos inconsistentes, estagios de ciclo de vida quebrados, propriedades nao utilizadas e lacunas em relatorios. Depois limpamos e reestruturamos os dados com a participacao da sua equipe. Apos a limpeza, adicionamos regras de validacao, automacoes e orientacoes de processo para que os dados nao se deteriorem novamente.",
     "technologies": [
       "HubSpot",
       "Salesforce",
       "Zoho CRM",
       "Microsoft Dynamics 365",
-      "Scripts de limpeza de dados em Python",
-      "Power Automate / Zapier"
+      "Python data cleaning scripts",
+      "Power Automate / Zapier",
+      "APIs",
+      "CSV workflows"
     ],
     "scenario": {
       "title": "Imobiliaria - reformulacao do banco de dados de contatos",
-      "context": "Uma imobiliaria tinha 12.000 contatos no CRM. Apos 4 anos de uso por varios corretores, 30% eram duplicatas, 40% tinham telefones ou e-mails faltando, e ninguem confiava nos dados o suficiente para rodar campanhas de marketing.",
-      "solution": "Exportamos e analisamos os dados, construimos um pipeline de deduplicacao em Python usando correspondencia aproximada, mesclamos registros com os dados mais completos e reimportamos o conjunto de dados limpo. Adicionamos regras de validacao para prevenir futuras duplicatas e configuramos enriquecimento automatico para campos faltantes.",
-      "outcome": "12.000 registros reduzidos a 7.800 contatos limpos. Primeira campanha de e-mail em 2 anos enviada na semana seguinte. Taxas de abertura dobraram em comparacao com a ultima tentativa."
+      "context": "Uma imobiliaria tinha 12.000 contatos no CRM. Apos anos de uso inconsistente, muitos registros estavam duplicados, incompletos ou nao confiaveis.",
+      "solution": "Exportamos e analisamos os dados, construimos um fluxo de deduplicacao usando correspondencia aproximada, mesclamos registros com base na completude e reimportamos um dataset mais limpo. Depois adicionamos regras de validacao e automacao para reduzir a deterioracao futura.",
+      "outcome": "O CRM voltou a ser utilizavel para relatorios e campanhas."
     }
   }
 }
